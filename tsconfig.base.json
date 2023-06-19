@@ -14,7 +14,30 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@large-ts-monorepo/small-pkg1": ["packages/small-pkg1/src/index.ts"],
+      "@large-ts-monorepo/small-pkg1-1": ["packages/small-pkg1-1/src/index.ts"],
+      "@large-ts-monorepo/small-pkg1-1-1": [
+        "packages/small-pkg1-1-1/src/index.ts"
+      ],
+      "@large-ts-monorepo/small-pkg1-1-2": [
+        "packages/small-pkg1-1-2/src/index.ts"
+      ],
+      "@large-ts-monorepo/small-pkg1-2": ["packages/small-pkg1-2/src/index.ts"],
+      "@large-ts-monorepo/small-pkg1-2-1": [
+        "packages/small-pkg1-2-1/src/index.ts"
+      ],
+      "@large-ts-monorepo/small-pkg1-2-2": [
+        "packages/small-pkg1-2-2/src/index.ts"
+      ],
+      "@large-ts-monorepo/small-pkg1-3": ["packages/small-pkg1-3/src/index.ts"],
+      "@large-ts-monorepo/small-pkg1-3-1": [
+        "packages/small-pkg1-3-1/src/index.ts"
+      ],
+      "@large-ts-monorepo/small-pkg1-3-2": [
+        "packages/small-pkg1-3-2/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

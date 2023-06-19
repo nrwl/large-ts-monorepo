@@ -1,0 +1,19 @@
+{
+  "name": "small-pkg1-1-1",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/small-pkg1-1-1/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/small-pkg1-1-1",
+        "main": "packages/small-pkg1-1-1/src/index.ts",
+        "tsConfig": "packages/small-pkg1-1-1/tsconfig.lib.json",
+        "assets": ["packages/small-pkg1-1-1/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
