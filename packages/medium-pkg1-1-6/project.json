@@ -1,0 +1,19 @@
+{
+  "name": "medium-pkg1-1-6",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/medium-pkg1-1-6/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/medium-pkg1-1-6",
+        "main": "packages/medium-pkg1-1-6/src/index.ts",
+        "tsConfig": "packages/medium-pkg1-1-6/tsconfig.lib.json",
+        "assets": ["packages/medium-pkg1-1-6/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
