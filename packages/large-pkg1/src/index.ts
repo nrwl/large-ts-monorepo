@@ -1,0 +1,13 @@
+export * from './lib/large-pkg1';
+export { largePkg11 } from '@large-ts-monorepo/large-pkg1-1';
+export { largePkg12 } from '@large-ts-monorepo/large-pkg1-2';
+export { largePkg13 } from '@large-ts-monorepo/large-pkg1-3';
+export { largePkg14 } from '@large-ts-monorepo/large-pkg1-4';
+export { largePkg15 } from '@large-ts-monorepo/large-pkg1-5';
+export { largePkg16 } from '@large-ts-monorepo/large-pkg1-6';
+export { largePkg17 } from '@large-ts-monorepo/large-pkg1-7';
+export { largePkg18 } from '@large-ts-monorepo/large-pkg1-8';
+export { largePkg19 } from '@large-ts-monorepo/large-pkg1-9';
+export { largePkg110 } from '@large-ts-monorepo/large-pkg1-10';
+export { largePkg111 } from '@large-ts-monorepo/large-pkg1-11';
+export { largePkg112 } from '@large-ts-monorepo/large-pkg1-12';

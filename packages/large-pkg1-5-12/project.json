@@ -1,0 +1,19 @@
+{
+  "name": "large-pkg1-5-12",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/large-pkg1-5-12/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/large-pkg1-5-12",
+        "main": "packages/large-pkg1-5-12/src/index.ts",
+        "tsConfig": "packages/large-pkg1-5-12/tsconfig.lib.json",
+        "assets": ["packages/large-pkg1-5-12/*.md"]
+      }
+    }
+  },
+  "tags": []
+}
