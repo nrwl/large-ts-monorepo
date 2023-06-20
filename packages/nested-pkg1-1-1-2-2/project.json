@@ -1,0 +1,19 @@
+{
+  "name": "nested-pkg1-1-1-2-2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/nested-pkg1-1-1-2-2/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/nested-pkg1-1-1-2-2",
+        "main": "packages/nested-pkg1-1-1-2-2/src/index.ts",
+        "tsConfig": "packages/nested-pkg1-1-1-2-2/tsconfig.lib.json",
+        "assets": ["packages/nested-pkg1-1-1-2-2/*.md"]
+      }
+    }
+  },
+  "tags": []
+}

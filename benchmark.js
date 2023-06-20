@@ -5,16 +5,16 @@ const path = require('path');
 const parser = require('yargs-parser');
 
 const options = parser(process.argv.slice(2), {
-  // small, medium, large
-  string: ['pkgSize'],
+  // small, medium, large, nested
+  string: ['scenario'],
   boolean: ['verbose'],
 });
 
-if (!options.pkgSize) {
+if (!options.scenario) {
   throw new Error('Please specify the package size to run the benchmark for.');
 }
 
-const pkgSizeInfo = {
+const scenarioInfo = {
   small: {
     levels: [1, 3, 2],
     count: 10,
@@ -27,10 +27,14 @@ const pkgSizeInfo = {
     levels: [1, 12, 20],
     count: 253,
   },
+  nested: {
+    levels: [1, 2, 2, 2, 2, 2],
+    count: 63,
+  },
 };
 
 const NUMBER_OF_RUNS = 3;
-const totalPkgs = pkgSizeInfo[options.pkgSize].count;
+const totalPkgs = scenarioInfo[options.scenario].count;
 
 function logTitle(message) {
   console.log(''.padEnd(message.length, '-'));
@@ -102,34 +106,34 @@ function affectPackages(pkgsCountToAffect) {
   let affectedPkgsCount = 0;
 
   // level 0
-  updatePkg(`${options.pkgSize}-pkg1`);
+  updatePkg(`${options.scenario}-pkg1`);
   affectedPkgsCount++;
 
   // level 1
   for (
     let i = 1;
-    i <= pkgSizeInfo[options.pkgSize].levels[1] &&
+    i <= scenarioInfo[options.scenario].levels[1] &&
     affectedPkgsCount < pkgsCountToAffect;
     i++
   ) {
-    updatePkg(`${options.pkgSize}-pkg1-${i}`);
+    updatePkg(`${options.scenario}-pkg1-${i}`);
     affectedPkgsCount++;
   }
 
   // level 2
   for (
     let i = 1;
-    i <= pkgSizeInfo[options.pkgSize].levels[1] &&
+    i <= scenarioInfo[options.scenario].levels[1] &&
     affectedPkgsCount < pkgsCountToAffect;
     i++
   ) {
     for (
       let j = 1;
-      j <= pkgSizeInfo[options.pkgSize].levels[2] &&
+      j <= scenarioInfo[options.scenario].levels[2] &&
       affectedPkgsCount < pkgsCountToAffect;
       j++
     ) {
-      updatePkg(`${options.pkgSize}-pkg1-${i}-${j}`);
+      updatePkg(`${options.scenario}-pkg1-${i}-${j}`);
       affectedPkgsCount++;
     }
   }
@@ -144,42 +148,46 @@ const benchmarkTimes = {
     affected10: 0,
     affected20: 0,
     affected50: 0,
+    affectedLeafDep: 0,
   },
   batch: {
     cold: 0,
     affected10: 0,
     affected20: 0,
     affected50: 0,
+    affectedLeafDep: 0,
   },
 };
 
 // Cold builds
 logTitle(`Running a cold build with @nx/js:tsc ${NUMBER_OF_RUNS} times`);
 benchmarkTimes.normal.cold = runBenchmark(() =>
-  spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`])
+  spawnSync('nx', ['run', `${options.scenario}-pkg1:build`])
 );
 
 logTitle(
   `Running a cold build with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.batch.cold = runBenchmark(() =>
-  spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`], {
+  spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
     NX_BATCH_MODE: 'true',
   })
 );
 
 // ~10% affected
+const affected10RunOptions = {
+  prepare: () => affectPackages(affected10Info.count),
+  warmup: true,
+  clearCache: false,
+  clearOutput: false,
+};
+
 logTitle(
   `Running build for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected10 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`]),
-  {
-    prepare: () => affectPackages(affected10Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  affected10RunOptions
 );
 
 logTitle(
@@ -187,29 +195,26 @@ logTitle(
 );
 benchmarkTimes.batch.affected10 = runBenchmark(
   () =>
-    spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`], {
+    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
       NX_BATCH_MODE: 'true',
     }),
-  {
-    prepare: () => affectPackages(affected10Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  affected10RunOptions
 );
 
 // ~20% affected
+const affected20RunOptions = {
+  prepare: () => affectPackages(affected20Info.count),
+  warmup: true,
+  clearCache: false,
+  clearOutput: false,
+};
+
 logTitle(
   `Running build for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected20 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`]),
-  {
-    prepare: () => affectPackages(affected20Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  affected20RunOptions
 );
 
 logTitle(
@@ -217,29 +222,26 @@ logTitle(
 );
 benchmarkTimes.batch.affected20 = runBenchmark(
   () =>
-    spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`], {
+    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
       NX_BATCH_MODE: 'true',
     }),
-  {
-    prepare: () => affectPackages(affected20Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  affected20RunOptions
 );
 
 // ~50% affected
+const affected50RunOptions = {
+  prepare: () => affectPackages(affected50Info.count),
+  warmup: true,
+  clearCache: false,
+  clearOutput: false,
+};
+
 logTitle(
   `Running build for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected50 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`]),
-  {
-    prepare: () => affectPackages(affected50Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  affected50RunOptions
 );
 
 logTitle(
@@ -247,15 +249,46 @@ logTitle(
 );
 benchmarkTimes.batch.affected50 = runBenchmark(
   () =>
-    spawnSync('nx', ['run', `${options.pkgSize}-pkg1:build`], {
+    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
       NX_BATCH_MODE: 'true',
     }),
-  {
-    prepare: () => affectPackages(affected50Info.count),
-    warmup: true,
-    clearCache: false,
-    clearOutput: false,
-  }
+  affected50RunOptions
+);
+
+// leaf project dep affected
+const affectedLeafDepRunOptions = {
+  prepare: () => {
+    const topPkgName = `${options.scenario}-pkg1`;
+    updatePkg(
+      topPkgName.padEnd(
+        topPkgName.length +
+          2 * (scenarioInfo[options.scenario].levels.length - 1),
+        '-1'
+      )
+    );
+  },
+  warmup: true,
+  clearCache: false,
+  clearOutput: false,
+};
+
+logTitle(
+  `Running build for project with a leaf dependency affected with @nx/js:tsc ${NUMBER_OF_RUNS} times`
+);
+benchmarkTimes.normal.affectedLeafDep = runBenchmark(
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  affectedLeafDepRunOptions
+);
+
+logTitle(
+  `Running build for project with a leaf dependency affected with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
+);
+benchmarkTimes.batch.affectedLeafDep = runBenchmark(
+  () =>
+    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
+      NX_BATCH_MODE: 'true',
+    }),
+  affectedLeafDepRunOptions
 );
 
 // Summary
@@ -314,6 +347,20 @@ console.log(
 console.log(
   `Running @nx/js:tsc using batch execution was ${
     benchmarkTimes.normal.affected50 / benchmarkTimes.batch.affected50
+  }x faster than non-batch execution`
+);
+
+console.log('\n');
+
+console.log(
+  `Average build time for project with a leaf dependency affected with @nx/js:tsc is: ${benchmarkTimes.normal.affectedLeafDep}ms`
+);
+console.log(
+  `Average build time for project with a leaf dependency affected with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.affectedLeafDep}ms`
+);
+console.log(
+  `Running @nx/js:tsc using batch execution was ${
+    benchmarkTimes.normal.affectedLeafDep / benchmarkTimes.batch.affectedLeafDep
   }x faster than non-batch execution`
 );
 

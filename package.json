@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "benchmark:small": "node benchmark.js --pkg-size small",
-    "benchmark:medium": "node benchmark.js --pkg-size medium",
-    "benchmark:large": "node benchmark.js --pkg-size large",
-    "benchmark": "pnpm benchmark:medium"
+    "benchmark:small": "node benchmark.js --scenario small",
+    "benchmark:medium": "node benchmark.js --scenario medium",
+    "benchmark:large": "node benchmark.js --scenario large",
+    "benchmark:nested": "node benchmark.js --scenario nested",
+    "benchmark": "pnpm benchmark:nested"
   },
   "private": true,
   "dependencies": {
