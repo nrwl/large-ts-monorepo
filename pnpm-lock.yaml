@@ -1,5 +1,10 @@
 lockfileVersion: '6.0'
 
+patchedDependencies:
+  nx@16.4.0-beta.8:
+    hash: kazmv62c4xjcafo74trxofjx74
+    path: patches/nx@16.4.0-beta.8.patch
+
 dependencies:
   tslib:
     specifier: ^2.5.3
@@ -23,7 +28,7 @@ devDependencies:
     version: 18.7.1
   nx:
     specifier: 16.4.0-beta.8
-    version: 16.4.0-beta.8
+    version: 16.4.0-beta.8(patch_hash=kazmv62c4xjcafo74trxofjx74)
   prettier:
     specifier: ^2.6.2
     version: 2.6.2
@@ -33,6 +38,9 @@ devDependencies:
   typescript:
     specifier: ~5.0.2
     version: 5.0.2
+  yargs-parser:
+    specifier: ^21.1.1
+    version: 21.1.1
 
 packages:
 
@@ -1469,7 +1477,7 @@ packages:
     resolution: {integrity: sha512-K/sSKv7pwRjExKIfS18yloZrz/h0jjpFhES25NFIhyvs0RAbpqPSnj/w/wiFD1utT2hZ/sM7RHU9Ymciya7ltQ==}
     hasBin: true
     dependencies:
-      nx: 16.4.0-beta.8
+      nx: 16.4.0-beta.8(patch_hash=kazmv62c4xjcafo74trxofjx74)
     transitivePeerDependencies:
       - '@swc-node/register'
       - '@swc/core'
@@ -1494,7 +1502,7 @@ packages:
       '@nrwl/devkit': 16.4.0-beta.8(nx@16.4.0-beta.8)
       ejs: 3.1.9
       ignore: 5.2.4
-      nx: 16.4.0-beta.8
+      nx: 16.4.0-beta.8(patch_hash=kazmv62c4xjcafo74trxofjx74)
       semver: 7.3.4
       tmp: 0.2.1
       tslib: 2.5.3
@@ -1673,7 +1681,7 @@ packages:
       ignore: 5.2.4
       minimatch: 3.0.5
       npm-run-path: 4.0.1
-      nx: 16.4.0-beta.8
+      nx: 16.4.0-beta.8(patch_hash=kazmv62c4xjcafo74trxofjx74)
       open: 8.4.2
       rxjs: 7.8.1
       tmp: 0.2.1
@@ -2611,7 +2619,7 @@ packages:
       path-key: 3.1.1
     dev: true
 
-  /nx@16.4.0-beta.8:
+  /nx@16.4.0-beta.8(patch_hash=kazmv62c4xjcafo74trxofjx74):
     resolution: {integrity: sha512-rmHkmabkRuJdUlJsdEuP4v+83KLEBjzxuFcwgiaxBIQDeQ0OKWKBANff5mKZESNDZMWDkxuHyyqRUdD9ICaJsQ==}
     hasBin: true
     requiresBuild: true
@@ -2672,6 +2680,7 @@ packages:
     transitivePeerDependencies:
       - debug
     dev: true
+    patched: true
 
   /once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
