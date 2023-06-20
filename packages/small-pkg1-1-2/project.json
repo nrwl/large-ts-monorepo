@@ -11,7 +11,8 @@
         "outputPath": "dist/packages/small-pkg1-1-2",
         "main": "packages/small-pkg1-1-2/src/index.ts",
         "tsConfig": "packages/small-pkg1-1-2/tsconfig.lib.json",
-        "assets": ["packages/small-pkg1-1-2/*.md"]
+        "assets": ["packages/small-pkg1-1-2/*.md"],
+        "clean": false
       }
     }
   },

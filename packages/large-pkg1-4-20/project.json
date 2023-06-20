@@ -11,7 +11,8 @@
         "outputPath": "dist/packages/large-pkg1-4-20",
         "main": "packages/large-pkg1-4-20/src/index.ts",
         "tsConfig": "packages/large-pkg1-4-20/tsconfig.lib.json",
-        "assets": ["packages/large-pkg1-4-20/*.md"]
+        "assets": ["packages/large-pkg1-4-20/*.md"],
+        "clean": false
       }
     }
   },

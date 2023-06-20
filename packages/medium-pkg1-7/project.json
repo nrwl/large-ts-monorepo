@@ -11,7 +11,8 @@
         "outputPath": "dist/packages/medium-pkg1-7",
         "main": "packages/medium-pkg1-7/src/index.ts",
         "tsConfig": "packages/medium-pkg1-7/tsconfig.lib.json",
-        "assets": ["packages/medium-pkg1-7/*.md"]
+        "assets": ["packages/medium-pkg1-7/*.md"],
+        "clean": false
       }
     }
   },
