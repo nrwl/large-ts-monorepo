@@ -66,6 +66,9 @@ function spawnSync(cmd, args, env = {}) {
 }
 
 function runBenchmark(task, options = {}) {
+  clearOutput();
+  clearCache();
+
   if (options.warmup) {
     console.log('Running warmup...');
     task();
