@@ -14,12 +14,12 @@
     "tslib": "^2.5.3"
   },
   "devDependencies": {
-    "@nx/devkit": "16.5.1",
-    "@nx/js": "16.5.1",
-    "@nx/linter": "16.5.1",
-    "@nx/workspace": "16.5.1",
+    "@nx/devkit": "16.6.0",
+    "@nx/js": "16.6.0",
+    "@nx/linter": "16.6.0",
+    "@nx/workspace": "16.6.0",
     "@types/node": "18.7.1",
-    "nx": "16.5.1",
+    "nx": "16.6.0",
     "prettier": "^2.6.2",
     "ts-node": "^10.9.1",
     "typescript": "5.1.3",
