@@ -1,10 +1,13 @@
-# Benchmarking TypeScript builds with `@nx/js:tsc` executor
+# 🔥🔥🔥 Nx+TypeScript Benchmark (Batch Mode = Project Refs + Incremental Builds) 🏎️🏎️🏎️
 
-This repo contains different benchmarks for the `@nx/js:tsc` executor.
+![benchmark](./assets/ts-benchmark.gif)
 
-The goal is to compare the performance of the batch implementation with the non-batch implementation. The batch implementation, apart from running multiple tasks in a single process, also creates the required [TypeScript project references](https://www.typescriptlang.org/docs/handbook/project-references.html) on the fly to perform incremental builds.
+This repo compares two modes of running the `@nx/js:tsc` executor: the regular one and the batch one. The batch implementation, apart from running multiple tasks in a single process, also creates the required [TypeScript project references](https://www.typescriptlang.org/docs/handbook/project-references.html) on the fly to perform incremental builds.
+
 
 ## Benchmark results (2023-07-31, Nx v16.6.0)
+
+**TLDR: Depending onthe operation, the batch mode is from 1.16 to 7.73 time faster.**
 
 All commands in the benchmarks are run with the default number of parallel processes (3). In the case of the batch implementation, it runs in a single process because all the tasks using the same executor are batched together.
 
@@ -66,6 +69,8 @@ Command: `pnpm benchmark:nested`
 - 32 affected packages (~51%): `@nx/js:tsc` batch implementation is **~1.81x faster** than non-batch implementation
 - 1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.47x faster** than non-batch implementation
 
+
+
 ## Notes
 
 The non-batch implementation of the `@nx/js:tsc` executor is the default implementation run by Nx. The batch implementation is an experimental implementation that can be enabled by setting the `NX_BATCH_MODE=true` environment variable.
@@ -76,16 +81,14 @@ The non-batch implementation runs each task in a separate process. Each process 
 
 The batch implementation runs multiple tasks in a single process. This reduces the overhead of starting a new process for each task. It also creates the required [TypeScript project references](https://www.typescriptlang.org/docs/handbook/project-references.html) (based on the project graph information) on the fly to perform [incremental builds](https://www.typescriptlang.org/docs/handbook/project-references.html#build-mode-for-typescript). This is what yields the main performance benefits over the non-batch implementation. In this mode, the TypeScript compiler doesn't create a full `ts.Program` per project. Instead, it acts more like a build orchestrator and runs only out-of-date projects in the correct order.
 
-### Why not use TypeScript project references in the non-batch implementation?
+### Compatible with Nx caching and distributed task execution 🏎️
 
-We have plans to look into this in the future. However, because the non-batch implementation runs each task independently in a separate process, the performance gains will be smaller, and the batch implementation will still perform better. In cold builds, the TypeScript compiler would still create a full `ts.Program` per project. Also, the overhead of starting a new process for each task would still be there.
+TSC has powerful capabilities for incremental builds. Nx has powerful capabilities for caching and task distribution. These features compose very nicely. First Nx will retreive whatever it can from its local and remote caches (which includes `.tsbuildinfo` files), and then TSC will compile the remaining libs using the cached `.tsbuildinfo` files. This results in the minimum amount of computation.
 
-It would still provide some good performance benefits when a non-TS file (relevant to the project build, e.g. `package.json` or assets) changes. In this case, the executor would still handle the asset change, but the TypeScript compiler would skip the project build because it's up to date (no TS file changed).
+Note even though the batch implementation can compile hundreds of libraries in the same process, each compiled library will be cached separately by Nx, which greatly increase computation reuse and the percentage of cache hits.
 
 ### Performance and DX balance
 
-TypeScript incremental builds with Project references is a great feature that can significantly improve build performance. However, in large monorepos, it can be challenging to set up and maintain the project references. Developers need to manually keep those references up to date, which is error-prone and can lead to broken builds.
+In large monorepos, it can be challenging to maintain Project references required for TSC incremental builds. Developers need to manually keep those references up to date, which is error-prone and can lead to broken builds.
 
-The `@nx/js:tsc` batch implementation addresses this by creating the required project references on the fly using the project graph information. This eliminates the need for developers to manually maintain the project references while still getting the performance benefits of incremental builds.
-
-Another improvement introduced by the `@nx/js:tsc` batch implementation is that it allows distributing the `.tsbuildinfo` files (where TypeScript stores the build information needed to determine the project's up to date state) across CI runs and developer machines. This takes the TypeScript incremental builds feature to the next level since we can get cache hits from previous runs in CI and other developers' machines.
+The `@nx/js:tsc` batch implementation addresses this by creating the required project references on the fly using the project graph information. Nx already knows how your projects relate, so no need to tell it again. This eliminates the need for developers to manually maintain the project references while still getting the performance benefits of incremental builds. Zero DX cost, huge perf benefits. 
