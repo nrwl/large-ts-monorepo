@@ -25,5 +25,6 @@
     "appsDir": "packages",
     "libsDir": "packages"
   },
-  "nxCloudAccessToken": "ODQxYWNiZmYtYzlhZC00ZDJhLWJmNzMtMzQ3YTU0OTJmYThmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ZjlhZjY4ZjktNDM3Ni00ZmFlLWE0YzMtY2ZlZjk1ZjJhOGIyfHJlYWQtd3JpdGU=",
+  "nxCloudUrl": "https://staging.nx.app"
 }
