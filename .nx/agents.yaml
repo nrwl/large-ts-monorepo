@@ -1,0 +1,22 @@
+launch-templates:
+  linux-medium:
+    resourceClass: "docker_linux_amd64/medium"
+    image: 'ubuntu22.04-node20.9-v1'
+    init-steps:
+      - name: checkout repo
+        uses: 'nrwl/nx-cloud-workflows/main/workflow-steps/checkout/main.yaml'
+
+      - name: node_modules cache
+        uses: 'nrwl/nx-cloud-workflows/main/workflow-steps/cache/main.yaml'
+        env:
+          KEY: 'yarn.lock'
+          PATHS: 'node_modules'
+          BASE_BRANCH: 'main'
+
+      - name: corepack enable
+        run: corepack enable
+
+      - name: yarn
+        run: yarn --immutable
+
+

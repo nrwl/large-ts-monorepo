@@ -52,8 +52,8 @@ jobs:
       - name: Check out the default branch
         run: git branch --track main origin/main
 
-      - name: Initialize the Nx Cloud distributed CI run and stop agents when the build tasks are done
-        run: yarn nx-cloud start-ci-run --stop-agents-after=build
+      - name: Start CI run
+        run: yarn nx-cloud start-ci-run --distributes-on="10 linux-medium"
 
       - name: Run commands in parallel
         run: |
@@ -71,35 +71,3 @@ jobs:
           done
 
           exit 0
-
-  agents:
-    name: Agent ${{ matrix.agent }}
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        # Add more agents here as your repository expands
-        agent: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # Set node/npm/yarn versions using volta
-      - uses: volta-cli/action@v4
-        with:
-          package-json-path: '${{ github.workspace }}/package.json'
-
-      - name: Use the package manager cache if available
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20
-
-      - name: corepack enable
-        run: corepack enable
-
-      - name: yarn
-        run: yarn --immutable
-
-      - name: Start Nx Agent ${{ matrix.agent }}
-        run: yarn nx-cloud start-agent
-        env:
-          NX_AGENT_NAME: ${{ matrix.agent }}
