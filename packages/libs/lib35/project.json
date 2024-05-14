@@ -1,0 +1,19 @@
+{
+  "name": "lib-35",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib35/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib35",
+        "main": "packages/libs/lib35/src/index.ts",
+        "tsConfig": "packages/libs/lib35/tsconfig.lib.json",
+        "assets": ["packages/libs/lib35/*.md"]
+      }
+    }
+  }
+}

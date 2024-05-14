@@ -1,0 +1,19 @@
+{
+  "name": "lib-25",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib25/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib25",
+        "main": "packages/libs/lib25/src/index.ts",
+        "tsConfig": "packages/libs/lib25/tsconfig.lib.json",
+        "assets": ["packages/libs/lib25/*.md"]
+      }
+    }
+  }
+}

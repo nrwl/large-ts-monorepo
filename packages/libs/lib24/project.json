@@ -1,0 +1,19 @@
+{
+  "name": "lib-24",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib24/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib24",
+        "main": "packages/libs/lib24/src/index.ts",
+        "tsConfig": "packages/libs/lib24/tsconfig.lib.json",
+        "assets": ["packages/libs/lib24/*.md"]
+      }
+    }
+  }
+}

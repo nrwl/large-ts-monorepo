@@ -1,0 +1,19 @@
+{
+  "name": "lib-82",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib82/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib82",
+        "main": "packages/libs/lib82/src/index.ts",
+        "tsConfig": "packages/libs/lib82/tsconfig.lib.json",
+        "assets": ["packages/libs/lib82/*.md"]
+      }
+    }
+  }
+}

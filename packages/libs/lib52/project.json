@@ -1,0 +1,19 @@
+{
+  "name": "lib-52",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib52/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib52",
+        "main": "packages/libs/lib52/src/index.ts",
+        "tsConfig": "packages/libs/lib52/tsconfig.lib.json",
+        "assets": ["packages/libs/lib52/*.md"]
+      }
+    }
+  }
+}

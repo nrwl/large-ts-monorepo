@@ -1,0 +1,19 @@
+{
+  "name": "lib-20",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs/lib20/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs/lib20",
+        "main": "packages/libs/lib20/src/index.ts",
+        "tsConfig": "packages/libs/lib20/tsconfig.lib.json",
+        "assets": ["packages/libs/lib20/*.md"]
+      }
+    }
+  }
+}
