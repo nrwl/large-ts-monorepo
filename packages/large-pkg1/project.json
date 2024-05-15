@@ -2,7 +2,7 @@
   "name": "large-pkg1",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "packages/large-pkg1/src",
-  "projectType": "library",
+  "projectType": "libraryy",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",

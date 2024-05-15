@@ -1,0 +1,19 @@
+{
+  "name": "lib-108",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-2/lib108/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-2/lib108",
+        "main": "packages/libs-2/lib108/src/index.ts",
+        "tsConfig": "packages/libs-2/lib108/tsconfig.lib.json",
+        "assets": ["packages/libs-2/lib108/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lib-139",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-2/lib139/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-2/lib139",
+        "main": "packages/libs-2/lib139/src/index.ts",
+        "tsConfig": "packages/libs-2/lib139/tsconfig.lib.json",
+        "assets": ["packages/libs-2/lib139/*.md"]
+      }
+    }
+  }
+}

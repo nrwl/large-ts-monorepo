@@ -1,0 +1,19 @@
+{
+  "name": "lib-180",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-2/lib180/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-2/lib180",
+        "main": "packages/libs-2/lib180/src/index.ts",
+        "tsConfig": "packages/libs-2/lib180/tsconfig.lib.json",
+        "assets": ["packages/libs-2/lib180/*.md"]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "lib-105",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-2/lib105/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-2/lib105",
+        "main": "packages/libs-2/lib105/src/index.ts",
+        "tsConfig": "packages/libs-2/lib105/tsconfig.lib.json",
+        "assets": ["packages/libs-2/lib105/*.md"]
+      }
+    }
+  }
+}

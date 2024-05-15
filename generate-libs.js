@@ -4,7 +4,7 @@ const { exec } = require('child_process');
 function createLibrary(index) {
   return new Promise((resolve, reject) => {
     const name = `lib-${index}`;
-    const directory = `packages/libs/lib${index}`;
+    const directory = `packages/libs-2/lib${index}`;
     const command = `npx nx g @nx/js:lib --name ${name} --directory ${directory} --no-interactive --projectNameAndRootFormat=as-provided`;
     exec(command, (error, stdout, stderr) => {
       if (error) {
@@ -23,7 +23,7 @@ function createLibrary(index) {
 
 // Generate and create 100 libraries
 async function generateLibraries() {
-  for (let i = 1; i <= 100; i++) {
+  for (let i = 101; i <= 200; i++) {
     console.log(`Creating library lib-${i} in directory lib${i}...`);
     try {
       await createLibrary(i);
