@@ -1,0 +1,19 @@
+{
+  "name": "lib-336",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-4/lib336/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-4/lib336",
+        "main": "packages/libs-4/lib336/src/index.ts",
+        "tsConfig": "packages/libs-4/lib336/tsconfig.lib.json",
+        "assets": ["packages/libs-4/lib336/*.md"]
+      }
+    }
+  }
+}

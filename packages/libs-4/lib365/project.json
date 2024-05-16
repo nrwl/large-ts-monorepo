@@ -1,0 +1,19 @@
+{
+  "name": "lib-365",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-4/lib365/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-4/lib365",
+        "main": "packages/libs-4/lib365/src/index.ts",
+        "tsConfig": "packages/libs-4/lib365/tsconfig.lib.json",
+        "assets": ["packages/libs-4/lib365/*.md"]
+      }
+    }
+  }
+}
