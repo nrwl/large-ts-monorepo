@@ -1,0 +1,19 @@
+{
+  "name": "lib-433",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-5/lib433/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-5/lib433",
+        "main": "packages/libs-5/lib433/src/index.ts",
+        "tsConfig": "packages/libs-5/lib433/tsconfig.lib.json",
+        "assets": ["packages/libs-5/lib433/*.md"]
+      }
+    }
+  }
+}

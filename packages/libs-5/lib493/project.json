@@ -1,0 +1,19 @@
+{
+  "name": "lib-493",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "packages/libs-5/lib493/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/packages/libs-5/lib493",
+        "main": "packages/libs-5/lib493/src/index.ts",
+        "tsConfig": "packages/libs-5/lib493/tsconfig.lib.json",
+        "assets": ["packages/libs-5/lib493/*.md"]
+      }
+    }
+  }
+}
