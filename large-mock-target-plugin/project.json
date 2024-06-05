@@ -1,0 +1,41 @@
+{
+  "name": "large-mock-target-plugin",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "large-mock-target-plugin/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/large-mock-target-plugin",
+        "main": "large-mock-target-plugin/src/index.ts",
+        "tsConfig": "large-mock-target-plugin/tsconfig.lib.json",
+        "assets": [
+          "large-mock-target-plugin/*.md",
+          {
+            "input": "./large-mock-target-plugin/src",
+            "glob": "**/!(*.ts)",
+            "output": "./src"
+          },
+          {
+            "input": "./large-mock-target-plugin/src",
+            "glob": "**/*.d.ts",
+            "output": "./src"
+          },
+          {
+            "input": "./large-mock-target-plugin",
+            "glob": "generators.json",
+            "output": "."
+          },
+          {
+            "input": "./large-mock-target-plugin",
+            "glob": "executors.json",
+            "output": "."
+          }
+        ]
+      }
+    }
+  }
+}

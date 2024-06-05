@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@large-ts-monorepo/large-mock-target-plugin": [
+        "large-mock-target-plugin/src/index.ts"
+      ],
       "@large-ts-monorepo/large-pkg1": ["packages/large-pkg1/src/index.ts"],
       "@large-ts-monorepo/large-pkg1-1": ["packages/large-pkg1-1/src/index.ts"],
       "@large-ts-monorepo/large-pkg1-1-1": [
