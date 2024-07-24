@@ -38,7 +38,7 @@ function processLibsDirectory(dir) {
                     const packageJsonPath = path.join(fullPath, 'package.json');
                     if (fs.existsSync(packageJsonPath)) {
                         console.log(`Processing project: ${fullPath}`);
-                        createDummyFilesInProject(fullPath);
+                        createDummyFilesInProject(path.join(fullPath, 'src', 'lib'));
                     } else {
                         // Recursively process nested directories
                         processLibsDirectory(fullPath);

@@ -67,7 +67,6 @@
       "options": {
         "targetName": "test"
       }
-    },
-    "@large-ts-monorepo/large-mock-target-plugin"
+    }
   ]
 }
