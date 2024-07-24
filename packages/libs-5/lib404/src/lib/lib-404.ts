@@ -1,3 +1,3 @@
 export function lib404(): string {
-  return 'lib-404';
+   return 'lib-404';
 }

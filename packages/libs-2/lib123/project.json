@@ -1,19 +1,19 @@
 {
-  "name": "lib-123",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-2/lib123/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-2/lib123",
-        "main": "packages/libs-2/lib123/src/index.ts",
-        "tsConfig": "packages/libs-2/lib123/tsconfig.lib.json",
-        "assets": ["packages/libs-2/lib123/*.md"]
+   "name": "lib-123",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-2/lib123/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-2/lib123",
+            "main": "packages/libs-2/lib123/src/index.ts",
+            "tsConfig": "packages/libs-2/lib123/tsconfig.lib.json",
+            "assets": ["packages/libs-2/lib123/*.md"]
+         }
       }
-    }
-  }
+   }
 }

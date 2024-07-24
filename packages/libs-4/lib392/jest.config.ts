@@ -1,11 +1,11 @@
 /* eslint-disable */
 export default {
-  displayName: 'lib-392',
-  preset: '../../../jest.preset.js',
-  testEnvironment: 'node',
-  transform: {
-    '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
-  },
-  moduleFileExtensions: ['ts', 'js', 'html'],
-  coverageDirectory: '../../../coverage/packages/libs-4/lib392',
+   displayName: 'lib-392',
+   preset: '../../../jest.preset.js',
+   testEnvironment: 'node',
+   transform: {
+      '^.+\\.[tj]s$': ['ts-jest', { tsconfig: '<rootDir>/tsconfig.spec.json' }],
+   },
+   moduleFileExtensions: ['ts', 'js', 'html'],
+   coverageDirectory: '../../../coverage/packages/libs-4/lib392',
 };

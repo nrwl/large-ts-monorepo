@@ -1,19 +1,19 @@
 {
-  "name": "lib-49",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib49/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib49",
-        "main": "packages/libs/lib49/src/index.ts",
-        "tsConfig": "packages/libs/lib49/tsconfig.lib.json",
-        "assets": ["packages/libs/lib49/*.md"]
+   "name": "lib-49",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib49/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib49",
+            "main": "packages/libs/lib49/src/index.ts",
+            "tsConfig": "packages/libs/lib49/tsconfig.lib.json",
+            "assets": ["packages/libs/lib49/*.md"]
+         }
       }
-    }
-  }
+   }
 }

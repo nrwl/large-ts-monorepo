@@ -1,19 +1,19 @@
 {
-  "name": "lib-371",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-4/lib371/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-4/lib371",
-        "main": "packages/libs-4/lib371/src/index.ts",
-        "tsConfig": "packages/libs-4/lib371/tsconfig.lib.json",
-        "assets": ["packages/libs-4/lib371/*.md"]
+   "name": "lib-371",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-4/lib371/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-4/lib371",
+            "main": "packages/libs-4/lib371/src/index.ts",
+            "tsConfig": "packages/libs-4/lib371/tsconfig.lib.json",
+            "assets": ["packages/libs-4/lib371/*.md"]
+         }
       }
-    }
-  }
+   }
 }

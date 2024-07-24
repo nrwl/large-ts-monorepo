@@ -1,19 +1,19 @@
 {
-  "name": "lib-83",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib83/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib83",
-        "main": "packages/libs/lib83/src/index.ts",
-        "tsConfig": "packages/libs/lib83/tsconfig.lib.json",
-        "assets": ["packages/libs/lib83/*.md"]
+   "name": "lib-83",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib83/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib83",
+            "main": "packages/libs/lib83/src/index.ts",
+            "tsConfig": "packages/libs/lib83/tsconfig.lib.json",
+            "assets": ["packages/libs/lib83/*.md"]
+         }
       }
-    }
-  }
+   }
 }

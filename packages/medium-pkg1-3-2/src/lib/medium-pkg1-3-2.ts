@@ -1,3 +1,3 @@
 export function mediumPkg132(): string {
-  return 'medium-pkg1-3-2';
+   return 'medium-pkg1-3-2';
 }

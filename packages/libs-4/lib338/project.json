@@ -1,19 +1,19 @@
 {
-  "name": "lib-338",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-4/lib338/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-4/lib338",
-        "main": "packages/libs-4/lib338/src/index.ts",
-        "tsConfig": "packages/libs-4/lib338/tsconfig.lib.json",
-        "assets": ["packages/libs-4/lib338/*.md"]
+   "name": "lib-338",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-4/lib338/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-4/lib338",
+            "main": "packages/libs-4/lib338/src/index.ts",
+            "tsConfig": "packages/libs-4/lib338/tsconfig.lib.json",
+            "assets": ["packages/libs-4/lib338/*.md"]
+         }
       }
-    }
-  }
+   }
 }

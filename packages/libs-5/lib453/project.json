@@ -1,19 +1,19 @@
 {
-  "name": "lib-453",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-5/lib453/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-5/lib453",
-        "main": "packages/libs-5/lib453/src/index.ts",
-        "tsConfig": "packages/libs-5/lib453/tsconfig.lib.json",
-        "assets": ["packages/libs-5/lib453/*.md"]
+   "name": "lib-453",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-5/lib453/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-5/lib453",
+            "main": "packages/libs-5/lib453/src/index.ts",
+            "tsConfig": "packages/libs-5/lib453/tsconfig.lib.json",
+            "assets": ["packages/libs-5/lib453/*.md"]
+         }
       }
-    }
-  }
+   }
 }

@@ -1,19 +1,19 @@
 {
-  "name": "lib-380",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-4/lib380/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-4/lib380",
-        "main": "packages/libs-4/lib380/src/index.ts",
-        "tsConfig": "packages/libs-4/lib380/tsconfig.lib.json",
-        "assets": ["packages/libs-4/lib380/*.md"]
+   "name": "lib-380",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-4/lib380/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-4/lib380",
+            "main": "packages/libs-4/lib380/src/index.ts",
+            "tsConfig": "packages/libs-4/lib380/tsconfig.lib.json",
+            "assets": ["packages/libs-4/lib380/*.md"]
+         }
       }
-    }
-  }
+   }
 }

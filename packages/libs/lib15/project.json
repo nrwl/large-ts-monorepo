@@ -1,19 +1,19 @@
 {
-  "name": "lib-15",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib15/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib15",
-        "main": "packages/libs/lib15/src/index.ts",
-        "tsConfig": "packages/libs/lib15/tsconfig.lib.json",
-        "assets": ["packages/libs/lib15/*.md"]
+   "name": "lib-15",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib15/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib15",
+            "main": "packages/libs/lib15/src/index.ts",
+            "tsConfig": "packages/libs/lib15/tsconfig.lib.json",
+            "assets": ["packages/libs/lib15/*.md"]
+         }
       }
-    }
-  }
+   }
 }

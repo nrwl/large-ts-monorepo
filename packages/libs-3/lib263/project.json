@@ -1,19 +1,19 @@
 {
-  "name": "lib-263",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-3/lib263/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-3/lib263",
-        "main": "packages/libs-3/lib263/src/index.ts",
-        "tsConfig": "packages/libs-3/lib263/tsconfig.lib.json",
-        "assets": ["packages/libs-3/lib263/*.md"]
+   "name": "lib-263",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-3/lib263/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-3/lib263",
+            "main": "packages/libs-3/lib263/src/index.ts",
+            "tsConfig": "packages/libs-3/lib263/tsconfig.lib.json",
+            "assets": ["packages/libs-3/lib263/*.md"]
+         }
       }
-    }
-  }
+   }
 }

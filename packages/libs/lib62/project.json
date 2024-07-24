@@ -1,19 +1,19 @@
 {
-  "name": "lib-62",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib62/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib62",
-        "main": "packages/libs/lib62/src/index.ts",
-        "tsConfig": "packages/libs/lib62/tsconfig.lib.json",
-        "assets": ["packages/libs/lib62/*.md"]
+   "name": "lib-62",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib62/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib62",
+            "main": "packages/libs/lib62/src/index.ts",
+            "tsConfig": "packages/libs/lib62/tsconfig.lib.json",
+            "assets": ["packages/libs/lib62/*.md"]
+         }
       }
-    }
-  }
+   }
 }

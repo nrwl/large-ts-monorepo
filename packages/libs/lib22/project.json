@@ -1,19 +1,19 @@
 {
-  "name": "lib-22",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib22/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib22",
-        "main": "packages/libs/lib22/src/index.ts",
-        "tsConfig": "packages/libs/lib22/tsconfig.lib.json",
-        "assets": ["packages/libs/lib22/*.md"]
+   "name": "lib-22",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib22/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib22",
+            "main": "packages/libs/lib22/src/index.ts",
+            "tsConfig": "packages/libs/lib22/tsconfig.lib.json",
+            "assets": ["packages/libs/lib22/*.md"]
+         }
       }
-    }
-  }
+   }
 }

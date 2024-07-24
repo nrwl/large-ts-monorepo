@@ -1,19 +1,19 @@
 {
-  "name": "lib-424",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-5/lib424/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-5/lib424",
-        "main": "packages/libs-5/lib424/src/index.ts",
-        "tsConfig": "packages/libs-5/lib424/tsconfig.lib.json",
-        "assets": ["packages/libs-5/lib424/*.md"]
+   "name": "lib-424",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-5/lib424/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-5/lib424",
+            "main": "packages/libs-5/lib424/src/index.ts",
+            "tsConfig": "packages/libs-5/lib424/tsconfig.lib.json",
+            "assets": ["packages/libs-5/lib424/*.md"]
+         }
       }
-    }
-  }
+   }
 }

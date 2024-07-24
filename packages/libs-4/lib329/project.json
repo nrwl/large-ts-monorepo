@@ -1,19 +1,19 @@
 {
-  "name": "lib-329",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-4/lib329/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-4/lib329",
-        "main": "packages/libs-4/lib329/src/index.ts",
-        "tsConfig": "packages/libs-4/lib329/tsconfig.lib.json",
-        "assets": ["packages/libs-4/lib329/*.md"]
+   "name": "lib-329",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-4/lib329/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-4/lib329",
+            "main": "packages/libs-4/lib329/src/index.ts",
+            "tsConfig": "packages/libs-4/lib329/tsconfig.lib.json",
+            "assets": ["packages/libs-4/lib329/*.md"]
+         }
       }
-    }
-  }
+   }
 }

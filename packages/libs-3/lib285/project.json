@@ -1,19 +1,19 @@
 {
-  "name": "lib-285",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-3/lib285/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-3/lib285",
-        "main": "packages/libs-3/lib285/src/index.ts",
-        "tsConfig": "packages/libs-3/lib285/tsconfig.lib.json",
-        "assets": ["packages/libs-3/lib285/*.md"]
+   "name": "lib-285",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-3/lib285/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-3/lib285",
+            "main": "packages/libs-3/lib285/src/index.ts",
+            "tsConfig": "packages/libs-3/lib285/tsconfig.lib.json",
+            "assets": ["packages/libs-3/lib285/*.md"]
+         }
       }
-    }
-  }
+   }
 }

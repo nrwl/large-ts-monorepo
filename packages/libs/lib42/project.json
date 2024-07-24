@@ -1,19 +1,19 @@
 {
-  "name": "lib-42",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib42/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib42",
-        "main": "packages/libs/lib42/src/index.ts",
-        "tsConfig": "packages/libs/lib42/tsconfig.lib.json",
-        "assets": ["packages/libs/lib42/*.md"]
+   "name": "lib-42",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib42/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib42",
+            "main": "packages/libs/lib42/src/index.ts",
+            "tsConfig": "packages/libs/lib42/tsconfig.lib.json",
+            "assets": ["packages/libs/lib42/*.md"]
+         }
       }
-    }
-  }
+   }
 }

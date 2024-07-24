@@ -1,19 +1,19 @@
 {
-  "name": "lib-50",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib50/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib50",
-        "main": "packages/libs/lib50/src/index.ts",
-        "tsConfig": "packages/libs/lib50/tsconfig.lib.json",
-        "assets": ["packages/libs/lib50/*.md"]
+   "name": "lib-50",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib50/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib50",
+            "main": "packages/libs/lib50/src/index.ts",
+            "tsConfig": "packages/libs/lib50/tsconfig.lib.json",
+            "assets": ["packages/libs/lib50/*.md"]
+         }
       }
-    }
-  }
+   }
 }

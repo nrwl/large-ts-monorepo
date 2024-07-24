@@ -4,7 +4,6 @@
 
 This repo compares two modes of running the `@nx/js:tsc` executor: the regular one and the batch one. The batch implementation, apart from running multiple tasks in a single process, also creates the required [TypeScript project references](https://www.typescriptlang.org/docs/handbook/project-references.html) on the fly to perform incremental builds.
 
-
 ## Benchmark results (2023-07-31, Nx v16.6.0)
 
 **TLDR: Depending onthe operation, the batch mode is from 1.16 to 7.73 time faster.**
@@ -27,11 +26,11 @@ A root package that depends on 3 other packages, each of which depends on 2 othe
 
 Command: `pnpm benchmark:small`
 
-- Cold build: `@nx/js:tsc` batch implementation is **~1.58x faster** than non-batch implementation
-- 1 affected packages (~10%): `@nx/js:tsc` batch implementation is **~1.16x faster** than non-batch implementation
-- 2 affected packages (~20%): `@nx/js:tsc` batch implementation is **~1.84x faster** than non-batch implementation
-- 5 affected packages (~50%): `@nx/js:tsc` batch implementation is **~2.71x faster** than non-batch implementation
-- 1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.59x faster** than non-batch implementation
+-  Cold build: `@nx/js:tsc` batch implementation is **~1.58x faster** than non-batch implementation
+-  1 affected packages (~10%): `@nx/js:tsc` batch implementation is **~1.16x faster** than non-batch implementation
+-  2 affected packages (~20%): `@nx/js:tsc` batch implementation is **~1.84x faster** than non-batch implementation
+-  5 affected packages (~50%): `@nx/js:tsc` batch implementation is **~2.71x faster** than non-batch implementation
+-  1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.59x faster** than non-batch implementation
 
 ### Scenario 2 (50 packages):
 
@@ -39,11 +38,11 @@ A root package that depends on 7 other packages, each of which depends on 6 othe
 
 Command: `pnpm benchmark:medium`
 
-- Cold build: `@nx/js:tsc` batch implementation is **~2.83x faster** than non-batch implementation
-- 5 affected packages (~10%): `@nx/js:tsc` batch implementation is **~2.45x faster** than non-batch implementation
-- 10 affected packages (~20%): `@nx/js:tsc` batch implementation is **~2.63x faster** than non-batch implementation
-- 25 affected packages (~50%): `@nx/js:tsc` batch implementation is **~4.71x faster** than non-batch implementation
-- 1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.39x faster** than non-batch implementation
+-  Cold build: `@nx/js:tsc` batch implementation is **~2.83x faster** than non-batch implementation
+-  5 affected packages (~10%): `@nx/js:tsc` batch implementation is **~2.45x faster** than non-batch implementation
+-  10 affected packages (~20%): `@nx/js:tsc` batch implementation is **~2.63x faster** than non-batch implementation
+-  25 affected packages (~50%): `@nx/js:tsc` batch implementation is **~4.71x faster** than non-batch implementation
+-  1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.39x faster** than non-batch implementation
 
 ### Scenario 3 (253 packages):
 
@@ -51,11 +50,11 @@ A root package that depends on 12 other packages, each of which depends on 20 ot
 
 Command: `pnpm benchmark:large`
 
-- Cold build: `@nx/js:tsc` batch implementation is **~4.22x faster** than non-batch implementation
-- 25 affected packages (~10%): `@nx/js:tsc` batch implementation is **~2.77x faster** than non-batch implementation
-- 51 affected packages (~20%): `@nx/js:tsc` batch implementation is **~4.39x faster** than non-batch implementation
-- 127 affected packages (~50%): `@nx/js:tsc` batch implementation is **~7.73x faster** than non-batch implementation
-- 1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~1.56x faster** than non-batch implementation
+-  Cold build: `@nx/js:tsc` batch implementation is **~4.22x faster** than non-batch implementation
+-  25 affected packages (~10%): `@nx/js:tsc` batch implementation is **~2.77x faster** than non-batch implementation
+-  51 affected packages (~20%): `@nx/js:tsc` batch implementation is **~4.39x faster** than non-batch implementation
+-  127 affected packages (~50%): `@nx/js:tsc` batch implementation is **~7.73x faster** than non-batch implementation
+-  1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~1.56x faster** than non-batch implementation
 
 ### Scenario 4 (63 packages, deeply nested dependencies):
 
@@ -63,13 +62,11 @@ A root package with dependencies up to 5 levels deep. Packages in each level dep
 
 Command: `pnpm benchmark:nested`
 
-- Cold build: `@nx/js:tsc` batch implementation is **~2.88x faster** than non-batch implementation
-- 6 affected packages (~10%): `@nx/js:tsc` batch implementation is **~1.49x faster** than non-batch implementation
-- 13 affected packages (~21%): `@nx/js:tsc` batch implementation is **~1.72x faster** than non-batch implementation
-- 32 affected packages (~51%): `@nx/js:tsc` batch implementation is **~1.81x faster** than non-batch implementation
-- 1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.47x faster** than non-batch implementation
-
-
+-  Cold build: `@nx/js:tsc` batch implementation is **~2.88x faster** than non-batch implementation
+-  6 affected packages (~10%): `@nx/js:tsc` batch implementation is **~1.49x faster** than non-batch implementation
+-  13 affected packages (~21%): `@nx/js:tsc` batch implementation is **~1.72x faster** than non-batch implementation
+-  32 affected packages (~51%): `@nx/js:tsc` batch implementation is **~1.81x faster** than non-batch implementation
+-  1 leaf dependency affected: `@nx/js:tsc` batch implementation is **~2.47x faster** than non-batch implementation
 
 ## Notes
 
@@ -91,4 +88,4 @@ Note even though the batch implementation can compile hundreds of libraries in t
 
 In large monorepos, it can be challenging to maintain Project references required for TSC incremental builds. Developers need to manually keep those references up to date, which is error-prone and can lead to broken builds.
 
-The `@nx/js:tsc` batch implementation addresses this by creating the required project references on the fly using the project graph information. Nx already knows how your projects relate, so no need to tell it again. This eliminates the need for developers to manually maintain the project references while still getting the performance benefits of incremental builds. Zero DX cost, huge perf benefits. 
+The `@nx/js:tsc` batch implementation addresses this by creating the required project references on the fly using the project graph information. Nx already knows how your projects relate, so no need to tell it again. This eliminates the need for developers to manually maintain the project references while still getting the performance benefits of incremental builds. Zero DX cost, huge perf benefits.

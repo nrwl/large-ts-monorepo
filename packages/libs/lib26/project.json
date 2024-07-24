@@ -1,19 +1,19 @@
 {
-  "name": "lib-26",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib26/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib26",
-        "main": "packages/libs/lib26/src/index.ts",
-        "tsConfig": "packages/libs/lib26/tsconfig.lib.json",
-        "assets": ["packages/libs/lib26/*.md"]
+   "name": "lib-26",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib26/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib26",
+            "main": "packages/libs/lib26/src/index.ts",
+            "tsConfig": "packages/libs/lib26/tsconfig.lib.json",
+            "assets": ["packages/libs/lib26/*.md"]
+         }
       }
-    }
-  }
+   }
 }

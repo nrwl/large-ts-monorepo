@@ -1,1679 +1,1706 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2020", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      
-      "@large-ts-monorepo/large-pkg1": ["packages/large-pkg1/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-1": ["packages/large-pkg1-1/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-1-1": [
-        "packages/large-pkg1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-10": [
-        "packages/large-pkg1-1-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-11": [
-        "packages/large-pkg1-1-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-12": [
-        "packages/large-pkg1-1-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-13": [
-        "packages/large-pkg1-1-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-14": [
-        "packages/large-pkg1-1-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-15": [
-        "packages/large-pkg1-1-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-16": [
-        "packages/large-pkg1-1-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-17": [
-        "packages/large-pkg1-1-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-18": [
-        "packages/large-pkg1-1-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-19": [
-        "packages/large-pkg1-1-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-2": [
-        "packages/large-pkg1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-20": [
-        "packages/large-pkg1-1-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-3": [
-        "packages/large-pkg1-1-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-4": [
-        "packages/large-pkg1-1-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-5": [
-        "packages/large-pkg1-1-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-6": [
-        "packages/large-pkg1-1-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-7": [
-        "packages/large-pkg1-1-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-8": [
-        "packages/large-pkg1-1-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-1-9": [
-        "packages/large-pkg1-1-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10": [
-        "packages/large-pkg1-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-1": [
-        "packages/large-pkg1-10-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-10": [
-        "packages/large-pkg1-10-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-11": [
-        "packages/large-pkg1-10-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-12": [
-        "packages/large-pkg1-10-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-13": [
-        "packages/large-pkg1-10-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-14": [
-        "packages/large-pkg1-10-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-15": [
-        "packages/large-pkg1-10-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-16": [
-        "packages/large-pkg1-10-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-17": [
-        "packages/large-pkg1-10-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-18": [
-        "packages/large-pkg1-10-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-19": [
-        "packages/large-pkg1-10-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-2": [
-        "packages/large-pkg1-10-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-20": [
-        "packages/large-pkg1-10-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-3": [
-        "packages/large-pkg1-10-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-4": [
-        "packages/large-pkg1-10-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-5": [
-        "packages/large-pkg1-10-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-6": [
-        "packages/large-pkg1-10-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-7": [
-        "packages/large-pkg1-10-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-8": [
-        "packages/large-pkg1-10-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-10-9": [
-        "packages/large-pkg1-10-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11": [
-        "packages/large-pkg1-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-1": [
-        "packages/large-pkg1-11-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-10": [
-        "packages/large-pkg1-11-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-11": [
-        "packages/large-pkg1-11-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-12": [
-        "packages/large-pkg1-11-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-13": [
-        "packages/large-pkg1-11-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-14": [
-        "packages/large-pkg1-11-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-15": [
-        "packages/large-pkg1-11-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-16": [
-        "packages/large-pkg1-11-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-17": [
-        "packages/large-pkg1-11-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-18": [
-        "packages/large-pkg1-11-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-19": [
-        "packages/large-pkg1-11-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-2": [
-        "packages/large-pkg1-11-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-20": [
-        "packages/large-pkg1-11-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-3": [
-        "packages/large-pkg1-11-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-4": [
-        "packages/large-pkg1-11-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-5": [
-        "packages/large-pkg1-11-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-6": [
-        "packages/large-pkg1-11-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-7": [
-        "packages/large-pkg1-11-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-8": [
-        "packages/large-pkg1-11-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-11-9": [
-        "packages/large-pkg1-11-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12": [
-        "packages/large-pkg1-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-1": [
-        "packages/large-pkg1-12-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-10": [
-        "packages/large-pkg1-12-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-11": [
-        "packages/large-pkg1-12-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-12": [
-        "packages/large-pkg1-12-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-13": [
-        "packages/large-pkg1-12-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-14": [
-        "packages/large-pkg1-12-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-15": [
-        "packages/large-pkg1-12-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-16": [
-        "packages/large-pkg1-12-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-17": [
-        "packages/large-pkg1-12-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-18": [
-        "packages/large-pkg1-12-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-19": [
-        "packages/large-pkg1-12-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-2": [
-        "packages/large-pkg1-12-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-20": [
-        "packages/large-pkg1-12-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-3": [
-        "packages/large-pkg1-12-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-4": [
-        "packages/large-pkg1-12-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-5": [
-        "packages/large-pkg1-12-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-6": [
-        "packages/large-pkg1-12-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-7": [
-        "packages/large-pkg1-12-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-8": [
-        "packages/large-pkg1-12-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-12-9": [
-        "packages/large-pkg1-12-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2": ["packages/large-pkg1-2/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-2-1": [
-        "packages/large-pkg1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-10": [
-        "packages/large-pkg1-2-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-11": [
-        "packages/large-pkg1-2-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-12": [
-        "packages/large-pkg1-2-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-13": [
-        "packages/large-pkg1-2-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-14": [
-        "packages/large-pkg1-2-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-15": [
-        "packages/large-pkg1-2-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-16": [
-        "packages/large-pkg1-2-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-17": [
-        "packages/large-pkg1-2-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-18": [
-        "packages/large-pkg1-2-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-19": [
-        "packages/large-pkg1-2-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-2": [
-        "packages/large-pkg1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-20": [
-        "packages/large-pkg1-2-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-3": [
-        "packages/large-pkg1-2-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-4": [
-        "packages/large-pkg1-2-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-5": [
-        "packages/large-pkg1-2-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-6": [
-        "packages/large-pkg1-2-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-7": [
-        "packages/large-pkg1-2-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-8": [
-        "packages/large-pkg1-2-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-2-9": [
-        "packages/large-pkg1-2-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3": ["packages/large-pkg1-3/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-3-1": [
-        "packages/large-pkg1-3-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-10": [
-        "packages/large-pkg1-3-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-11": [
-        "packages/large-pkg1-3-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-12": [
-        "packages/large-pkg1-3-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-13": [
-        "packages/large-pkg1-3-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-14": [
-        "packages/large-pkg1-3-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-15": [
-        "packages/large-pkg1-3-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-16": [
-        "packages/large-pkg1-3-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-17": [
-        "packages/large-pkg1-3-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-18": [
-        "packages/large-pkg1-3-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-19": [
-        "packages/large-pkg1-3-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-2": [
-        "packages/large-pkg1-3-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-20": [
-        "packages/large-pkg1-3-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-3": [
-        "packages/large-pkg1-3-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-4": [
-        "packages/large-pkg1-3-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-5": [
-        "packages/large-pkg1-3-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-6": [
-        "packages/large-pkg1-3-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-7": [
-        "packages/large-pkg1-3-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-8": [
-        "packages/large-pkg1-3-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-3-9": [
-        "packages/large-pkg1-3-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4": ["packages/large-pkg1-4/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-4-1": [
-        "packages/large-pkg1-4-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-10": [
-        "packages/large-pkg1-4-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-11": [
-        "packages/large-pkg1-4-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-12": [
-        "packages/large-pkg1-4-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-13": [
-        "packages/large-pkg1-4-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-14": [
-        "packages/large-pkg1-4-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-15": [
-        "packages/large-pkg1-4-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-16": [
-        "packages/large-pkg1-4-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-17": [
-        "packages/large-pkg1-4-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-18": [
-        "packages/large-pkg1-4-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-19": [
-        "packages/large-pkg1-4-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-2": [
-        "packages/large-pkg1-4-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-20": [
-        "packages/large-pkg1-4-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-3": [
-        "packages/large-pkg1-4-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-4": [
-        "packages/large-pkg1-4-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-5": [
-        "packages/large-pkg1-4-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-6": [
-        "packages/large-pkg1-4-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-7": [
-        "packages/large-pkg1-4-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-8": [
-        "packages/large-pkg1-4-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-4-9": [
-        "packages/large-pkg1-4-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5": ["packages/large-pkg1-5/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-5-1": [
-        "packages/large-pkg1-5-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-10": [
-        "packages/large-pkg1-5-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-11": [
-        "packages/large-pkg1-5-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-12": [
-        "packages/large-pkg1-5-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-13": [
-        "packages/large-pkg1-5-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-14": [
-        "packages/large-pkg1-5-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-15": [
-        "packages/large-pkg1-5-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-16": [
-        "packages/large-pkg1-5-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-17": [
-        "packages/large-pkg1-5-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-18": [
-        "packages/large-pkg1-5-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-19": [
-        "packages/large-pkg1-5-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-2": [
-        "packages/large-pkg1-5-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-20": [
-        "packages/large-pkg1-5-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-3": [
-        "packages/large-pkg1-5-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-4": [
-        "packages/large-pkg1-5-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-5": [
-        "packages/large-pkg1-5-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-6": [
-        "packages/large-pkg1-5-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-7": [
-        "packages/large-pkg1-5-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-8": [
-        "packages/large-pkg1-5-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-5-9": [
-        "packages/large-pkg1-5-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6": ["packages/large-pkg1-6/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-6-1": [
-        "packages/large-pkg1-6-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-10": [
-        "packages/large-pkg1-6-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-11": [
-        "packages/large-pkg1-6-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-12": [
-        "packages/large-pkg1-6-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-13": [
-        "packages/large-pkg1-6-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-14": [
-        "packages/large-pkg1-6-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-15": [
-        "packages/large-pkg1-6-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-16": [
-        "packages/large-pkg1-6-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-17": [
-        "packages/large-pkg1-6-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-18": [
-        "packages/large-pkg1-6-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-19": [
-        "packages/large-pkg1-6-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-2": [
-        "packages/large-pkg1-6-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-20": [
-        "packages/large-pkg1-6-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-3": [
-        "packages/large-pkg1-6-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-4": [
-        "packages/large-pkg1-6-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-5": [
-        "packages/large-pkg1-6-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-6": [
-        "packages/large-pkg1-6-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-7": [
-        "packages/large-pkg1-6-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-8": [
-        "packages/large-pkg1-6-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-6-9": [
-        "packages/large-pkg1-6-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7": ["packages/large-pkg1-7/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-7-1": [
-        "packages/large-pkg1-7-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-10": [
-        "packages/large-pkg1-7-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-11": [
-        "packages/large-pkg1-7-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-12": [
-        "packages/large-pkg1-7-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-13": [
-        "packages/large-pkg1-7-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-14": [
-        "packages/large-pkg1-7-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-15": [
-        "packages/large-pkg1-7-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-16": [
-        "packages/large-pkg1-7-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-17": [
-        "packages/large-pkg1-7-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-18": [
-        "packages/large-pkg1-7-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-19": [
-        "packages/large-pkg1-7-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-2": [
-        "packages/large-pkg1-7-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-20": [
-        "packages/large-pkg1-7-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-3": [
-        "packages/large-pkg1-7-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-4": [
-        "packages/large-pkg1-7-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-5": [
-        "packages/large-pkg1-7-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-6": [
-        "packages/large-pkg1-7-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-7": [
-        "packages/large-pkg1-7-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-8": [
-        "packages/large-pkg1-7-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-7-9": [
-        "packages/large-pkg1-7-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8": ["packages/large-pkg1-8/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-8-1": [
-        "packages/large-pkg1-8-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-10": [
-        "packages/large-pkg1-8-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-11": [
-        "packages/large-pkg1-8-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-12": [
-        "packages/large-pkg1-8-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-13": [
-        "packages/large-pkg1-8-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-14": [
-        "packages/large-pkg1-8-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-15": [
-        "packages/large-pkg1-8-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-16": [
-        "packages/large-pkg1-8-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-17": [
-        "packages/large-pkg1-8-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-18": [
-        "packages/large-pkg1-8-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-19": [
-        "packages/large-pkg1-8-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-2": [
-        "packages/large-pkg1-8-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-20": [
-        "packages/large-pkg1-8-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-3": [
-        "packages/large-pkg1-8-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-4": [
-        "packages/large-pkg1-8-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-5": [
-        "packages/large-pkg1-8-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-6": [
-        "packages/large-pkg1-8-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-7": [
-        "packages/large-pkg1-8-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-8": [
-        "packages/large-pkg1-8-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-8-9": [
-        "packages/large-pkg1-8-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9": ["packages/large-pkg1-9/src/index.ts"],
-      "@large-ts-monorepo/large-pkg1-9-1": [
-        "packages/large-pkg1-9-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-10": [
-        "packages/large-pkg1-9-10/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-11": [
-        "packages/large-pkg1-9-11/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-12": [
-        "packages/large-pkg1-9-12/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-13": [
-        "packages/large-pkg1-9-13/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-14": [
-        "packages/large-pkg1-9-14/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-15": [
-        "packages/large-pkg1-9-15/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-16": [
-        "packages/large-pkg1-9-16/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-17": [
-        "packages/large-pkg1-9-17/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-18": [
-        "packages/large-pkg1-9-18/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-19": [
-        "packages/large-pkg1-9-19/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-2": [
-        "packages/large-pkg1-9-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-20": [
-        "packages/large-pkg1-9-20/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-3": [
-        "packages/large-pkg1-9-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-4": [
-        "packages/large-pkg1-9-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-5": [
-        "packages/large-pkg1-9-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-6": [
-        "packages/large-pkg1-9-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-7": [
-        "packages/large-pkg1-9-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-8": [
-        "packages/large-pkg1-9-8/src/index.ts"
-      ],
-      "@large-ts-monorepo/large-pkg1-9-9": [
-        "packages/large-pkg1-9-9/src/index.ts"
-      ],
-      "@large-ts-monorepo/lib-1": ["packages/libs/lib1/src/index.ts"],
-      "@large-ts-monorepo/lib-10": ["packages/libs/lib10/src/index.ts"],
-      "@large-ts-monorepo/lib-100": ["packages/libs/lib100/src/index.ts"],
-      "@large-ts-monorepo/lib-101": ["packages/libs-2/lib101/src/index.ts"],
-      "@large-ts-monorepo/lib-102": ["packages/libs-2/lib102/src/index.ts"],
-      "@large-ts-monorepo/lib-103": ["packages/libs-2/lib103/src/index.ts"],
-      "@large-ts-monorepo/lib-104": ["packages/libs-2/lib104/src/index.ts"],
-      "@large-ts-monorepo/lib-105": ["packages/libs-2/lib105/src/index.ts"],
-      "@large-ts-monorepo/lib-106": ["packages/libs-2/lib106/src/index.ts"],
-      "@large-ts-monorepo/lib-107": ["packages/libs-2/lib107/src/index.ts"],
-      "@large-ts-monorepo/lib-108": ["packages/libs-2/lib108/src/index.ts"],
-      "@large-ts-monorepo/lib-109": ["packages/libs-2/lib109/src/index.ts"],
-      "@large-ts-monorepo/lib-11": ["packages/libs/lib11/src/index.ts"],
-      "@large-ts-monorepo/lib-110": ["packages/libs-2/lib110/src/index.ts"],
-      "@large-ts-monorepo/lib-111": ["packages/libs-2/lib111/src/index.ts"],
-      "@large-ts-monorepo/lib-112": ["packages/libs-2/lib112/src/index.ts"],
-      "@large-ts-monorepo/lib-113": ["packages/libs-2/lib113/src/index.ts"],
-      "@large-ts-monorepo/lib-114": ["packages/libs-2/lib114/src/index.ts"],
-      "@large-ts-monorepo/lib-115": ["packages/libs-2/lib115/src/index.ts"],
-      "@large-ts-monorepo/lib-116": ["packages/libs-2/lib116/src/index.ts"],
-      "@large-ts-monorepo/lib-117": ["packages/libs-2/lib117/src/index.ts"],
-      "@large-ts-monorepo/lib-118": ["packages/libs-2/lib118/src/index.ts"],
-      "@large-ts-monorepo/lib-119": ["packages/libs-2/lib119/src/index.ts"],
-      "@large-ts-monorepo/lib-12": ["packages/libs/lib12/src/index.ts"],
-      "@large-ts-monorepo/lib-120": ["packages/libs-2/lib120/src/index.ts"],
-      "@large-ts-monorepo/lib-121": ["packages/libs-2/lib121/src/index.ts"],
-      "@large-ts-monorepo/lib-122": ["packages/libs-2/lib122/src/index.ts"],
-      "@large-ts-monorepo/lib-123": ["packages/libs-2/lib123/src/index.ts"],
-      "@large-ts-monorepo/lib-124": ["packages/libs-2/lib124/src/index.ts"],
-      "@large-ts-monorepo/lib-125": ["packages/libs-2/lib125/src/index.ts"],
-      "@large-ts-monorepo/lib-126": ["packages/libs-2/lib126/src/index.ts"],
-      "@large-ts-monorepo/lib-127": ["packages/libs-2/lib127/src/index.ts"],
-      "@large-ts-monorepo/lib-128": ["packages/libs-2/lib128/src/index.ts"],
-      "@large-ts-monorepo/lib-129": ["packages/libs-2/lib129/src/index.ts"],
-      "@large-ts-monorepo/lib-13": ["packages/libs/lib13/src/index.ts"],
-      "@large-ts-monorepo/lib-130": ["packages/libs-2/lib130/src/index.ts"],
-      "@large-ts-monorepo/lib-131": ["packages/libs-2/lib131/src/index.ts"],
-      "@large-ts-monorepo/lib-132": ["packages/libs-2/lib132/src/index.ts"],
-      "@large-ts-monorepo/lib-133": ["packages/libs-2/lib133/src/index.ts"],
-      "@large-ts-monorepo/lib-134": ["packages/libs-2/lib134/src/index.ts"],
-      "@large-ts-monorepo/lib-135": ["packages/libs-2/lib135/src/index.ts"],
-      "@large-ts-monorepo/lib-136": ["packages/libs-2/lib136/src/index.ts"],
-      "@large-ts-monorepo/lib-137": ["packages/libs-2/lib137/src/index.ts"],
-      "@large-ts-monorepo/lib-138": ["packages/libs-2/lib138/src/index.ts"],
-      "@large-ts-monorepo/lib-139": ["packages/libs-2/lib139/src/index.ts"],
-      "@large-ts-monorepo/lib-14": ["packages/libs/lib14/src/index.ts"],
-      "@large-ts-monorepo/lib-140": ["packages/libs-2/lib140/src/index.ts"],
-      "@large-ts-monorepo/lib-141": ["packages/libs-2/lib141/src/index.ts"],
-      "@large-ts-monorepo/lib-142": ["packages/libs-2/lib142/src/index.ts"],
-      "@large-ts-monorepo/lib-143": ["packages/libs-2/lib143/src/index.ts"],
-      "@large-ts-monorepo/lib-144": ["packages/libs-2/lib144/src/index.ts"],
-      "@large-ts-monorepo/lib-145": ["packages/libs-2/lib145/src/index.ts"],
-      "@large-ts-monorepo/lib-146": ["packages/libs-2/lib146/src/index.ts"],
-      "@large-ts-monorepo/lib-147": ["packages/libs-2/lib147/src/index.ts"],
-      "@large-ts-monorepo/lib-148": ["packages/libs-2/lib148/src/index.ts"],
-      "@large-ts-monorepo/lib-149": ["packages/libs-2/lib149/src/index.ts"],
-      "@large-ts-monorepo/lib-15": ["packages/libs/lib15/src/index.ts"],
-      "@large-ts-monorepo/lib-150": ["packages/libs-2/lib150/src/index.ts"],
-      "@large-ts-monorepo/lib-151": ["packages/libs-2/lib151/src/index.ts"],
-      "@large-ts-monorepo/lib-152": ["packages/libs-2/lib152/src/index.ts"],
-      "@large-ts-monorepo/lib-153": ["packages/libs-2/lib153/src/index.ts"],
-      "@large-ts-monorepo/lib-154": ["packages/libs-2/lib154/src/index.ts"],
-      "@large-ts-monorepo/lib-155": ["packages/libs-2/lib155/src/index.ts"],
-      "@large-ts-monorepo/lib-156": ["packages/libs-2/lib156/src/index.ts"],
-      "@large-ts-monorepo/lib-157": ["packages/libs-2/lib157/src/index.ts"],
-      "@large-ts-monorepo/lib-158": ["packages/libs-2/lib158/src/index.ts"],
-      "@large-ts-monorepo/lib-159": ["packages/libs-2/lib159/src/index.ts"],
-      "@large-ts-monorepo/lib-16": ["packages/libs/lib16/src/index.ts"],
-      "@large-ts-monorepo/lib-160": ["packages/libs-2/lib160/src/index.ts"],
-      "@large-ts-monorepo/lib-161": ["packages/libs-2/lib161/src/index.ts"],
-      "@large-ts-monorepo/lib-162": ["packages/libs-2/lib162/src/index.ts"],
-      "@large-ts-monorepo/lib-163": ["packages/libs-2/lib163/src/index.ts"],
-      "@large-ts-monorepo/lib-164": ["packages/libs-2/lib164/src/index.ts"],
-      "@large-ts-monorepo/lib-165": ["packages/libs-2/lib165/src/index.ts"],
-      "@large-ts-monorepo/lib-166": ["packages/libs-2/lib166/src/index.ts"],
-      "@large-ts-monorepo/lib-167": ["packages/libs-2/lib167/src/index.ts"],
-      "@large-ts-monorepo/lib-168": ["packages/libs-2/lib168/src/index.ts"],
-      "@large-ts-monorepo/lib-169": ["packages/libs-2/lib169/src/index.ts"],
-      "@large-ts-monorepo/lib-17": ["packages/libs/lib17/src/index.ts"],
-      "@large-ts-monorepo/lib-170": ["packages/libs-2/lib170/src/index.ts"],
-      "@large-ts-monorepo/lib-171": ["packages/libs-2/lib171/src/index.ts"],
-      "@large-ts-monorepo/lib-172": ["packages/libs-2/lib172/src/index.ts"],
-      "@large-ts-monorepo/lib-173": ["packages/libs-2/lib173/src/index.ts"],
-      "@large-ts-monorepo/lib-174": ["packages/libs-2/lib174/src/index.ts"],
-      "@large-ts-monorepo/lib-175": ["packages/libs-2/lib175/src/index.ts"],
-      "@large-ts-monorepo/lib-176": ["packages/libs-2/lib176/src/index.ts"],
-      "@large-ts-monorepo/lib-177": ["packages/libs-2/lib177/src/index.ts"],
-      "@large-ts-monorepo/lib-178": ["packages/libs-2/lib178/src/index.ts"],
-      "@large-ts-monorepo/lib-179": ["packages/libs-2/lib179/src/index.ts"],
-      "@large-ts-monorepo/lib-18": ["packages/libs/lib18/src/index.ts"],
-      "@large-ts-monorepo/lib-180": ["packages/libs-2/lib180/src/index.ts"],
-      "@large-ts-monorepo/lib-181": ["packages/libs-2/lib181/src/index.ts"],
-      "@large-ts-monorepo/lib-182": ["packages/libs-2/lib182/src/index.ts"],
-      "@large-ts-monorepo/lib-183": ["packages/libs-2/lib183/src/index.ts"],
-      "@large-ts-monorepo/lib-184": ["packages/libs-2/lib184/src/index.ts"],
-      "@large-ts-monorepo/lib-185": ["packages/libs-2/lib185/src/index.ts"],
-      "@large-ts-monorepo/lib-186": ["packages/libs-2/lib186/src/index.ts"],
-      "@large-ts-monorepo/lib-187": ["packages/libs-2/lib187/src/index.ts"],
-      "@large-ts-monorepo/lib-188": ["packages/libs-2/lib188/src/index.ts"],
-      "@large-ts-monorepo/lib-189": ["packages/libs-2/lib189/src/index.ts"],
-      "@large-ts-monorepo/lib-19": ["packages/libs/lib19/src/index.ts"],
-      "@large-ts-monorepo/lib-190": ["packages/libs-2/lib190/src/index.ts"],
-      "@large-ts-monorepo/lib-191": ["packages/libs-2/lib191/src/index.ts"],
-      "@large-ts-monorepo/lib-192": ["packages/libs-2/lib192/src/index.ts"],
-      "@large-ts-monorepo/lib-193": ["packages/libs-2/lib193/src/index.ts"],
-      "@large-ts-monorepo/lib-194": ["packages/libs-2/lib194/src/index.ts"],
-      "@large-ts-monorepo/lib-195": ["packages/libs-2/lib195/src/index.ts"],
-      "@large-ts-monorepo/lib-196": ["packages/libs-2/lib196/src/index.ts"],
-      "@large-ts-monorepo/lib-197": ["packages/libs-2/lib197/src/index.ts"],
-      "@large-ts-monorepo/lib-198": ["packages/libs-2/lib198/src/index.ts"],
-      "@large-ts-monorepo/lib-199": ["packages/libs-2/lib199/src/index.ts"],
-      "@large-ts-monorepo/lib-2": ["packages/libs/lib2/src/index.ts"],
-      "@large-ts-monorepo/lib-20": ["packages/libs/lib20/src/index.ts"],
-      "@large-ts-monorepo/lib-200": ["packages/libs-2/lib200/src/index.ts"],
-      "@large-ts-monorepo/lib-201": ["packages/libs-3/lib201/src/index.ts"],
-      "@large-ts-monorepo/lib-202": ["packages/libs-3/lib202/src/index.ts"],
-      "@large-ts-monorepo/lib-203": ["packages/libs-3/lib203/src/index.ts"],
-      "@large-ts-monorepo/lib-204": ["packages/libs-3/lib204/src/index.ts"],
-      "@large-ts-monorepo/lib-205": ["packages/libs-3/lib205/src/index.ts"],
-      "@large-ts-monorepo/lib-206": ["packages/libs-3/lib206/src/index.ts"],
-      "@large-ts-monorepo/lib-207": ["packages/libs-3/lib207/src/index.ts"],
-      "@large-ts-monorepo/lib-208": ["packages/libs-3/lib208/src/index.ts"],
-      "@large-ts-monorepo/lib-209": ["packages/libs-3/lib209/src/index.ts"],
-      "@large-ts-monorepo/lib-21": ["packages/libs/lib21/src/index.ts"],
-      "@large-ts-monorepo/lib-210": ["packages/libs-3/lib210/src/index.ts"],
-      "@large-ts-monorepo/lib-211": ["packages/libs-3/lib211/src/index.ts"],
-      "@large-ts-monorepo/lib-212": ["packages/libs-3/lib212/src/index.ts"],
-      "@large-ts-monorepo/lib-213": ["packages/libs-3/lib213/src/index.ts"],
-      "@large-ts-monorepo/lib-214": ["packages/libs-3/lib214/src/index.ts"],
-      "@large-ts-monorepo/lib-215": ["packages/libs-3/lib215/src/index.ts"],
-      "@large-ts-monorepo/lib-216": ["packages/libs-3/lib216/src/index.ts"],
-      "@large-ts-monorepo/lib-217": ["packages/libs-3/lib217/src/index.ts"],
-      "@large-ts-monorepo/lib-218": ["packages/libs-3/lib218/src/index.ts"],
-      "@large-ts-monorepo/lib-219": ["packages/libs-3/lib219/src/index.ts"],
-      "@large-ts-monorepo/lib-22": ["packages/libs/lib22/src/index.ts"],
-      "@large-ts-monorepo/lib-220": ["packages/libs-3/lib220/src/index.ts"],
-      "@large-ts-monorepo/lib-221": ["packages/libs-3/lib221/src/index.ts"],
-      "@large-ts-monorepo/lib-222": ["packages/libs-3/lib222/src/index.ts"],
-      "@large-ts-monorepo/lib-223": ["packages/libs-3/lib223/src/index.ts"],
-      "@large-ts-monorepo/lib-224": ["packages/libs-3/lib224/src/index.ts"],
-      "@large-ts-monorepo/lib-225": ["packages/libs-3/lib225/src/index.ts"],
-      "@large-ts-monorepo/lib-226": ["packages/libs-3/lib226/src/index.ts"],
-      "@large-ts-monorepo/lib-227": ["packages/libs-3/lib227/src/index.ts"],
-      "@large-ts-monorepo/lib-228": ["packages/libs-3/lib228/src/index.ts"],
-      "@large-ts-monorepo/lib-229": ["packages/libs-3/lib229/src/index.ts"],
-      "@large-ts-monorepo/lib-23": ["packages/libs/lib23/src/index.ts"],
-      "@large-ts-monorepo/lib-230": ["packages/libs-3/lib230/src/index.ts"],
-      "@large-ts-monorepo/lib-231": ["packages/libs-3/lib231/src/index.ts"],
-      "@large-ts-monorepo/lib-232": ["packages/libs-3/lib232/src/index.ts"],
-      "@large-ts-monorepo/lib-233": ["packages/libs-3/lib233/src/index.ts"],
-      "@large-ts-monorepo/lib-234": ["packages/libs-3/lib234/src/index.ts"],
-      "@large-ts-monorepo/lib-235": ["packages/libs-3/lib235/src/index.ts"],
-      "@large-ts-monorepo/lib-236": ["packages/libs-3/lib236/src/index.ts"],
-      "@large-ts-monorepo/lib-237": ["packages/libs-3/lib237/src/index.ts"],
-      "@large-ts-monorepo/lib-238": ["packages/libs-3/lib238/src/index.ts"],
-      "@large-ts-monorepo/lib-239": ["packages/libs-3/lib239/src/index.ts"],
-      "@large-ts-monorepo/lib-24": ["packages/libs/lib24/src/index.ts"],
-      "@large-ts-monorepo/lib-240": ["packages/libs-3/lib240/src/index.ts"],
-      "@large-ts-monorepo/lib-241": ["packages/libs-3/lib241/src/index.ts"],
-      "@large-ts-monorepo/lib-242": ["packages/libs-3/lib242/src/index.ts"],
-      "@large-ts-monorepo/lib-243": ["packages/libs-3/lib243/src/index.ts"],
-      "@large-ts-monorepo/lib-244": ["packages/libs-3/lib244/src/index.ts"],
-      "@large-ts-monorepo/lib-245": ["packages/libs-3/lib245/src/index.ts"],
-      "@large-ts-monorepo/lib-246": ["packages/libs-3/lib246/src/index.ts"],
-      "@large-ts-monorepo/lib-247": ["packages/libs-3/lib247/src/index.ts"],
-      "@large-ts-monorepo/lib-248": ["packages/libs-3/lib248/src/index.ts"],
-      "@large-ts-monorepo/lib-249": ["packages/libs-3/lib249/src/index.ts"],
-      "@large-ts-monorepo/lib-25": ["packages/libs/lib25/src/index.ts"],
-      "@large-ts-monorepo/lib-250": ["packages/libs-3/lib250/src/index.ts"],
-      "@large-ts-monorepo/lib-251": ["packages/libs-3/lib251/src/index.ts"],
-      "@large-ts-monorepo/lib-252": ["packages/libs-3/lib252/src/index.ts"],
-      "@large-ts-monorepo/lib-253": ["packages/libs-3/lib253/src/index.ts"],
-      "@large-ts-monorepo/lib-254": ["packages/libs-3/lib254/src/index.ts"],
-      "@large-ts-monorepo/lib-255": ["packages/libs-3/lib255/src/index.ts"],
-      "@large-ts-monorepo/lib-256": ["packages/libs-3/lib256/src/index.ts"],
-      "@large-ts-monorepo/lib-257": ["packages/libs-3/lib257/src/index.ts"],
-      "@large-ts-monorepo/lib-258": ["packages/libs-3/lib258/src/index.ts"],
-      "@large-ts-monorepo/lib-259": ["packages/libs-3/lib259/src/index.ts"],
-      "@large-ts-monorepo/lib-26": ["packages/libs/lib26/src/index.ts"],
-      "@large-ts-monorepo/lib-260": ["packages/libs-3/lib260/src/index.ts"],
-      "@large-ts-monorepo/lib-261": ["packages/libs-3/lib261/src/index.ts"],
-      "@large-ts-monorepo/lib-262": ["packages/libs-3/lib262/src/index.ts"],
-      "@large-ts-monorepo/lib-263": ["packages/libs-3/lib263/src/index.ts"],
-      "@large-ts-monorepo/lib-264": ["packages/libs-3/lib264/src/index.ts"],
-      "@large-ts-monorepo/lib-265": ["packages/libs-3/lib265/src/index.ts"],
-      "@large-ts-monorepo/lib-266": ["packages/libs-3/lib266/src/index.ts"],
-      "@large-ts-monorepo/lib-267": ["packages/libs-3/lib267/src/index.ts"],
-      "@large-ts-monorepo/lib-268": ["packages/libs-3/lib268/src/index.ts"],
-      "@large-ts-monorepo/lib-269": ["packages/libs-3/lib269/src/index.ts"],
-      "@large-ts-monorepo/lib-27": ["packages/libs/lib27/src/index.ts"],
-      "@large-ts-monorepo/lib-270": ["packages/libs-3/lib270/src/index.ts"],
-      "@large-ts-monorepo/lib-271": ["packages/libs-3/lib271/src/index.ts"],
-      "@large-ts-monorepo/lib-272": ["packages/libs-3/lib272/src/index.ts"],
-      "@large-ts-monorepo/lib-273": ["packages/libs-3/lib273/src/index.ts"],
-      "@large-ts-monorepo/lib-274": ["packages/libs-3/lib274/src/index.ts"],
-      "@large-ts-monorepo/lib-275": ["packages/libs-3/lib275/src/index.ts"],
-      "@large-ts-monorepo/lib-276": ["packages/libs-3/lib276/src/index.ts"],
-      "@large-ts-monorepo/lib-277": ["packages/libs-3/lib277/src/index.ts"],
-      "@large-ts-monorepo/lib-278": ["packages/libs-3/lib278/src/index.ts"],
-      "@large-ts-monorepo/lib-279": ["packages/libs-3/lib279/src/index.ts"],
-      "@large-ts-monorepo/lib-28": ["packages/libs/lib28/src/index.ts"],
-      "@large-ts-monorepo/lib-280": ["packages/libs-3/lib280/src/index.ts"],
-      "@large-ts-monorepo/lib-281": ["packages/libs-3/lib281/src/index.ts"],
-      "@large-ts-monorepo/lib-282": ["packages/libs-3/lib282/src/index.ts"],
-      "@large-ts-monorepo/lib-283": ["packages/libs-3/lib283/src/index.ts"],
-      "@large-ts-monorepo/lib-284": ["packages/libs-3/lib284/src/index.ts"],
-      "@large-ts-monorepo/lib-285": ["packages/libs-3/lib285/src/index.ts"],
-      "@large-ts-monorepo/lib-286": ["packages/libs-3/lib286/src/index.ts"],
-      "@large-ts-monorepo/lib-287": ["packages/libs-3/lib287/src/index.ts"],
-      "@large-ts-monorepo/lib-288": ["packages/libs-3/lib288/src/index.ts"],
-      "@large-ts-monorepo/lib-289": ["packages/libs-3/lib289/src/index.ts"],
-      "@large-ts-monorepo/lib-29": ["packages/libs/lib29/src/index.ts"],
-      "@large-ts-monorepo/lib-290": ["packages/libs-3/lib290/src/index.ts"],
-      "@large-ts-monorepo/lib-291": ["packages/libs-3/lib291/src/index.ts"],
-      "@large-ts-monorepo/lib-292": ["packages/libs-3/lib292/src/index.ts"],
-      "@large-ts-monorepo/lib-293": ["packages/libs-3/lib293/src/index.ts"],
-      "@large-ts-monorepo/lib-294": ["packages/libs-3/lib294/src/index.ts"],
-      "@large-ts-monorepo/lib-295": ["packages/libs-3/lib295/src/index.ts"],
-      "@large-ts-monorepo/lib-296": ["packages/libs-3/lib296/src/index.ts"],
-      "@large-ts-monorepo/lib-297": ["packages/libs-3/lib297/src/index.ts"],
-      "@large-ts-monorepo/lib-298": ["packages/libs-3/lib298/src/index.ts"],
-      "@large-ts-monorepo/lib-299": ["packages/libs-3/lib299/src/index.ts"],
-      "@large-ts-monorepo/lib-3": ["packages/libs/lib3/src/index.ts"],
-      "@large-ts-monorepo/lib-30": ["packages/libs/lib30/src/index.ts"],
-      "@large-ts-monorepo/lib-300": ["packages/libs-3/lib300/src/index.ts"],
-      "@large-ts-monorepo/lib-301": ["packages/libs-4/lib301/src/index.ts"],
-      "@large-ts-monorepo/lib-302": ["packages/libs-4/lib302/src/index.ts"],
-      "@large-ts-monorepo/lib-303": ["packages/libs-4/lib303/src/index.ts"],
-      "@large-ts-monorepo/lib-304": ["packages/libs-4/lib304/src/index.ts"],
-      "@large-ts-monorepo/lib-305": ["packages/libs-4/lib305/src/index.ts"],
-      "@large-ts-monorepo/lib-306": ["packages/libs-4/lib306/src/index.ts"],
-      "@large-ts-monorepo/lib-307": ["packages/libs-4/lib307/src/index.ts"],
-      "@large-ts-monorepo/lib-308": ["packages/libs-4/lib308/src/index.ts"],
-      "@large-ts-monorepo/lib-309": ["packages/libs-4/lib309/src/index.ts"],
-      "@large-ts-monorepo/lib-31": ["packages/libs/lib31/src/index.ts"],
-      "@large-ts-monorepo/lib-310": ["packages/libs-4/lib310/src/index.ts"],
-      "@large-ts-monorepo/lib-311": ["packages/libs-4/lib311/src/index.ts"],
-      "@large-ts-monorepo/lib-312": ["packages/libs-4/lib312/src/index.ts"],
-      "@large-ts-monorepo/lib-313": ["packages/libs-4/lib313/src/index.ts"],
-      "@large-ts-monorepo/lib-314": ["packages/libs-4/lib314/src/index.ts"],
-      "@large-ts-monorepo/lib-315": ["packages/libs-4/lib315/src/index.ts"],
-      "@large-ts-monorepo/lib-316": ["packages/libs-4/lib316/src/index.ts"],
-      "@large-ts-monorepo/lib-317": ["packages/libs-4/lib317/src/index.ts"],
-      "@large-ts-monorepo/lib-318": ["packages/libs-4/lib318/src/index.ts"],
-      "@large-ts-monorepo/lib-319": ["packages/libs-4/lib319/src/index.ts"],
-      "@large-ts-monorepo/lib-32": ["packages/libs/lib32/src/index.ts"],
-      "@large-ts-monorepo/lib-320": ["packages/libs-4/lib320/src/index.ts"],
-      "@large-ts-monorepo/lib-321": ["packages/libs-4/lib321/src/index.ts"],
-      "@large-ts-monorepo/lib-322": ["packages/libs-4/lib322/src/index.ts"],
-      "@large-ts-monorepo/lib-323": ["packages/libs-4/lib323/src/index.ts"],
-      "@large-ts-monorepo/lib-324": ["packages/libs-4/lib324/src/index.ts"],
-      "@large-ts-monorepo/lib-325": ["packages/libs-4/lib325/src/index.ts"],
-      "@large-ts-monorepo/lib-326": ["packages/libs-4/lib326/src/index.ts"],
-      "@large-ts-monorepo/lib-327": ["packages/libs-4/lib327/src/index.ts"],
-      "@large-ts-monorepo/lib-328": ["packages/libs-4/lib328/src/index.ts"],
-      "@large-ts-monorepo/lib-329": ["packages/libs-4/lib329/src/index.ts"],
-      "@large-ts-monorepo/lib-33": ["packages/libs/lib33/src/index.ts"],
-      "@large-ts-monorepo/lib-330": ["packages/libs-4/lib330/src/index.ts"],
-      "@large-ts-monorepo/lib-331": ["packages/libs-4/lib331/src/index.ts"],
-      "@large-ts-monorepo/lib-332": ["packages/libs-4/lib332/src/index.ts"],
-      "@large-ts-monorepo/lib-333": ["packages/libs-4/lib333/src/index.ts"],
-      "@large-ts-monorepo/lib-334": ["packages/libs-4/lib334/src/index.ts"],
-      "@large-ts-monorepo/lib-335": ["packages/libs-4/lib335/src/index.ts"],
-      "@large-ts-monorepo/lib-336": ["packages/libs-4/lib336/src/index.ts"],
-      "@large-ts-monorepo/lib-337": ["packages/libs-4/lib337/src/index.ts"],
-      "@large-ts-monorepo/lib-338": ["packages/libs-4/lib338/src/index.ts"],
-      "@large-ts-monorepo/lib-339": ["packages/libs-4/lib339/src/index.ts"],
-      "@large-ts-monorepo/lib-34": ["packages/libs/lib34/src/index.ts"],
-      "@large-ts-monorepo/lib-340": ["packages/libs-4/lib340/src/index.ts"],
-      "@large-ts-monorepo/lib-341": ["packages/libs-4/lib341/src/index.ts"],
-      "@large-ts-monorepo/lib-342": ["packages/libs-4/lib342/src/index.ts"],
-      "@large-ts-monorepo/lib-343": ["packages/libs-4/lib343/src/index.ts"],
-      "@large-ts-monorepo/lib-344": ["packages/libs-4/lib344/src/index.ts"],
-      "@large-ts-monorepo/lib-345": ["packages/libs-4/lib345/src/index.ts"],
-      "@large-ts-monorepo/lib-346": ["packages/libs-4/lib346/src/index.ts"],
-      "@large-ts-monorepo/lib-347": ["packages/libs-4/lib347/src/index.ts"],
-      "@large-ts-monorepo/lib-348": ["packages/libs-4/lib348/src/index.ts"],
-      "@large-ts-monorepo/lib-349": ["packages/libs-4/lib349/src/index.ts"],
-      "@large-ts-monorepo/lib-35": ["packages/libs/lib35/src/index.ts"],
-      "@large-ts-monorepo/lib-350": ["packages/libs-4/lib350/src/index.ts"],
-      "@large-ts-monorepo/lib-351": ["packages/libs-4/lib351/src/index.ts"],
-      "@large-ts-monorepo/lib-352": ["packages/libs-4/lib352/src/index.ts"],
-      "@large-ts-monorepo/lib-353": ["packages/libs-4/lib353/src/index.ts"],
-      "@large-ts-monorepo/lib-354": ["packages/libs-4/lib354/src/index.ts"],
-      "@large-ts-monorepo/lib-355": ["packages/libs-4/lib355/src/index.ts"],
-      "@large-ts-monorepo/lib-356": ["packages/libs-4/lib356/src/index.ts"],
-      "@large-ts-monorepo/lib-357": ["packages/libs-4/lib357/src/index.ts"],
-      "@large-ts-monorepo/lib-358": ["packages/libs-4/lib358/src/index.ts"],
-      "@large-ts-monorepo/lib-359": ["packages/libs-4/lib359/src/index.ts"],
-      "@large-ts-monorepo/lib-36": ["packages/libs/lib36/src/index.ts"],
-      "@large-ts-monorepo/lib-360": ["packages/libs-4/lib360/src/index.ts"],
-      "@large-ts-monorepo/lib-361": ["packages/libs-4/lib361/src/index.ts"],
-      "@large-ts-monorepo/lib-362": ["packages/libs-4/lib362/src/index.ts"],
-      "@large-ts-monorepo/lib-363": ["packages/libs-4/lib363/src/index.ts"],
-      "@large-ts-monorepo/lib-364": ["packages/libs-4/lib364/src/index.ts"],
-      "@large-ts-monorepo/lib-365": ["packages/libs-4/lib365/src/index.ts"],
-      "@large-ts-monorepo/lib-366": ["packages/libs-4/lib366/src/index.ts"],
-      "@large-ts-monorepo/lib-367": ["packages/libs-4/lib367/src/index.ts"],
-      "@large-ts-monorepo/lib-368": ["packages/libs-4/lib368/src/index.ts"],
-      "@large-ts-monorepo/lib-369": ["packages/libs-4/lib369/src/index.ts"],
-      "@large-ts-monorepo/lib-37": ["packages/libs/lib37/src/index.ts"],
-      "@large-ts-monorepo/lib-370": ["packages/libs-4/lib370/src/index.ts"],
-      "@large-ts-monorepo/lib-371": ["packages/libs-4/lib371/src/index.ts"],
-      "@large-ts-monorepo/lib-372": ["packages/libs-4/lib372/src/index.ts"],
-      "@large-ts-monorepo/lib-373": ["packages/libs-4/lib373/src/index.ts"],
-      "@large-ts-monorepo/lib-374": ["packages/libs-4/lib374/src/index.ts"],
-      "@large-ts-monorepo/lib-375": ["packages/libs-4/lib375/src/index.ts"],
-      "@large-ts-monorepo/lib-376": ["packages/libs-4/lib376/src/index.ts"],
-      "@large-ts-monorepo/lib-377": ["packages/libs-4/lib377/src/index.ts"],
-      "@large-ts-monorepo/lib-378": ["packages/libs-4/lib378/src/index.ts"],
-      "@large-ts-monorepo/lib-379": ["packages/libs-4/lib379/src/index.ts"],
-      "@large-ts-monorepo/lib-38": ["packages/libs/lib38/src/index.ts"],
-      "@large-ts-monorepo/lib-380": ["packages/libs-4/lib380/src/index.ts"],
-      "@large-ts-monorepo/lib-381": ["packages/libs-4/lib381/src/index.ts"],
-      "@large-ts-monorepo/lib-382": ["packages/libs-4/lib382/src/index.ts"],
-      "@large-ts-monorepo/lib-383": ["packages/libs-4/lib383/src/index.ts"],
-      "@large-ts-monorepo/lib-384": ["packages/libs-4/lib384/src/index.ts"],
-      "@large-ts-monorepo/lib-385": ["packages/libs-4/lib385/src/index.ts"],
-      "@large-ts-monorepo/lib-386": ["packages/libs-4/lib386/src/index.ts"],
-      "@large-ts-monorepo/lib-387": ["packages/libs-4/lib387/src/index.ts"],
-      "@large-ts-monorepo/lib-388": ["packages/libs-4/lib388/src/index.ts"],
-      "@large-ts-monorepo/lib-389": ["packages/libs-4/lib389/src/index.ts"],
-      "@large-ts-monorepo/lib-39": ["packages/libs/lib39/src/index.ts"],
-      "@large-ts-monorepo/lib-390": ["packages/libs-4/lib390/src/index.ts"],
-      "@large-ts-monorepo/lib-391": ["packages/libs-4/lib391/src/index.ts"],
-      "@large-ts-monorepo/lib-392": ["packages/libs-4/lib392/src/index.ts"],
-      "@large-ts-monorepo/lib-393": ["packages/libs-4/lib393/src/index.ts"],
-      "@large-ts-monorepo/lib-394": ["packages/libs-4/lib394/src/index.ts"],
-      "@large-ts-monorepo/lib-395": ["packages/libs-4/lib395/src/index.ts"],
-      "@large-ts-monorepo/lib-396": ["packages/libs-4/lib396/src/index.ts"],
-      "@large-ts-monorepo/lib-397": ["packages/libs-4/lib397/src/index.ts"],
-      "@large-ts-monorepo/lib-398": ["packages/libs-4/lib398/src/index.ts"],
-      "@large-ts-monorepo/lib-399": ["packages/libs-4/lib399/src/index.ts"],
-      "@large-ts-monorepo/lib-4": ["packages/libs/lib4/src/index.ts"],
-      "@large-ts-monorepo/lib-40": ["packages/libs/lib40/src/index.ts"],
-      "@large-ts-monorepo/lib-400": ["packages/libs-4/lib400/src/index.ts"],
-      "@large-ts-monorepo/lib-401": ["packages/libs-5/lib401/src/index.ts"],
-      "@large-ts-monorepo/lib-402": ["packages/libs-5/lib402/src/index.ts"],
-      "@large-ts-monorepo/lib-403": ["packages/libs-5/lib403/src/index.ts"],
-      "@large-ts-monorepo/lib-404": ["packages/libs-5/lib404/src/index.ts"],
-      "@large-ts-monorepo/lib-405": ["packages/libs-5/lib405/src/index.ts"],
-      "@large-ts-monorepo/lib-406": ["packages/libs-5/lib406/src/index.ts"],
-      "@large-ts-monorepo/lib-407": ["packages/libs-5/lib407/src/index.ts"],
-      "@large-ts-monorepo/lib-408": ["packages/libs-5/lib408/src/index.ts"],
-      "@large-ts-monorepo/lib-409": ["packages/libs-5/lib409/src/index.ts"],
-      "@large-ts-monorepo/lib-41": ["packages/libs/lib41/src/index.ts"],
-      "@large-ts-monorepo/lib-410": ["packages/libs-5/lib410/src/index.ts"],
-      "@large-ts-monorepo/lib-411": ["packages/libs-5/lib411/src/index.ts"],
-      "@large-ts-monorepo/lib-412": ["packages/libs-5/lib412/src/index.ts"],
-      "@large-ts-monorepo/lib-413": ["packages/libs-5/lib413/src/index.ts"],
-      "@large-ts-monorepo/lib-414": ["packages/libs-5/lib414/src/index.ts"],
-      "@large-ts-monorepo/lib-415": ["packages/libs-5/lib415/src/index.ts"],
-      "@large-ts-monorepo/lib-416": ["packages/libs-5/lib416/src/index.ts"],
-      "@large-ts-monorepo/lib-417": ["packages/libs-5/lib417/src/index.ts"],
-      "@large-ts-monorepo/lib-418": ["packages/libs-5/lib418/src/index.ts"],
-      "@large-ts-monorepo/lib-419": ["packages/libs-5/lib419/src/index.ts"],
-      "@large-ts-monorepo/lib-42": ["packages/libs/lib42/src/index.ts"],
-      "@large-ts-monorepo/lib-420": ["packages/libs-5/lib420/src/index.ts"],
-      "@large-ts-monorepo/lib-421": ["packages/libs-5/lib421/src/index.ts"],
-      "@large-ts-monorepo/lib-422": ["packages/libs-5/lib422/src/index.ts"],
-      "@large-ts-monorepo/lib-423": ["packages/libs-5/lib423/src/index.ts"],
-      "@large-ts-monorepo/lib-424": ["packages/libs-5/lib424/src/index.ts"],
-      "@large-ts-monorepo/lib-425": ["packages/libs-5/lib425/src/index.ts"],
-      "@large-ts-monorepo/lib-426": ["packages/libs-5/lib426/src/index.ts"],
-      "@large-ts-monorepo/lib-427": ["packages/libs-5/lib427/src/index.ts"],
-      "@large-ts-monorepo/lib-428": ["packages/libs-5/lib428/src/index.ts"],
-      "@large-ts-monorepo/lib-429": ["packages/libs-5/lib429/src/index.ts"],
-      "@large-ts-monorepo/lib-43": ["packages/libs/lib43/src/index.ts"],
-      "@large-ts-monorepo/lib-430": ["packages/libs-5/lib430/src/index.ts"],
-      "@large-ts-monorepo/lib-431": ["packages/libs-5/lib431/src/index.ts"],
-      "@large-ts-monorepo/lib-432": ["packages/libs-5/lib432/src/index.ts"],
-      "@large-ts-monorepo/lib-433": ["packages/libs-5/lib433/src/index.ts"],
-      "@large-ts-monorepo/lib-434": ["packages/libs-5/lib434/src/index.ts"],
-      "@large-ts-monorepo/lib-435": ["packages/libs-5/lib435/src/index.ts"],
-      "@large-ts-monorepo/lib-436": ["packages/libs-5/lib436/src/index.ts"],
-      "@large-ts-monorepo/lib-437": ["packages/libs-5/lib437/src/index.ts"],
-      "@large-ts-monorepo/lib-438": ["packages/libs-5/lib438/src/index.ts"],
-      "@large-ts-monorepo/lib-439": ["packages/libs-5/lib439/src/index.ts"],
-      "@large-ts-monorepo/lib-44": ["packages/libs/lib44/src/index.ts"],
-      "@large-ts-monorepo/lib-440": ["packages/libs-5/lib440/src/index.ts"],
-      "@large-ts-monorepo/lib-441": ["packages/libs-5/lib441/src/index.ts"],
-      "@large-ts-monorepo/lib-442": ["packages/libs-5/lib442/src/index.ts"],
-      "@large-ts-monorepo/lib-443": ["packages/libs-5/lib443/src/index.ts"],
-      "@large-ts-monorepo/lib-444": ["packages/libs-5/lib444/src/index.ts"],
-      "@large-ts-monorepo/lib-445": ["packages/libs-5/lib445/src/index.ts"],
-      "@large-ts-monorepo/lib-446": ["packages/libs-5/lib446/src/index.ts"],
-      "@large-ts-monorepo/lib-447": ["packages/libs-5/lib447/src/index.ts"],
-      "@large-ts-monorepo/lib-448": ["packages/libs-5/lib448/src/index.ts"],
-      "@large-ts-monorepo/lib-449": ["packages/libs-5/lib449/src/index.ts"],
-      "@large-ts-monorepo/lib-45": ["packages/libs/lib45/src/index.ts"],
-      "@large-ts-monorepo/lib-450": ["packages/libs-5/lib450/src/index.ts"],
-      "@large-ts-monorepo/lib-451": ["packages/libs-5/lib451/src/index.ts"],
-      "@large-ts-monorepo/lib-452": ["packages/libs-5/lib452/src/index.ts"],
-      "@large-ts-monorepo/lib-453": ["packages/libs-5/lib453/src/index.ts"],
-      "@large-ts-monorepo/lib-454": ["packages/libs-5/lib454/src/index.ts"],
-      "@large-ts-monorepo/lib-455": ["packages/libs-5/lib455/src/index.ts"],
-      "@large-ts-monorepo/lib-456": ["packages/libs-5/lib456/src/index.ts"],
-      "@large-ts-monorepo/lib-457": ["packages/libs-5/lib457/src/index.ts"],
-      "@large-ts-monorepo/lib-458": ["packages/libs-5/lib458/src/index.ts"],
-      "@large-ts-monorepo/lib-459": ["packages/libs-5/lib459/src/index.ts"],
-      "@large-ts-monorepo/lib-46": ["packages/libs/lib46/src/index.ts"],
-      "@large-ts-monorepo/lib-460": ["packages/libs-5/lib460/src/index.ts"],
-      "@large-ts-monorepo/lib-461": ["packages/libs-5/lib461/src/index.ts"],
-      "@large-ts-monorepo/lib-462": ["packages/libs-5/lib462/src/index.ts"],
-      "@large-ts-monorepo/lib-463": ["packages/libs-5/lib463/src/index.ts"],
-      "@large-ts-monorepo/lib-464": ["packages/libs-5/lib464/src/index.ts"],
-      "@large-ts-monorepo/lib-465": ["packages/libs-5/lib465/src/index.ts"],
-      "@large-ts-monorepo/lib-466": ["packages/libs-5/lib466/src/index.ts"],
-      "@large-ts-monorepo/lib-467": ["packages/libs-5/lib467/src/index.ts"],
-      "@large-ts-monorepo/lib-468": ["packages/libs-5/lib468/src/index.ts"],
-      "@large-ts-monorepo/lib-469": ["packages/libs-5/lib469/src/index.ts"],
-      "@large-ts-monorepo/lib-47": ["packages/libs/lib47/src/index.ts"],
-      "@large-ts-monorepo/lib-470": ["packages/libs-5/lib470/src/index.ts"],
-      "@large-ts-monorepo/lib-471": ["packages/libs-5/lib471/src/index.ts"],
-      "@large-ts-monorepo/lib-472": ["packages/libs-5/lib472/src/index.ts"],
-      "@large-ts-monorepo/lib-473": ["packages/libs-5/lib473/src/index.ts"],
-      "@large-ts-monorepo/lib-474": ["packages/libs-5/lib474/src/index.ts"],
-      "@large-ts-monorepo/lib-475": ["packages/libs-5/lib475/src/index.ts"],
-      "@large-ts-monorepo/lib-476": ["packages/libs-5/lib476/src/index.ts"],
-      "@large-ts-monorepo/lib-477": ["packages/libs-5/lib477/src/index.ts"],
-      "@large-ts-monorepo/lib-478": ["packages/libs-5/lib478/src/index.ts"],
-      "@large-ts-monorepo/lib-479": ["packages/libs-5/lib479/src/index.ts"],
-      "@large-ts-monorepo/lib-48": ["packages/libs/lib48/src/index.ts"],
-      "@large-ts-monorepo/lib-480": ["packages/libs-5/lib480/src/index.ts"],
-      "@large-ts-monorepo/lib-481": ["packages/libs-5/lib481/src/index.ts"],
-      "@large-ts-monorepo/lib-482": ["packages/libs-5/lib482/src/index.ts"],
-      "@large-ts-monorepo/lib-483": ["packages/libs-5/lib483/src/index.ts"],
-      "@large-ts-monorepo/lib-484": ["packages/libs-5/lib484/src/index.ts"],
-      "@large-ts-monorepo/lib-485": ["packages/libs-5/lib485/src/index.ts"],
-      "@large-ts-monorepo/lib-486": ["packages/libs-5/lib486/src/index.ts"],
-      "@large-ts-monorepo/lib-487": ["packages/libs-5/lib487/src/index.ts"],
-      "@large-ts-monorepo/lib-488": ["packages/libs-5/lib488/src/index.ts"],
-      "@large-ts-monorepo/lib-489": ["packages/libs-5/lib489/src/index.ts"],
-      "@large-ts-monorepo/lib-49": ["packages/libs/lib49/src/index.ts"],
-      "@large-ts-monorepo/lib-490": ["packages/libs-5/lib490/src/index.ts"],
-      "@large-ts-monorepo/lib-491": ["packages/libs-5/lib491/src/index.ts"],
-      "@large-ts-monorepo/lib-492": ["packages/libs-5/lib492/src/index.ts"],
-      "@large-ts-monorepo/lib-493": ["packages/libs-5/lib493/src/index.ts"],
-      "@large-ts-monorepo/lib-494": ["packages/libs-5/lib494/src/index.ts"],
-      "@large-ts-monorepo/lib-495": ["packages/libs-5/lib495/src/index.ts"],
-      "@large-ts-monorepo/lib-496": ["packages/libs-5/lib496/src/index.ts"],
-      "@large-ts-monorepo/lib-497": ["packages/libs-5/lib497/src/index.ts"],
-      "@large-ts-monorepo/lib-498": ["packages/libs-5/lib498/src/index.ts"],
-      "@large-ts-monorepo/lib-499": ["packages/libs-5/lib499/src/index.ts"],
-      "@large-ts-monorepo/lib-5": ["packages/libs/lib5/src/index.ts"],
-      "@large-ts-monorepo/lib-50": ["packages/libs/lib50/src/index.ts"],
-      "@large-ts-monorepo/lib-500": ["packages/libs-5/lib500/src/index.ts"],
-      "@large-ts-monorepo/lib-501": ["packages/libs-5/lib501/src/index.ts"],
-      "@large-ts-monorepo/lib-502": ["packages/libs-5/lib502/src/index.ts"],
-      "@large-ts-monorepo/lib-503": ["packages/libs-5/lib503/src/index.ts"],
-      "@large-ts-monorepo/lib-504": ["packages/libs-5/lib504/src/index.ts"],
-      "@large-ts-monorepo/lib-505": ["packages/libs-5/lib505/src/index.ts"],
-      "@large-ts-monorepo/lib-506": ["packages/libs-5/lib506/src/index.ts"],
-      "@large-ts-monorepo/lib-507": ["packages/libs-5/lib507/src/index.ts"],
-      "@large-ts-monorepo/lib-508": ["packages/libs-5/lib508/src/index.ts"],
-      "@large-ts-monorepo/lib-509": ["packages/libs-5/lib509/src/index.ts"],
-      "@large-ts-monorepo/lib-51": ["packages/libs/lib51/src/index.ts"],
-      "@large-ts-monorepo/lib-510": ["packages/libs-5/lib510/src/index.ts"],
-      "@large-ts-monorepo/lib-511": ["packages/libs-5/lib511/src/index.ts"],
-      "@large-ts-monorepo/lib-512": ["packages/libs-5/lib512/src/index.ts"],
-      "@large-ts-monorepo/lib-513": ["packages/libs-5/lib513/src/index.ts"],
-      "@large-ts-monorepo/lib-514": ["packages/libs-5/lib514/src/index.ts"],
-      "@large-ts-monorepo/lib-515": ["packages/libs-5/lib515/src/index.ts"],
-      "@large-ts-monorepo/lib-516": ["packages/libs-5/lib516/src/index.ts"],
-      "@large-ts-monorepo/lib-517": ["packages/libs-5/lib517/src/index.ts"],
-      "@large-ts-monorepo/lib-518": ["packages/libs-5/lib518/src/index.ts"],
-      "@large-ts-monorepo/lib-519": ["packages/libs-5/lib519/src/index.ts"],
-      "@large-ts-monorepo/lib-52": ["packages/libs/lib52/src/index.ts"],
-      "@large-ts-monorepo/lib-520": ["packages/libs-5/lib520/src/index.ts"],
-      "@large-ts-monorepo/lib-521": ["packages/libs-5/lib521/src/index.ts"],
-      "@large-ts-monorepo/lib-522": ["packages/libs-5/lib522/src/index.ts"],
-      "@large-ts-monorepo/lib-523": ["packages/libs-5/lib523/src/index.ts"],
-      "@large-ts-monorepo/lib-524": ["packages/libs-5/lib524/src/index.ts"],
-      "@large-ts-monorepo/lib-525": ["packages/libs-5/lib525/src/index.ts"],
-      "@large-ts-monorepo/lib-526": ["packages/libs-5/lib526/src/index.ts"],
-      "@large-ts-monorepo/lib-527": ["packages/libs-5/lib527/src/index.ts"],
-      "@large-ts-monorepo/lib-528": ["packages/libs-5/lib528/src/index.ts"],
-      "@large-ts-monorepo/lib-529": ["packages/libs-5/lib529/src/index.ts"],
-      "@large-ts-monorepo/lib-53": ["packages/libs/lib53/src/index.ts"],
-      "@large-ts-monorepo/lib-530": ["packages/libs-5/lib530/src/index.ts"],
-      "@large-ts-monorepo/lib-531": ["packages/libs-5/lib531/src/index.ts"],
-      "@large-ts-monorepo/lib-532": ["packages/libs-5/lib532/src/index.ts"],
-      "@large-ts-monorepo/lib-533": ["packages/libs-5/lib533/src/index.ts"],
-      "@large-ts-monorepo/lib-534": ["packages/libs-5/lib534/src/index.ts"],
-      "@large-ts-monorepo/lib-535": ["packages/libs-5/lib535/src/index.ts"],
-      "@large-ts-monorepo/lib-536": ["packages/libs-5/lib536/src/index.ts"],
-      "@large-ts-monorepo/lib-537": ["packages/libs-5/lib537/src/index.ts"],
-      "@large-ts-monorepo/lib-538": ["packages/libs-5/lib538/src/index.ts"],
-      "@large-ts-monorepo/lib-539": ["packages/libs-5/lib539/src/index.ts"],
-      "@large-ts-monorepo/lib-54": ["packages/libs/lib54/src/index.ts"],
-      "@large-ts-monorepo/lib-540": ["packages/libs-5/lib540/src/index.ts"],
-      "@large-ts-monorepo/lib-541": ["packages/libs-5/lib541/src/index.ts"],
-      "@large-ts-monorepo/lib-542": ["packages/libs-5/lib542/src/index.ts"],
-      "@large-ts-monorepo/lib-543": ["packages/libs-5/lib543/src/index.ts"],
-      "@large-ts-monorepo/lib-544": ["packages/libs-5/lib544/src/index.ts"],
-      "@large-ts-monorepo/lib-545": ["packages/libs-5/lib545/src/index.ts"],
-      "@large-ts-monorepo/lib-546": ["packages/libs-5/lib546/src/index.ts"],
-      "@large-ts-monorepo/lib-547": ["packages/libs-5/lib547/src/index.ts"],
-      "@large-ts-monorepo/lib-548": ["packages/libs-5/lib548/src/index.ts"],
-      "@large-ts-monorepo/lib-549": ["packages/libs-5/lib549/src/index.ts"],
-      "@large-ts-monorepo/lib-55": ["packages/libs/lib55/src/index.ts"],
-      "@large-ts-monorepo/lib-550": ["packages/libs-5/lib550/src/index.ts"],
-      "@large-ts-monorepo/lib-551": ["packages/libs-5/lib551/src/index.ts"],
-      "@large-ts-monorepo/lib-552": ["packages/libs-5/lib552/src/index.ts"],
-      "@large-ts-monorepo/lib-553": ["packages/libs-5/lib553/src/index.ts"],
-      "@large-ts-monorepo/lib-554": ["packages/libs-5/lib554/src/index.ts"],
-      "@large-ts-monorepo/lib-555": ["packages/libs-5/lib555/src/index.ts"],
-      "@large-ts-monorepo/lib-556": ["packages/libs-5/lib556/src/index.ts"],
-      "@large-ts-monorepo/lib-557": ["packages/libs-5/lib557/src/index.ts"],
-      "@large-ts-monorepo/lib-558": ["packages/libs-5/lib558/src/index.ts"],
-      "@large-ts-monorepo/lib-559": ["packages/libs-5/lib559/src/index.ts"],
-      "@large-ts-monorepo/lib-56": ["packages/libs/lib56/src/index.ts"],
-      "@large-ts-monorepo/lib-560": ["packages/libs-5/lib560/src/index.ts"],
-      "@large-ts-monorepo/lib-561": ["packages/libs-5/lib561/src/index.ts"],
-      "@large-ts-monorepo/lib-57": ["packages/libs/lib57/src/index.ts"],
-      "@large-ts-monorepo/lib-58": ["packages/libs/lib58/src/index.ts"],
-      "@large-ts-monorepo/lib-59": ["packages/libs/lib59/src/index.ts"],
-      "@large-ts-monorepo/lib-6": ["packages/libs/lib6/src/index.ts"],
-      "@large-ts-monorepo/lib-60": ["packages/libs/lib60/src/index.ts"],
-      "@large-ts-monorepo/lib-61": ["packages/libs/lib61/src/index.ts"],
-      "@large-ts-monorepo/lib-62": ["packages/libs/lib62/src/index.ts"],
-      "@large-ts-monorepo/lib-63": ["packages/libs/lib63/src/index.ts"],
-      "@large-ts-monorepo/lib-64": ["packages/libs/lib64/src/index.ts"],
-      "@large-ts-monorepo/lib-65": ["packages/libs/lib65/src/index.ts"],
-      "@large-ts-monorepo/lib-66": ["packages/libs/lib66/src/index.ts"],
-      "@large-ts-monorepo/lib-67": ["packages/libs/lib67/src/index.ts"],
-      "@large-ts-monorepo/lib-68": ["packages/libs/lib68/src/index.ts"],
-      "@large-ts-monorepo/lib-69": ["packages/libs/lib69/src/index.ts"],
-      "@large-ts-monorepo/lib-7": ["packages/libs/lib7/src/index.ts"],
-      "@large-ts-monorepo/lib-70": ["packages/libs/lib70/src/index.ts"],
-      "@large-ts-monorepo/lib-71": ["packages/libs/lib71/src/index.ts"],
-      "@large-ts-monorepo/lib-72": ["packages/libs/lib72/src/index.ts"],
-      "@large-ts-monorepo/lib-73": ["packages/libs/lib73/src/index.ts"],
-      "@large-ts-monorepo/lib-74": ["packages/libs/lib74/src/index.ts"],
-      "@large-ts-monorepo/lib-75": ["packages/libs/lib75/src/index.ts"],
-      "@large-ts-monorepo/lib-76": ["packages/libs/lib76/src/index.ts"],
-      "@large-ts-monorepo/lib-77": ["packages/libs/lib77/src/index.ts"],
-      "@large-ts-monorepo/lib-78": ["packages/libs/lib78/src/index.ts"],
-      "@large-ts-monorepo/lib-79": ["packages/libs/lib79/src/index.ts"],
-      "@large-ts-monorepo/lib-8": ["packages/libs/lib8/src/index.ts"],
-      "@large-ts-monorepo/lib-80": ["packages/libs/lib80/src/index.ts"],
-      "@large-ts-monorepo/lib-81": ["packages/libs/lib81/src/index.ts"],
-      "@large-ts-monorepo/lib-82": ["packages/libs/lib82/src/index.ts"],
-      "@large-ts-monorepo/lib-83": ["packages/libs/lib83/src/index.ts"],
-      "@large-ts-monorepo/lib-84": ["packages/libs/lib84/src/index.ts"],
-      "@large-ts-monorepo/lib-85": ["packages/libs/lib85/src/index.ts"],
-      "@large-ts-monorepo/lib-86": ["packages/libs/lib86/src/index.ts"],
-      "@large-ts-monorepo/lib-87": ["packages/libs/lib87/src/index.ts"],
-      "@large-ts-monorepo/lib-88": ["packages/libs/lib88/src/index.ts"],
-      "@large-ts-monorepo/lib-89": ["packages/libs/lib89/src/index.ts"],
-      "@large-ts-monorepo/lib-9": ["packages/libs/lib9/src/index.ts"],
-      "@large-ts-monorepo/lib-90": ["packages/libs/lib90/src/index.ts"],
-      "@large-ts-monorepo/lib-91": ["packages/libs/lib91/src/index.ts"],
-      "@large-ts-monorepo/lib-92": ["packages/libs/lib92/src/index.ts"],
-      "@large-ts-monorepo/lib-93": ["packages/libs/lib93/src/index.ts"],
-      "@large-ts-monorepo/lib-94": ["packages/libs/lib94/src/index.ts"],
-      "@large-ts-monorepo/lib-95": ["packages/libs/lib95/src/index.ts"],
-      "@large-ts-monorepo/lib-96": ["packages/libs/lib96/src/index.ts"],
-      "@large-ts-monorepo/lib-97": ["packages/libs/lib97/src/index.ts"],
-      "@large-ts-monorepo/lib-98": ["packages/libs/lib98/src/index.ts"],
-      "@large-ts-monorepo/lib-99": ["packages/libs/lib99/src/index.ts"],
-      "@large-ts-monorepo/medium-pkg1": ["packages/medium-pkg1/src/index.ts"],
-      "@large-ts-monorepo/medium-pkg1-1": [
-        "packages/medium-pkg1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-1": [
-        "packages/medium-pkg1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-2": [
-        "packages/medium-pkg1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-3": [
-        "packages/medium-pkg1-1-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-4": [
-        "packages/medium-pkg1-1-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-5": [
-        "packages/medium-pkg1-1-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-1-6": [
-        "packages/medium-pkg1-1-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2": [
-        "packages/medium-pkg1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-1": [
-        "packages/medium-pkg1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-2": [
-        "packages/medium-pkg1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-3": [
-        "packages/medium-pkg1-2-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-4": [
-        "packages/medium-pkg1-2-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-5": [
-        "packages/medium-pkg1-2-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-2-6": [
-        "packages/medium-pkg1-2-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3": [
-        "packages/medium-pkg1-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-1": [
-        "packages/medium-pkg1-3-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-2": [
-        "packages/medium-pkg1-3-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-3": [
-        "packages/medium-pkg1-3-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-4": [
-        "packages/medium-pkg1-3-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-5": [
-        "packages/medium-pkg1-3-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-3-6": [
-        "packages/medium-pkg1-3-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4": [
-        "packages/medium-pkg1-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-1": [
-        "packages/medium-pkg1-4-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-2": [
-        "packages/medium-pkg1-4-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-3": [
-        "packages/medium-pkg1-4-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-4": [
-        "packages/medium-pkg1-4-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-5": [
-        "packages/medium-pkg1-4-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-4-6": [
-        "packages/medium-pkg1-4-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5": [
-        "packages/medium-pkg1-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-1": [
-        "packages/medium-pkg1-5-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-2": [
-        "packages/medium-pkg1-5-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-3": [
-        "packages/medium-pkg1-5-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-4": [
-        "packages/medium-pkg1-5-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-5": [
-        "packages/medium-pkg1-5-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-5-6": [
-        "packages/medium-pkg1-5-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6": [
-        "packages/medium-pkg1-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-1": [
-        "packages/medium-pkg1-6-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-2": [
-        "packages/medium-pkg1-6-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-3": [
-        "packages/medium-pkg1-6-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-4": [
-        "packages/medium-pkg1-6-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-5": [
-        "packages/medium-pkg1-6-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-6-6": [
-        "packages/medium-pkg1-6-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7": [
-        "packages/medium-pkg1-7/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-1": [
-        "packages/medium-pkg1-7-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-2": [
-        "packages/medium-pkg1-7-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-3": [
-        "packages/medium-pkg1-7-3/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-4": [
-        "packages/medium-pkg1-7-4/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-5": [
-        "packages/medium-pkg1-7-5/src/index.ts"
-      ],
-      "@large-ts-monorepo/medium-pkg1-7-6": [
-        "packages/medium-pkg1-7-6/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1": ["packages/nested-pkg1/src/index.ts"],
-      "@large-ts-monorepo/nested-pkg1-1": [
-        "packages/nested-pkg1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1": [
-        "packages/nested-pkg1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1": [
-        "packages/nested-pkg1-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-1": [
-        "packages/nested-pkg1-1-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-1-1": [
-        "packages/nested-pkg1-1-1-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-1-2": [
-        "packages/nested-pkg1-1-1-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-2": [
-        "packages/nested-pkg1-1-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-2-1": [
-        "packages/nested-pkg1-1-1-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-1-2-2": [
-        "packages/nested-pkg1-1-1-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2": [
-        "packages/nested-pkg1-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-1": [
-        "packages/nested-pkg1-1-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-1-1": [
-        "packages/nested-pkg1-1-1-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-1-2": [
-        "packages/nested-pkg1-1-1-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-2": [
-        "packages/nested-pkg1-1-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-2-1": [
-        "packages/nested-pkg1-1-1-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-1-2-2-2": [
-        "packages/nested-pkg1-1-1-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2": [
-        "packages/nested-pkg1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1": [
-        "packages/nested-pkg1-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-1": [
-        "packages/nested-pkg1-1-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-1-1": [
-        "packages/nested-pkg1-1-2-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-1-2": [
-        "packages/nested-pkg1-1-2-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-2": [
-        "packages/nested-pkg1-1-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-2-1": [
-        "packages/nested-pkg1-1-2-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-1-2-2": [
-        "packages/nested-pkg1-1-2-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2": [
-        "packages/nested-pkg1-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-1": [
-        "packages/nested-pkg1-1-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-1-1": [
-        "packages/nested-pkg1-1-2-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-1-2": [
-        "packages/nested-pkg1-1-2-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-2": [
-        "packages/nested-pkg1-1-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-2-1": [
-        "packages/nested-pkg1-1-2-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-1-2-2-2-2": [
-        "packages/nested-pkg1-1-2-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2": [
-        "packages/nested-pkg1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1": [
-        "packages/nested-pkg1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1": [
-        "packages/nested-pkg1-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-1": [
-        "packages/nested-pkg1-2-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-1-1": [
-        "packages/nested-pkg1-2-1-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-1-2": [
-        "packages/nested-pkg1-2-1-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-2": [
-        "packages/nested-pkg1-2-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-2-1": [
-        "packages/nested-pkg1-2-1-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-1-2-2": [
-        "packages/nested-pkg1-2-1-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2": [
-        "packages/nested-pkg1-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-1": [
-        "packages/nested-pkg1-2-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-1-1": [
-        "packages/nested-pkg1-2-1-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-1-2": [
-        "packages/nested-pkg1-2-1-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-2": [
-        "packages/nested-pkg1-2-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-2-1": [
-        "packages/nested-pkg1-2-1-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-1-2-2-2": [
-        "packages/nested-pkg1-2-1-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2": [
-        "packages/nested-pkg1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1": [
-        "packages/nested-pkg1-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-1": [
-        "packages/nested-pkg1-2-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-1-1": [
-        "packages/nested-pkg1-2-2-1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-1-2": [
-        "packages/nested-pkg1-2-2-1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-2": [
-        "packages/nested-pkg1-2-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-2-1": [
-        "packages/nested-pkg1-2-2-1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-1-2-2": [
-        "packages/nested-pkg1-2-2-1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2": [
-        "packages/nested-pkg1-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-1": [
-        "packages/nested-pkg1-2-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-1-1": [
-        "packages/nested-pkg1-2-2-2-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-1-2": [
-        "packages/nested-pkg1-2-2-2-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-2": [
-        "packages/nested-pkg1-2-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-2-1": [
-        "packages/nested-pkg1-2-2-2-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/nested-pkg1-2-2-2-2-2": [
-        "packages/nested-pkg1-2-2-2-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1": ["packages/small-pkg1/src/index.ts"],
-      "@large-ts-monorepo/small-pkg1-1": ["packages/small-pkg1-1/src/index.ts"],
-      "@large-ts-monorepo/small-pkg1-1-1": [
-        "packages/small-pkg1-1-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1-1-2": [
-        "packages/small-pkg1-1-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1-2": ["packages/small-pkg1-2/src/index.ts"],
-      "@large-ts-monorepo/small-pkg1-2-1": [
-        "packages/small-pkg1-2-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1-2-2": [
-        "packages/small-pkg1-2-2/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1-3": ["packages/small-pkg1-3/src/index.ts"],
-      "@large-ts-monorepo/small-pkg1-3-1": [
-        "packages/small-pkg1-3-1/src/index.ts"
-      ],
-      "@large-ts-monorepo/small-pkg1-3-2": [
-        "packages/small-pkg1-3-2/src/index.ts"
-      ]
-    }
-  },
-  "exclude": ["node_modules", "tmp"]
+   "compileOnSave": false,
+   "compilerOptions": {
+      "rootDir": ".",
+      "sourceMap": true,
+      "declaration": false,
+      "moduleResolution": "node",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "target": "es2015",
+      "module": "esnext",
+      "lib": ["es2020", "dom"],
+      "skipLibCheck": true,
+      "skipDefaultLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+         "@large-ts-monorepo/large-pkg1": ["packages/large-pkg1/src/index.ts"],
+         "@large-ts-monorepo/large-pkg1-1": [
+            "packages/large-pkg1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-1": [
+            "packages/large-pkg1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-10": [
+            "packages/large-pkg1-1-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-11": [
+            "packages/large-pkg1-1-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-12": [
+            "packages/large-pkg1-1-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-13": [
+            "packages/large-pkg1-1-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-14": [
+            "packages/large-pkg1-1-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-15": [
+            "packages/large-pkg1-1-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-16": [
+            "packages/large-pkg1-1-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-17": [
+            "packages/large-pkg1-1-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-18": [
+            "packages/large-pkg1-1-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-19": [
+            "packages/large-pkg1-1-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-2": [
+            "packages/large-pkg1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-20": [
+            "packages/large-pkg1-1-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-3": [
+            "packages/large-pkg1-1-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-4": [
+            "packages/large-pkg1-1-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-5": [
+            "packages/large-pkg1-1-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-6": [
+            "packages/large-pkg1-1-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-7": [
+            "packages/large-pkg1-1-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-8": [
+            "packages/large-pkg1-1-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-1-9": [
+            "packages/large-pkg1-1-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10": [
+            "packages/large-pkg1-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-1": [
+            "packages/large-pkg1-10-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-10": [
+            "packages/large-pkg1-10-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-11": [
+            "packages/large-pkg1-10-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-12": [
+            "packages/large-pkg1-10-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-13": [
+            "packages/large-pkg1-10-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-14": [
+            "packages/large-pkg1-10-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-15": [
+            "packages/large-pkg1-10-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-16": [
+            "packages/large-pkg1-10-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-17": [
+            "packages/large-pkg1-10-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-18": [
+            "packages/large-pkg1-10-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-19": [
+            "packages/large-pkg1-10-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-2": [
+            "packages/large-pkg1-10-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-20": [
+            "packages/large-pkg1-10-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-3": [
+            "packages/large-pkg1-10-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-4": [
+            "packages/large-pkg1-10-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-5": [
+            "packages/large-pkg1-10-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-6": [
+            "packages/large-pkg1-10-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-7": [
+            "packages/large-pkg1-10-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-8": [
+            "packages/large-pkg1-10-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-10-9": [
+            "packages/large-pkg1-10-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11": [
+            "packages/large-pkg1-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-1": [
+            "packages/large-pkg1-11-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-10": [
+            "packages/large-pkg1-11-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-11": [
+            "packages/large-pkg1-11-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-12": [
+            "packages/large-pkg1-11-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-13": [
+            "packages/large-pkg1-11-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-14": [
+            "packages/large-pkg1-11-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-15": [
+            "packages/large-pkg1-11-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-16": [
+            "packages/large-pkg1-11-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-17": [
+            "packages/large-pkg1-11-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-18": [
+            "packages/large-pkg1-11-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-19": [
+            "packages/large-pkg1-11-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-2": [
+            "packages/large-pkg1-11-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-20": [
+            "packages/large-pkg1-11-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-3": [
+            "packages/large-pkg1-11-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-4": [
+            "packages/large-pkg1-11-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-5": [
+            "packages/large-pkg1-11-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-6": [
+            "packages/large-pkg1-11-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-7": [
+            "packages/large-pkg1-11-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-8": [
+            "packages/large-pkg1-11-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-11-9": [
+            "packages/large-pkg1-11-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12": [
+            "packages/large-pkg1-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-1": [
+            "packages/large-pkg1-12-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-10": [
+            "packages/large-pkg1-12-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-11": [
+            "packages/large-pkg1-12-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-12": [
+            "packages/large-pkg1-12-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-13": [
+            "packages/large-pkg1-12-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-14": [
+            "packages/large-pkg1-12-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-15": [
+            "packages/large-pkg1-12-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-16": [
+            "packages/large-pkg1-12-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-17": [
+            "packages/large-pkg1-12-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-18": [
+            "packages/large-pkg1-12-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-19": [
+            "packages/large-pkg1-12-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-2": [
+            "packages/large-pkg1-12-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-20": [
+            "packages/large-pkg1-12-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-3": [
+            "packages/large-pkg1-12-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-4": [
+            "packages/large-pkg1-12-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-5": [
+            "packages/large-pkg1-12-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-6": [
+            "packages/large-pkg1-12-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-7": [
+            "packages/large-pkg1-12-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-8": [
+            "packages/large-pkg1-12-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-12-9": [
+            "packages/large-pkg1-12-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2": [
+            "packages/large-pkg1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-1": [
+            "packages/large-pkg1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-10": [
+            "packages/large-pkg1-2-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-11": [
+            "packages/large-pkg1-2-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-12": [
+            "packages/large-pkg1-2-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-13": [
+            "packages/large-pkg1-2-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-14": [
+            "packages/large-pkg1-2-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-15": [
+            "packages/large-pkg1-2-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-16": [
+            "packages/large-pkg1-2-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-17": [
+            "packages/large-pkg1-2-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-18": [
+            "packages/large-pkg1-2-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-19": [
+            "packages/large-pkg1-2-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-2": [
+            "packages/large-pkg1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-20": [
+            "packages/large-pkg1-2-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-3": [
+            "packages/large-pkg1-2-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-4": [
+            "packages/large-pkg1-2-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-5": [
+            "packages/large-pkg1-2-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-6": [
+            "packages/large-pkg1-2-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-7": [
+            "packages/large-pkg1-2-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-8": [
+            "packages/large-pkg1-2-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-2-9": [
+            "packages/large-pkg1-2-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3": [
+            "packages/large-pkg1-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-1": [
+            "packages/large-pkg1-3-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-10": [
+            "packages/large-pkg1-3-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-11": [
+            "packages/large-pkg1-3-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-12": [
+            "packages/large-pkg1-3-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-13": [
+            "packages/large-pkg1-3-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-14": [
+            "packages/large-pkg1-3-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-15": [
+            "packages/large-pkg1-3-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-16": [
+            "packages/large-pkg1-3-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-17": [
+            "packages/large-pkg1-3-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-18": [
+            "packages/large-pkg1-3-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-19": [
+            "packages/large-pkg1-3-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-2": [
+            "packages/large-pkg1-3-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-20": [
+            "packages/large-pkg1-3-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-3": [
+            "packages/large-pkg1-3-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-4": [
+            "packages/large-pkg1-3-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-5": [
+            "packages/large-pkg1-3-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-6": [
+            "packages/large-pkg1-3-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-7": [
+            "packages/large-pkg1-3-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-8": [
+            "packages/large-pkg1-3-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-3-9": [
+            "packages/large-pkg1-3-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4": [
+            "packages/large-pkg1-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-1": [
+            "packages/large-pkg1-4-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-10": [
+            "packages/large-pkg1-4-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-11": [
+            "packages/large-pkg1-4-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-12": [
+            "packages/large-pkg1-4-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-13": [
+            "packages/large-pkg1-4-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-14": [
+            "packages/large-pkg1-4-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-15": [
+            "packages/large-pkg1-4-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-16": [
+            "packages/large-pkg1-4-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-17": [
+            "packages/large-pkg1-4-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-18": [
+            "packages/large-pkg1-4-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-19": [
+            "packages/large-pkg1-4-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-2": [
+            "packages/large-pkg1-4-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-20": [
+            "packages/large-pkg1-4-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-3": [
+            "packages/large-pkg1-4-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-4": [
+            "packages/large-pkg1-4-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-5": [
+            "packages/large-pkg1-4-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-6": [
+            "packages/large-pkg1-4-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-7": [
+            "packages/large-pkg1-4-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-8": [
+            "packages/large-pkg1-4-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-4-9": [
+            "packages/large-pkg1-4-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5": [
+            "packages/large-pkg1-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-1": [
+            "packages/large-pkg1-5-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-10": [
+            "packages/large-pkg1-5-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-11": [
+            "packages/large-pkg1-5-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-12": [
+            "packages/large-pkg1-5-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-13": [
+            "packages/large-pkg1-5-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-14": [
+            "packages/large-pkg1-5-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-15": [
+            "packages/large-pkg1-5-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-16": [
+            "packages/large-pkg1-5-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-17": [
+            "packages/large-pkg1-5-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-18": [
+            "packages/large-pkg1-5-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-19": [
+            "packages/large-pkg1-5-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-2": [
+            "packages/large-pkg1-5-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-20": [
+            "packages/large-pkg1-5-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-3": [
+            "packages/large-pkg1-5-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-4": [
+            "packages/large-pkg1-5-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-5": [
+            "packages/large-pkg1-5-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-6": [
+            "packages/large-pkg1-5-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-7": [
+            "packages/large-pkg1-5-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-8": [
+            "packages/large-pkg1-5-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-5-9": [
+            "packages/large-pkg1-5-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6": [
+            "packages/large-pkg1-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-1": [
+            "packages/large-pkg1-6-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-10": [
+            "packages/large-pkg1-6-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-11": [
+            "packages/large-pkg1-6-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-12": [
+            "packages/large-pkg1-6-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-13": [
+            "packages/large-pkg1-6-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-14": [
+            "packages/large-pkg1-6-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-15": [
+            "packages/large-pkg1-6-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-16": [
+            "packages/large-pkg1-6-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-17": [
+            "packages/large-pkg1-6-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-18": [
+            "packages/large-pkg1-6-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-19": [
+            "packages/large-pkg1-6-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-2": [
+            "packages/large-pkg1-6-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-20": [
+            "packages/large-pkg1-6-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-3": [
+            "packages/large-pkg1-6-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-4": [
+            "packages/large-pkg1-6-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-5": [
+            "packages/large-pkg1-6-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-6": [
+            "packages/large-pkg1-6-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-7": [
+            "packages/large-pkg1-6-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-8": [
+            "packages/large-pkg1-6-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-6-9": [
+            "packages/large-pkg1-6-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7": [
+            "packages/large-pkg1-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-1": [
+            "packages/large-pkg1-7-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-10": [
+            "packages/large-pkg1-7-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-11": [
+            "packages/large-pkg1-7-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-12": [
+            "packages/large-pkg1-7-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-13": [
+            "packages/large-pkg1-7-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-14": [
+            "packages/large-pkg1-7-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-15": [
+            "packages/large-pkg1-7-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-16": [
+            "packages/large-pkg1-7-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-17": [
+            "packages/large-pkg1-7-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-18": [
+            "packages/large-pkg1-7-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-19": [
+            "packages/large-pkg1-7-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-2": [
+            "packages/large-pkg1-7-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-20": [
+            "packages/large-pkg1-7-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-3": [
+            "packages/large-pkg1-7-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-4": [
+            "packages/large-pkg1-7-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-5": [
+            "packages/large-pkg1-7-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-6": [
+            "packages/large-pkg1-7-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-7": [
+            "packages/large-pkg1-7-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-8": [
+            "packages/large-pkg1-7-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-7-9": [
+            "packages/large-pkg1-7-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8": [
+            "packages/large-pkg1-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-1": [
+            "packages/large-pkg1-8-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-10": [
+            "packages/large-pkg1-8-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-11": [
+            "packages/large-pkg1-8-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-12": [
+            "packages/large-pkg1-8-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-13": [
+            "packages/large-pkg1-8-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-14": [
+            "packages/large-pkg1-8-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-15": [
+            "packages/large-pkg1-8-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-16": [
+            "packages/large-pkg1-8-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-17": [
+            "packages/large-pkg1-8-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-18": [
+            "packages/large-pkg1-8-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-19": [
+            "packages/large-pkg1-8-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-2": [
+            "packages/large-pkg1-8-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-20": [
+            "packages/large-pkg1-8-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-3": [
+            "packages/large-pkg1-8-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-4": [
+            "packages/large-pkg1-8-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-5": [
+            "packages/large-pkg1-8-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-6": [
+            "packages/large-pkg1-8-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-7": [
+            "packages/large-pkg1-8-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-8": [
+            "packages/large-pkg1-8-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-8-9": [
+            "packages/large-pkg1-8-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9": [
+            "packages/large-pkg1-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-1": [
+            "packages/large-pkg1-9-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-10": [
+            "packages/large-pkg1-9-10/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-11": [
+            "packages/large-pkg1-9-11/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-12": [
+            "packages/large-pkg1-9-12/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-13": [
+            "packages/large-pkg1-9-13/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-14": [
+            "packages/large-pkg1-9-14/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-15": [
+            "packages/large-pkg1-9-15/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-16": [
+            "packages/large-pkg1-9-16/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-17": [
+            "packages/large-pkg1-9-17/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-18": [
+            "packages/large-pkg1-9-18/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-19": [
+            "packages/large-pkg1-9-19/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-2": [
+            "packages/large-pkg1-9-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-20": [
+            "packages/large-pkg1-9-20/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-3": [
+            "packages/large-pkg1-9-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-4": [
+            "packages/large-pkg1-9-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-5": [
+            "packages/large-pkg1-9-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-6": [
+            "packages/large-pkg1-9-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-7": [
+            "packages/large-pkg1-9-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-8": [
+            "packages/large-pkg1-9-8/src/index.ts"
+         ],
+         "@large-ts-monorepo/large-pkg1-9-9": [
+            "packages/large-pkg1-9-9/src/index.ts"
+         ],
+         "@large-ts-monorepo/lib-1": ["packages/libs/lib1/src/index.ts"],
+         "@large-ts-monorepo/lib-10": ["packages/libs/lib10/src/index.ts"],
+         "@large-ts-monorepo/lib-100": ["packages/libs/lib100/src/index.ts"],
+         "@large-ts-monorepo/lib-101": ["packages/libs-2/lib101/src/index.ts"],
+         "@large-ts-monorepo/lib-102": ["packages/libs-2/lib102/src/index.ts"],
+         "@large-ts-monorepo/lib-103": ["packages/libs-2/lib103/src/index.ts"],
+         "@large-ts-monorepo/lib-104": ["packages/libs-2/lib104/src/index.ts"],
+         "@large-ts-monorepo/lib-105": ["packages/libs-2/lib105/src/index.ts"],
+         "@large-ts-monorepo/lib-106": ["packages/libs-2/lib106/src/index.ts"],
+         "@large-ts-monorepo/lib-107": ["packages/libs-2/lib107/src/index.ts"],
+         "@large-ts-monorepo/lib-108": ["packages/libs-2/lib108/src/index.ts"],
+         "@large-ts-monorepo/lib-109": ["packages/libs-2/lib109/src/index.ts"],
+         "@large-ts-monorepo/lib-11": ["packages/libs/lib11/src/index.ts"],
+         "@large-ts-monorepo/lib-110": ["packages/libs-2/lib110/src/index.ts"],
+         "@large-ts-monorepo/lib-111": ["packages/libs-2/lib111/src/index.ts"],
+         "@large-ts-monorepo/lib-112": ["packages/libs-2/lib112/src/index.ts"],
+         "@large-ts-monorepo/lib-113": ["packages/libs-2/lib113/src/index.ts"],
+         "@large-ts-monorepo/lib-114": ["packages/libs-2/lib114/src/index.ts"],
+         "@large-ts-monorepo/lib-115": ["packages/libs-2/lib115/src/index.ts"],
+         "@large-ts-monorepo/lib-116": ["packages/libs-2/lib116/src/index.ts"],
+         "@large-ts-monorepo/lib-117": ["packages/libs-2/lib117/src/index.ts"],
+         "@large-ts-monorepo/lib-118": ["packages/libs-2/lib118/src/index.ts"],
+         "@large-ts-monorepo/lib-119": ["packages/libs-2/lib119/src/index.ts"],
+         "@large-ts-monorepo/lib-12": ["packages/libs/lib12/src/index.ts"],
+         "@large-ts-monorepo/lib-120": ["packages/libs-2/lib120/src/index.ts"],
+         "@large-ts-monorepo/lib-121": ["packages/libs-2/lib121/src/index.ts"],
+         "@large-ts-monorepo/lib-122": ["packages/libs-2/lib122/src/index.ts"],
+         "@large-ts-monorepo/lib-123": ["packages/libs-2/lib123/src/index.ts"],
+         "@large-ts-monorepo/lib-124": ["packages/libs-2/lib124/src/index.ts"],
+         "@large-ts-monorepo/lib-125": ["packages/libs-2/lib125/src/index.ts"],
+         "@large-ts-monorepo/lib-126": ["packages/libs-2/lib126/src/index.ts"],
+         "@large-ts-monorepo/lib-127": ["packages/libs-2/lib127/src/index.ts"],
+         "@large-ts-monorepo/lib-128": ["packages/libs-2/lib128/src/index.ts"],
+         "@large-ts-monorepo/lib-129": ["packages/libs-2/lib129/src/index.ts"],
+         "@large-ts-monorepo/lib-13": ["packages/libs/lib13/src/index.ts"],
+         "@large-ts-monorepo/lib-130": ["packages/libs-2/lib130/src/index.ts"],
+         "@large-ts-monorepo/lib-131": ["packages/libs-2/lib131/src/index.ts"],
+         "@large-ts-monorepo/lib-132": ["packages/libs-2/lib132/src/index.ts"],
+         "@large-ts-monorepo/lib-133": ["packages/libs-2/lib133/src/index.ts"],
+         "@large-ts-monorepo/lib-134": ["packages/libs-2/lib134/src/index.ts"],
+         "@large-ts-monorepo/lib-135": ["packages/libs-2/lib135/src/index.ts"],
+         "@large-ts-monorepo/lib-136": ["packages/libs-2/lib136/src/index.ts"],
+         "@large-ts-monorepo/lib-137": ["packages/libs-2/lib137/src/index.ts"],
+         "@large-ts-monorepo/lib-138": ["packages/libs-2/lib138/src/index.ts"],
+         "@large-ts-monorepo/lib-139": ["packages/libs-2/lib139/src/index.ts"],
+         "@large-ts-monorepo/lib-14": ["packages/libs/lib14/src/index.ts"],
+         "@large-ts-monorepo/lib-140": ["packages/libs-2/lib140/src/index.ts"],
+         "@large-ts-monorepo/lib-141": ["packages/libs-2/lib141/src/index.ts"],
+         "@large-ts-monorepo/lib-142": ["packages/libs-2/lib142/src/index.ts"],
+         "@large-ts-monorepo/lib-143": ["packages/libs-2/lib143/src/index.ts"],
+         "@large-ts-monorepo/lib-144": ["packages/libs-2/lib144/src/index.ts"],
+         "@large-ts-monorepo/lib-145": ["packages/libs-2/lib145/src/index.ts"],
+         "@large-ts-monorepo/lib-146": ["packages/libs-2/lib146/src/index.ts"],
+         "@large-ts-monorepo/lib-147": ["packages/libs-2/lib147/src/index.ts"],
+         "@large-ts-monorepo/lib-148": ["packages/libs-2/lib148/src/index.ts"],
+         "@large-ts-monorepo/lib-149": ["packages/libs-2/lib149/src/index.ts"],
+         "@large-ts-monorepo/lib-15": ["packages/libs/lib15/src/index.ts"],
+         "@large-ts-monorepo/lib-150": ["packages/libs-2/lib150/src/index.ts"],
+         "@large-ts-monorepo/lib-151": ["packages/libs-2/lib151/src/index.ts"],
+         "@large-ts-monorepo/lib-152": ["packages/libs-2/lib152/src/index.ts"],
+         "@large-ts-monorepo/lib-153": ["packages/libs-2/lib153/src/index.ts"],
+         "@large-ts-monorepo/lib-154": ["packages/libs-2/lib154/src/index.ts"],
+         "@large-ts-monorepo/lib-155": ["packages/libs-2/lib155/src/index.ts"],
+         "@large-ts-monorepo/lib-156": ["packages/libs-2/lib156/src/index.ts"],
+         "@large-ts-monorepo/lib-157": ["packages/libs-2/lib157/src/index.ts"],
+         "@large-ts-monorepo/lib-158": ["packages/libs-2/lib158/src/index.ts"],
+         "@large-ts-monorepo/lib-159": ["packages/libs-2/lib159/src/index.ts"],
+         "@large-ts-monorepo/lib-16": ["packages/libs/lib16/src/index.ts"],
+         "@large-ts-monorepo/lib-160": ["packages/libs-2/lib160/src/index.ts"],
+         "@large-ts-monorepo/lib-161": ["packages/libs-2/lib161/src/index.ts"],
+         "@large-ts-monorepo/lib-162": ["packages/libs-2/lib162/src/index.ts"],
+         "@large-ts-monorepo/lib-163": ["packages/libs-2/lib163/src/index.ts"],
+         "@large-ts-monorepo/lib-164": ["packages/libs-2/lib164/src/index.ts"],
+         "@large-ts-monorepo/lib-165": ["packages/libs-2/lib165/src/index.ts"],
+         "@large-ts-monorepo/lib-166": ["packages/libs-2/lib166/src/index.ts"],
+         "@large-ts-monorepo/lib-167": ["packages/libs-2/lib167/src/index.ts"],
+         "@large-ts-monorepo/lib-168": ["packages/libs-2/lib168/src/index.ts"],
+         "@large-ts-monorepo/lib-169": ["packages/libs-2/lib169/src/index.ts"],
+         "@large-ts-monorepo/lib-17": ["packages/libs/lib17/src/index.ts"],
+         "@large-ts-monorepo/lib-170": ["packages/libs-2/lib170/src/index.ts"],
+         "@large-ts-monorepo/lib-171": ["packages/libs-2/lib171/src/index.ts"],
+         "@large-ts-monorepo/lib-172": ["packages/libs-2/lib172/src/index.ts"],
+         "@large-ts-monorepo/lib-173": ["packages/libs-2/lib173/src/index.ts"],
+         "@large-ts-monorepo/lib-174": ["packages/libs-2/lib174/src/index.ts"],
+         "@large-ts-monorepo/lib-175": ["packages/libs-2/lib175/src/index.ts"],
+         "@large-ts-monorepo/lib-176": ["packages/libs-2/lib176/src/index.ts"],
+         "@large-ts-monorepo/lib-177": ["packages/libs-2/lib177/src/index.ts"],
+         "@large-ts-monorepo/lib-178": ["packages/libs-2/lib178/src/index.ts"],
+         "@large-ts-monorepo/lib-179": ["packages/libs-2/lib179/src/index.ts"],
+         "@large-ts-monorepo/lib-18": ["packages/libs/lib18/src/index.ts"],
+         "@large-ts-monorepo/lib-180": ["packages/libs-2/lib180/src/index.ts"],
+         "@large-ts-monorepo/lib-181": ["packages/libs-2/lib181/src/index.ts"],
+         "@large-ts-monorepo/lib-182": ["packages/libs-2/lib182/src/index.ts"],
+         "@large-ts-monorepo/lib-183": ["packages/libs-2/lib183/src/index.ts"],
+         "@large-ts-monorepo/lib-184": ["packages/libs-2/lib184/src/index.ts"],
+         "@large-ts-monorepo/lib-185": ["packages/libs-2/lib185/src/index.ts"],
+         "@large-ts-monorepo/lib-186": ["packages/libs-2/lib186/src/index.ts"],
+         "@large-ts-monorepo/lib-187": ["packages/libs-2/lib187/src/index.ts"],
+         "@large-ts-monorepo/lib-188": ["packages/libs-2/lib188/src/index.ts"],
+         "@large-ts-monorepo/lib-189": ["packages/libs-2/lib189/src/index.ts"],
+         "@large-ts-monorepo/lib-19": ["packages/libs/lib19/src/index.ts"],
+         "@large-ts-monorepo/lib-190": ["packages/libs-2/lib190/src/index.ts"],
+         "@large-ts-monorepo/lib-191": ["packages/libs-2/lib191/src/index.ts"],
+         "@large-ts-monorepo/lib-192": ["packages/libs-2/lib192/src/index.ts"],
+         "@large-ts-monorepo/lib-193": ["packages/libs-2/lib193/src/index.ts"],
+         "@large-ts-monorepo/lib-194": ["packages/libs-2/lib194/src/index.ts"],
+         "@large-ts-monorepo/lib-195": ["packages/libs-2/lib195/src/index.ts"],
+         "@large-ts-monorepo/lib-196": ["packages/libs-2/lib196/src/index.ts"],
+         "@large-ts-monorepo/lib-197": ["packages/libs-2/lib197/src/index.ts"],
+         "@large-ts-monorepo/lib-198": ["packages/libs-2/lib198/src/index.ts"],
+         "@large-ts-monorepo/lib-199": ["packages/libs-2/lib199/src/index.ts"],
+         "@large-ts-monorepo/lib-2": ["packages/libs/lib2/src/index.ts"],
+         "@large-ts-monorepo/lib-20": ["packages/libs/lib20/src/index.ts"],
+         "@large-ts-monorepo/lib-200": ["packages/libs-2/lib200/src/index.ts"],
+         "@large-ts-monorepo/lib-201": ["packages/libs-3/lib201/src/index.ts"],
+         "@large-ts-monorepo/lib-202": ["packages/libs-3/lib202/src/index.ts"],
+         "@large-ts-monorepo/lib-203": ["packages/libs-3/lib203/src/index.ts"],
+         "@large-ts-monorepo/lib-204": ["packages/libs-3/lib204/src/index.ts"],
+         "@large-ts-monorepo/lib-205": ["packages/libs-3/lib205/src/index.ts"],
+         "@large-ts-monorepo/lib-206": ["packages/libs-3/lib206/src/index.ts"],
+         "@large-ts-monorepo/lib-207": ["packages/libs-3/lib207/src/index.ts"],
+         "@large-ts-monorepo/lib-208": ["packages/libs-3/lib208/src/index.ts"],
+         "@large-ts-monorepo/lib-209": ["packages/libs-3/lib209/src/index.ts"],
+         "@large-ts-monorepo/lib-21": ["packages/libs/lib21/src/index.ts"],
+         "@large-ts-monorepo/lib-210": ["packages/libs-3/lib210/src/index.ts"],
+         "@large-ts-monorepo/lib-211": ["packages/libs-3/lib211/src/index.ts"],
+         "@large-ts-monorepo/lib-212": ["packages/libs-3/lib212/src/index.ts"],
+         "@large-ts-monorepo/lib-213": ["packages/libs-3/lib213/src/index.ts"],
+         "@large-ts-monorepo/lib-214": ["packages/libs-3/lib214/src/index.ts"],
+         "@large-ts-monorepo/lib-215": ["packages/libs-3/lib215/src/index.ts"],
+         "@large-ts-monorepo/lib-216": ["packages/libs-3/lib216/src/index.ts"],
+         "@large-ts-monorepo/lib-217": ["packages/libs-3/lib217/src/index.ts"],
+         "@large-ts-monorepo/lib-218": ["packages/libs-3/lib218/src/index.ts"],
+         "@large-ts-monorepo/lib-219": ["packages/libs-3/lib219/src/index.ts"],
+         "@large-ts-monorepo/lib-22": ["packages/libs/lib22/src/index.ts"],
+         "@large-ts-monorepo/lib-220": ["packages/libs-3/lib220/src/index.ts"],
+         "@large-ts-monorepo/lib-221": ["packages/libs-3/lib221/src/index.ts"],
+         "@large-ts-monorepo/lib-222": ["packages/libs-3/lib222/src/index.ts"],
+         "@large-ts-monorepo/lib-223": ["packages/libs-3/lib223/src/index.ts"],
+         "@large-ts-monorepo/lib-224": ["packages/libs-3/lib224/src/index.ts"],
+         "@large-ts-monorepo/lib-225": ["packages/libs-3/lib225/src/index.ts"],
+         "@large-ts-monorepo/lib-226": ["packages/libs-3/lib226/src/index.ts"],
+         "@large-ts-monorepo/lib-227": ["packages/libs-3/lib227/src/index.ts"],
+         "@large-ts-monorepo/lib-228": ["packages/libs-3/lib228/src/index.ts"],
+         "@large-ts-monorepo/lib-229": ["packages/libs-3/lib229/src/index.ts"],
+         "@large-ts-monorepo/lib-23": ["packages/libs/lib23/src/index.ts"],
+         "@large-ts-monorepo/lib-230": ["packages/libs-3/lib230/src/index.ts"],
+         "@large-ts-monorepo/lib-231": ["packages/libs-3/lib231/src/index.ts"],
+         "@large-ts-monorepo/lib-232": ["packages/libs-3/lib232/src/index.ts"],
+         "@large-ts-monorepo/lib-233": ["packages/libs-3/lib233/src/index.ts"],
+         "@large-ts-monorepo/lib-234": ["packages/libs-3/lib234/src/index.ts"],
+         "@large-ts-monorepo/lib-235": ["packages/libs-3/lib235/src/index.ts"],
+         "@large-ts-monorepo/lib-236": ["packages/libs-3/lib236/src/index.ts"],
+         "@large-ts-monorepo/lib-237": ["packages/libs-3/lib237/src/index.ts"],
+         "@large-ts-monorepo/lib-238": ["packages/libs-3/lib238/src/index.ts"],
+         "@large-ts-monorepo/lib-239": ["packages/libs-3/lib239/src/index.ts"],
+         "@large-ts-monorepo/lib-24": ["packages/libs/lib24/src/index.ts"],
+         "@large-ts-monorepo/lib-240": ["packages/libs-3/lib240/src/index.ts"],
+         "@large-ts-monorepo/lib-241": ["packages/libs-3/lib241/src/index.ts"],
+         "@large-ts-monorepo/lib-242": ["packages/libs-3/lib242/src/index.ts"],
+         "@large-ts-monorepo/lib-243": ["packages/libs-3/lib243/src/index.ts"],
+         "@large-ts-monorepo/lib-244": ["packages/libs-3/lib244/src/index.ts"],
+         "@large-ts-monorepo/lib-245": ["packages/libs-3/lib245/src/index.ts"],
+         "@large-ts-monorepo/lib-246": ["packages/libs-3/lib246/src/index.ts"],
+         "@large-ts-monorepo/lib-247": ["packages/libs-3/lib247/src/index.ts"],
+         "@large-ts-monorepo/lib-248": ["packages/libs-3/lib248/src/index.ts"],
+         "@large-ts-monorepo/lib-249": ["packages/libs-3/lib249/src/index.ts"],
+         "@large-ts-monorepo/lib-25": ["packages/libs/lib25/src/index.ts"],
+         "@large-ts-monorepo/lib-250": ["packages/libs-3/lib250/src/index.ts"],
+         "@large-ts-monorepo/lib-251": ["packages/libs-3/lib251/src/index.ts"],
+         "@large-ts-monorepo/lib-252": ["packages/libs-3/lib252/src/index.ts"],
+         "@large-ts-monorepo/lib-253": ["packages/libs-3/lib253/src/index.ts"],
+         "@large-ts-monorepo/lib-254": ["packages/libs-3/lib254/src/index.ts"],
+         "@large-ts-monorepo/lib-255": ["packages/libs-3/lib255/src/index.ts"],
+         "@large-ts-monorepo/lib-256": ["packages/libs-3/lib256/src/index.ts"],
+         "@large-ts-monorepo/lib-257": ["packages/libs-3/lib257/src/index.ts"],
+         "@large-ts-monorepo/lib-258": ["packages/libs-3/lib258/src/index.ts"],
+         "@large-ts-monorepo/lib-259": ["packages/libs-3/lib259/src/index.ts"],
+         "@large-ts-monorepo/lib-26": ["packages/libs/lib26/src/index.ts"],
+         "@large-ts-monorepo/lib-260": ["packages/libs-3/lib260/src/index.ts"],
+         "@large-ts-monorepo/lib-261": ["packages/libs-3/lib261/src/index.ts"],
+         "@large-ts-monorepo/lib-262": ["packages/libs-3/lib262/src/index.ts"],
+         "@large-ts-monorepo/lib-263": ["packages/libs-3/lib263/src/index.ts"],
+         "@large-ts-monorepo/lib-264": ["packages/libs-3/lib264/src/index.ts"],
+         "@large-ts-monorepo/lib-265": ["packages/libs-3/lib265/src/index.ts"],
+         "@large-ts-monorepo/lib-266": ["packages/libs-3/lib266/src/index.ts"],
+         "@large-ts-monorepo/lib-267": ["packages/libs-3/lib267/src/index.ts"],
+         "@large-ts-monorepo/lib-268": ["packages/libs-3/lib268/src/index.ts"],
+         "@large-ts-monorepo/lib-269": ["packages/libs-3/lib269/src/index.ts"],
+         "@large-ts-monorepo/lib-27": ["packages/libs/lib27/src/index.ts"],
+         "@large-ts-monorepo/lib-270": ["packages/libs-3/lib270/src/index.ts"],
+         "@large-ts-monorepo/lib-271": ["packages/libs-3/lib271/src/index.ts"],
+         "@large-ts-monorepo/lib-272": ["packages/libs-3/lib272/src/index.ts"],
+         "@large-ts-monorepo/lib-273": ["packages/libs-3/lib273/src/index.ts"],
+         "@large-ts-monorepo/lib-274": ["packages/libs-3/lib274/src/index.ts"],
+         "@large-ts-monorepo/lib-275": ["packages/libs-3/lib275/src/index.ts"],
+         "@large-ts-monorepo/lib-276": ["packages/libs-3/lib276/src/index.ts"],
+         "@large-ts-monorepo/lib-277": ["packages/libs-3/lib277/src/index.ts"],
+         "@large-ts-monorepo/lib-278": ["packages/libs-3/lib278/src/index.ts"],
+         "@large-ts-monorepo/lib-279": ["packages/libs-3/lib279/src/index.ts"],
+         "@large-ts-monorepo/lib-28": ["packages/libs/lib28/src/index.ts"],
+         "@large-ts-monorepo/lib-280": ["packages/libs-3/lib280/src/index.ts"],
+         "@large-ts-monorepo/lib-281": ["packages/libs-3/lib281/src/index.ts"],
+         "@large-ts-monorepo/lib-282": ["packages/libs-3/lib282/src/index.ts"],
+         "@large-ts-monorepo/lib-283": ["packages/libs-3/lib283/src/index.ts"],
+         "@large-ts-monorepo/lib-284": ["packages/libs-3/lib284/src/index.ts"],
+         "@large-ts-monorepo/lib-285": ["packages/libs-3/lib285/src/index.ts"],
+         "@large-ts-monorepo/lib-286": ["packages/libs-3/lib286/src/index.ts"],
+         "@large-ts-monorepo/lib-287": ["packages/libs-3/lib287/src/index.ts"],
+         "@large-ts-monorepo/lib-288": ["packages/libs-3/lib288/src/index.ts"],
+         "@large-ts-monorepo/lib-289": ["packages/libs-3/lib289/src/index.ts"],
+         "@large-ts-monorepo/lib-29": ["packages/libs/lib29/src/index.ts"],
+         "@large-ts-monorepo/lib-290": ["packages/libs-3/lib290/src/index.ts"],
+         "@large-ts-monorepo/lib-291": ["packages/libs-3/lib291/src/index.ts"],
+         "@large-ts-monorepo/lib-292": ["packages/libs-3/lib292/src/index.ts"],
+         "@large-ts-monorepo/lib-293": ["packages/libs-3/lib293/src/index.ts"],
+         "@large-ts-monorepo/lib-294": ["packages/libs-3/lib294/src/index.ts"],
+         "@large-ts-monorepo/lib-295": ["packages/libs-3/lib295/src/index.ts"],
+         "@large-ts-monorepo/lib-296": ["packages/libs-3/lib296/src/index.ts"],
+         "@large-ts-monorepo/lib-297": ["packages/libs-3/lib297/src/index.ts"],
+         "@large-ts-monorepo/lib-298": ["packages/libs-3/lib298/src/index.ts"],
+         "@large-ts-monorepo/lib-299": ["packages/libs-3/lib299/src/index.ts"],
+         "@large-ts-monorepo/lib-3": ["packages/libs/lib3/src/index.ts"],
+         "@large-ts-monorepo/lib-30": ["packages/libs/lib30/src/index.ts"],
+         "@large-ts-monorepo/lib-300": ["packages/libs-3/lib300/src/index.ts"],
+         "@large-ts-monorepo/lib-301": ["packages/libs-4/lib301/src/index.ts"],
+         "@large-ts-monorepo/lib-302": ["packages/libs-4/lib302/src/index.ts"],
+         "@large-ts-monorepo/lib-303": ["packages/libs-4/lib303/src/index.ts"],
+         "@large-ts-monorepo/lib-304": ["packages/libs-4/lib304/src/index.ts"],
+         "@large-ts-monorepo/lib-305": ["packages/libs-4/lib305/src/index.ts"],
+         "@large-ts-monorepo/lib-306": ["packages/libs-4/lib306/src/index.ts"],
+         "@large-ts-monorepo/lib-307": ["packages/libs-4/lib307/src/index.ts"],
+         "@large-ts-monorepo/lib-308": ["packages/libs-4/lib308/src/index.ts"],
+         "@large-ts-monorepo/lib-309": ["packages/libs-4/lib309/src/index.ts"],
+         "@large-ts-monorepo/lib-31": ["packages/libs/lib31/src/index.ts"],
+         "@large-ts-monorepo/lib-310": ["packages/libs-4/lib310/src/index.ts"],
+         "@large-ts-monorepo/lib-311": ["packages/libs-4/lib311/src/index.ts"],
+         "@large-ts-monorepo/lib-312": ["packages/libs-4/lib312/src/index.ts"],
+         "@large-ts-monorepo/lib-313": ["packages/libs-4/lib313/src/index.ts"],
+         "@large-ts-monorepo/lib-314": ["packages/libs-4/lib314/src/index.ts"],
+         "@large-ts-monorepo/lib-315": ["packages/libs-4/lib315/src/index.ts"],
+         "@large-ts-monorepo/lib-316": ["packages/libs-4/lib316/src/index.ts"],
+         "@large-ts-monorepo/lib-317": ["packages/libs-4/lib317/src/index.ts"],
+         "@large-ts-monorepo/lib-318": ["packages/libs-4/lib318/src/index.ts"],
+         "@large-ts-monorepo/lib-319": ["packages/libs-4/lib319/src/index.ts"],
+         "@large-ts-monorepo/lib-32": ["packages/libs/lib32/src/index.ts"],
+         "@large-ts-monorepo/lib-320": ["packages/libs-4/lib320/src/index.ts"],
+         "@large-ts-monorepo/lib-321": ["packages/libs-4/lib321/src/index.ts"],
+         "@large-ts-monorepo/lib-322": ["packages/libs-4/lib322/src/index.ts"],
+         "@large-ts-monorepo/lib-323": ["packages/libs-4/lib323/src/index.ts"],
+         "@large-ts-monorepo/lib-324": ["packages/libs-4/lib324/src/index.ts"],
+         "@large-ts-monorepo/lib-325": ["packages/libs-4/lib325/src/index.ts"],
+         "@large-ts-monorepo/lib-326": ["packages/libs-4/lib326/src/index.ts"],
+         "@large-ts-monorepo/lib-327": ["packages/libs-4/lib327/src/index.ts"],
+         "@large-ts-monorepo/lib-328": ["packages/libs-4/lib328/src/index.ts"],
+         "@large-ts-monorepo/lib-329": ["packages/libs-4/lib329/src/index.ts"],
+         "@large-ts-monorepo/lib-33": ["packages/libs/lib33/src/index.ts"],
+         "@large-ts-monorepo/lib-330": ["packages/libs-4/lib330/src/index.ts"],
+         "@large-ts-monorepo/lib-331": ["packages/libs-4/lib331/src/index.ts"],
+         "@large-ts-monorepo/lib-332": ["packages/libs-4/lib332/src/index.ts"],
+         "@large-ts-monorepo/lib-333": ["packages/libs-4/lib333/src/index.ts"],
+         "@large-ts-monorepo/lib-334": ["packages/libs-4/lib334/src/index.ts"],
+         "@large-ts-monorepo/lib-335": ["packages/libs-4/lib335/src/index.ts"],
+         "@large-ts-monorepo/lib-336": ["packages/libs-4/lib336/src/index.ts"],
+         "@large-ts-monorepo/lib-337": ["packages/libs-4/lib337/src/index.ts"],
+         "@large-ts-monorepo/lib-338": ["packages/libs-4/lib338/src/index.ts"],
+         "@large-ts-monorepo/lib-339": ["packages/libs-4/lib339/src/index.ts"],
+         "@large-ts-monorepo/lib-34": ["packages/libs/lib34/src/index.ts"],
+         "@large-ts-monorepo/lib-340": ["packages/libs-4/lib340/src/index.ts"],
+         "@large-ts-monorepo/lib-341": ["packages/libs-4/lib341/src/index.ts"],
+         "@large-ts-monorepo/lib-342": ["packages/libs-4/lib342/src/index.ts"],
+         "@large-ts-monorepo/lib-343": ["packages/libs-4/lib343/src/index.ts"],
+         "@large-ts-monorepo/lib-344": ["packages/libs-4/lib344/src/index.ts"],
+         "@large-ts-monorepo/lib-345": ["packages/libs-4/lib345/src/index.ts"],
+         "@large-ts-monorepo/lib-346": ["packages/libs-4/lib346/src/index.ts"],
+         "@large-ts-monorepo/lib-347": ["packages/libs-4/lib347/src/index.ts"],
+         "@large-ts-monorepo/lib-348": ["packages/libs-4/lib348/src/index.ts"],
+         "@large-ts-monorepo/lib-349": ["packages/libs-4/lib349/src/index.ts"],
+         "@large-ts-monorepo/lib-35": ["packages/libs/lib35/src/index.ts"],
+         "@large-ts-monorepo/lib-350": ["packages/libs-4/lib350/src/index.ts"],
+         "@large-ts-monorepo/lib-351": ["packages/libs-4/lib351/src/index.ts"],
+         "@large-ts-monorepo/lib-352": ["packages/libs-4/lib352/src/index.ts"],
+         "@large-ts-monorepo/lib-353": ["packages/libs-4/lib353/src/index.ts"],
+         "@large-ts-monorepo/lib-354": ["packages/libs-4/lib354/src/index.ts"],
+         "@large-ts-monorepo/lib-355": ["packages/libs-4/lib355/src/index.ts"],
+         "@large-ts-monorepo/lib-356": ["packages/libs-4/lib356/src/index.ts"],
+         "@large-ts-monorepo/lib-357": ["packages/libs-4/lib357/src/index.ts"],
+         "@large-ts-monorepo/lib-358": ["packages/libs-4/lib358/src/index.ts"],
+         "@large-ts-monorepo/lib-359": ["packages/libs-4/lib359/src/index.ts"],
+         "@large-ts-monorepo/lib-36": ["packages/libs/lib36/src/index.ts"],
+         "@large-ts-monorepo/lib-360": ["packages/libs-4/lib360/src/index.ts"],
+         "@large-ts-monorepo/lib-361": ["packages/libs-4/lib361/src/index.ts"],
+         "@large-ts-monorepo/lib-362": ["packages/libs-4/lib362/src/index.ts"],
+         "@large-ts-monorepo/lib-363": ["packages/libs-4/lib363/src/index.ts"],
+         "@large-ts-monorepo/lib-364": ["packages/libs-4/lib364/src/index.ts"],
+         "@large-ts-monorepo/lib-365": ["packages/libs-4/lib365/src/index.ts"],
+         "@large-ts-monorepo/lib-366": ["packages/libs-4/lib366/src/index.ts"],
+         "@large-ts-monorepo/lib-367": ["packages/libs-4/lib367/src/index.ts"],
+         "@large-ts-monorepo/lib-368": ["packages/libs-4/lib368/src/index.ts"],
+         "@large-ts-monorepo/lib-369": ["packages/libs-4/lib369/src/index.ts"],
+         "@large-ts-monorepo/lib-37": ["packages/libs/lib37/src/index.ts"],
+         "@large-ts-monorepo/lib-370": ["packages/libs-4/lib370/src/index.ts"],
+         "@large-ts-monorepo/lib-371": ["packages/libs-4/lib371/src/index.ts"],
+         "@large-ts-monorepo/lib-372": ["packages/libs-4/lib372/src/index.ts"],
+         "@large-ts-monorepo/lib-373": ["packages/libs-4/lib373/src/index.ts"],
+         "@large-ts-monorepo/lib-374": ["packages/libs-4/lib374/src/index.ts"],
+         "@large-ts-monorepo/lib-375": ["packages/libs-4/lib375/src/index.ts"],
+         "@large-ts-monorepo/lib-376": ["packages/libs-4/lib376/src/index.ts"],
+         "@large-ts-monorepo/lib-377": ["packages/libs-4/lib377/src/index.ts"],
+         "@large-ts-monorepo/lib-378": ["packages/libs-4/lib378/src/index.ts"],
+         "@large-ts-monorepo/lib-379": ["packages/libs-4/lib379/src/index.ts"],
+         "@large-ts-monorepo/lib-38": ["packages/libs/lib38/src/index.ts"],
+         "@large-ts-monorepo/lib-380": ["packages/libs-4/lib380/src/index.ts"],
+         "@large-ts-monorepo/lib-381": ["packages/libs-4/lib381/src/index.ts"],
+         "@large-ts-monorepo/lib-382": ["packages/libs-4/lib382/src/index.ts"],
+         "@large-ts-monorepo/lib-383": ["packages/libs-4/lib383/src/index.ts"],
+         "@large-ts-monorepo/lib-384": ["packages/libs-4/lib384/src/index.ts"],
+         "@large-ts-monorepo/lib-385": ["packages/libs-4/lib385/src/index.ts"],
+         "@large-ts-monorepo/lib-386": ["packages/libs-4/lib386/src/index.ts"],
+         "@large-ts-monorepo/lib-387": ["packages/libs-4/lib387/src/index.ts"],
+         "@large-ts-monorepo/lib-388": ["packages/libs-4/lib388/src/index.ts"],
+         "@large-ts-monorepo/lib-389": ["packages/libs-4/lib389/src/index.ts"],
+         "@large-ts-monorepo/lib-39": ["packages/libs/lib39/src/index.ts"],
+         "@large-ts-monorepo/lib-390": ["packages/libs-4/lib390/src/index.ts"],
+         "@large-ts-monorepo/lib-391": ["packages/libs-4/lib391/src/index.ts"],
+         "@large-ts-monorepo/lib-392": ["packages/libs-4/lib392/src/index.ts"],
+         "@large-ts-monorepo/lib-393": ["packages/libs-4/lib393/src/index.ts"],
+         "@large-ts-monorepo/lib-394": ["packages/libs-4/lib394/src/index.ts"],
+         "@large-ts-monorepo/lib-395": ["packages/libs-4/lib395/src/index.ts"],
+         "@large-ts-monorepo/lib-396": ["packages/libs-4/lib396/src/index.ts"],
+         "@large-ts-monorepo/lib-397": ["packages/libs-4/lib397/src/index.ts"],
+         "@large-ts-monorepo/lib-398": ["packages/libs-4/lib398/src/index.ts"],
+         "@large-ts-monorepo/lib-399": ["packages/libs-4/lib399/src/index.ts"],
+         "@large-ts-monorepo/lib-4": ["packages/libs/lib4/src/index.ts"],
+         "@large-ts-monorepo/lib-40": ["packages/libs/lib40/src/index.ts"],
+         "@large-ts-monorepo/lib-400": ["packages/libs-4/lib400/src/index.ts"],
+         "@large-ts-monorepo/lib-401": ["packages/libs-5/lib401/src/index.ts"],
+         "@large-ts-monorepo/lib-402": ["packages/libs-5/lib402/src/index.ts"],
+         "@large-ts-monorepo/lib-403": ["packages/libs-5/lib403/src/index.ts"],
+         "@large-ts-monorepo/lib-404": ["packages/libs-5/lib404/src/index.ts"],
+         "@large-ts-monorepo/lib-405": ["packages/libs-5/lib405/src/index.ts"],
+         "@large-ts-monorepo/lib-406": ["packages/libs-5/lib406/src/index.ts"],
+         "@large-ts-monorepo/lib-407": ["packages/libs-5/lib407/src/index.ts"],
+         "@large-ts-monorepo/lib-408": ["packages/libs-5/lib408/src/index.ts"],
+         "@large-ts-monorepo/lib-409": ["packages/libs-5/lib409/src/index.ts"],
+         "@large-ts-monorepo/lib-41": ["packages/libs/lib41/src/index.ts"],
+         "@large-ts-monorepo/lib-410": ["packages/libs-5/lib410/src/index.ts"],
+         "@large-ts-monorepo/lib-411": ["packages/libs-5/lib411/src/index.ts"],
+         "@large-ts-monorepo/lib-412": ["packages/libs-5/lib412/src/index.ts"],
+         "@large-ts-monorepo/lib-413": ["packages/libs-5/lib413/src/index.ts"],
+         "@large-ts-monorepo/lib-414": ["packages/libs-5/lib414/src/index.ts"],
+         "@large-ts-monorepo/lib-415": ["packages/libs-5/lib415/src/index.ts"],
+         "@large-ts-monorepo/lib-416": ["packages/libs-5/lib416/src/index.ts"],
+         "@large-ts-monorepo/lib-417": ["packages/libs-5/lib417/src/index.ts"],
+         "@large-ts-monorepo/lib-418": ["packages/libs-5/lib418/src/index.ts"],
+         "@large-ts-monorepo/lib-419": ["packages/libs-5/lib419/src/index.ts"],
+         "@large-ts-monorepo/lib-42": ["packages/libs/lib42/src/index.ts"],
+         "@large-ts-monorepo/lib-420": ["packages/libs-5/lib420/src/index.ts"],
+         "@large-ts-monorepo/lib-421": ["packages/libs-5/lib421/src/index.ts"],
+         "@large-ts-monorepo/lib-422": ["packages/libs-5/lib422/src/index.ts"],
+         "@large-ts-monorepo/lib-423": ["packages/libs-5/lib423/src/index.ts"],
+         "@large-ts-monorepo/lib-424": ["packages/libs-5/lib424/src/index.ts"],
+         "@large-ts-monorepo/lib-425": ["packages/libs-5/lib425/src/index.ts"],
+         "@large-ts-monorepo/lib-426": ["packages/libs-5/lib426/src/index.ts"],
+         "@large-ts-monorepo/lib-427": ["packages/libs-5/lib427/src/index.ts"],
+         "@large-ts-monorepo/lib-428": ["packages/libs-5/lib428/src/index.ts"],
+         "@large-ts-monorepo/lib-429": ["packages/libs-5/lib429/src/index.ts"],
+         "@large-ts-monorepo/lib-43": ["packages/libs/lib43/src/index.ts"],
+         "@large-ts-monorepo/lib-430": ["packages/libs-5/lib430/src/index.ts"],
+         "@large-ts-monorepo/lib-431": ["packages/libs-5/lib431/src/index.ts"],
+         "@large-ts-monorepo/lib-432": ["packages/libs-5/lib432/src/index.ts"],
+         "@large-ts-monorepo/lib-433": ["packages/libs-5/lib433/src/index.ts"],
+         "@large-ts-monorepo/lib-434": ["packages/libs-5/lib434/src/index.ts"],
+         "@large-ts-monorepo/lib-435": ["packages/libs-5/lib435/src/index.ts"],
+         "@large-ts-monorepo/lib-436": ["packages/libs-5/lib436/src/index.ts"],
+         "@large-ts-monorepo/lib-437": ["packages/libs-5/lib437/src/index.ts"],
+         "@large-ts-monorepo/lib-438": ["packages/libs-5/lib438/src/index.ts"],
+         "@large-ts-monorepo/lib-439": ["packages/libs-5/lib439/src/index.ts"],
+         "@large-ts-monorepo/lib-44": ["packages/libs/lib44/src/index.ts"],
+         "@large-ts-monorepo/lib-440": ["packages/libs-5/lib440/src/index.ts"],
+         "@large-ts-monorepo/lib-441": ["packages/libs-5/lib441/src/index.ts"],
+         "@large-ts-monorepo/lib-442": ["packages/libs-5/lib442/src/index.ts"],
+         "@large-ts-monorepo/lib-443": ["packages/libs-5/lib443/src/index.ts"],
+         "@large-ts-monorepo/lib-444": ["packages/libs-5/lib444/src/index.ts"],
+         "@large-ts-monorepo/lib-445": ["packages/libs-5/lib445/src/index.ts"],
+         "@large-ts-monorepo/lib-446": ["packages/libs-5/lib446/src/index.ts"],
+         "@large-ts-monorepo/lib-447": ["packages/libs-5/lib447/src/index.ts"],
+         "@large-ts-monorepo/lib-448": ["packages/libs-5/lib448/src/index.ts"],
+         "@large-ts-monorepo/lib-449": ["packages/libs-5/lib449/src/index.ts"],
+         "@large-ts-monorepo/lib-45": ["packages/libs/lib45/src/index.ts"],
+         "@large-ts-monorepo/lib-450": ["packages/libs-5/lib450/src/index.ts"],
+         "@large-ts-monorepo/lib-451": ["packages/libs-5/lib451/src/index.ts"],
+         "@large-ts-monorepo/lib-452": ["packages/libs-5/lib452/src/index.ts"],
+         "@large-ts-monorepo/lib-453": ["packages/libs-5/lib453/src/index.ts"],
+         "@large-ts-monorepo/lib-454": ["packages/libs-5/lib454/src/index.ts"],
+         "@large-ts-monorepo/lib-455": ["packages/libs-5/lib455/src/index.ts"],
+         "@large-ts-monorepo/lib-456": ["packages/libs-5/lib456/src/index.ts"],
+         "@large-ts-monorepo/lib-457": ["packages/libs-5/lib457/src/index.ts"],
+         "@large-ts-monorepo/lib-458": ["packages/libs-5/lib458/src/index.ts"],
+         "@large-ts-monorepo/lib-459": ["packages/libs-5/lib459/src/index.ts"],
+         "@large-ts-monorepo/lib-46": ["packages/libs/lib46/src/index.ts"],
+         "@large-ts-monorepo/lib-460": ["packages/libs-5/lib460/src/index.ts"],
+         "@large-ts-monorepo/lib-461": ["packages/libs-5/lib461/src/index.ts"],
+         "@large-ts-monorepo/lib-462": ["packages/libs-5/lib462/src/index.ts"],
+         "@large-ts-monorepo/lib-463": ["packages/libs-5/lib463/src/index.ts"],
+         "@large-ts-monorepo/lib-464": ["packages/libs-5/lib464/src/index.ts"],
+         "@large-ts-monorepo/lib-465": ["packages/libs-5/lib465/src/index.ts"],
+         "@large-ts-monorepo/lib-466": ["packages/libs-5/lib466/src/index.ts"],
+         "@large-ts-monorepo/lib-467": ["packages/libs-5/lib467/src/index.ts"],
+         "@large-ts-monorepo/lib-468": ["packages/libs-5/lib468/src/index.ts"],
+         "@large-ts-monorepo/lib-469": ["packages/libs-5/lib469/src/index.ts"],
+         "@large-ts-monorepo/lib-47": ["packages/libs/lib47/src/index.ts"],
+         "@large-ts-monorepo/lib-470": ["packages/libs-5/lib470/src/index.ts"],
+         "@large-ts-monorepo/lib-471": ["packages/libs-5/lib471/src/index.ts"],
+         "@large-ts-monorepo/lib-472": ["packages/libs-5/lib472/src/index.ts"],
+         "@large-ts-monorepo/lib-473": ["packages/libs-5/lib473/src/index.ts"],
+         "@large-ts-monorepo/lib-474": ["packages/libs-5/lib474/src/index.ts"],
+         "@large-ts-monorepo/lib-475": ["packages/libs-5/lib475/src/index.ts"],
+         "@large-ts-monorepo/lib-476": ["packages/libs-5/lib476/src/index.ts"],
+         "@large-ts-monorepo/lib-477": ["packages/libs-5/lib477/src/index.ts"],
+         "@large-ts-monorepo/lib-478": ["packages/libs-5/lib478/src/index.ts"],
+         "@large-ts-monorepo/lib-479": ["packages/libs-5/lib479/src/index.ts"],
+         "@large-ts-monorepo/lib-48": ["packages/libs/lib48/src/index.ts"],
+         "@large-ts-monorepo/lib-480": ["packages/libs-5/lib480/src/index.ts"],
+         "@large-ts-monorepo/lib-481": ["packages/libs-5/lib481/src/index.ts"],
+         "@large-ts-monorepo/lib-482": ["packages/libs-5/lib482/src/index.ts"],
+         "@large-ts-monorepo/lib-483": ["packages/libs-5/lib483/src/index.ts"],
+         "@large-ts-monorepo/lib-484": ["packages/libs-5/lib484/src/index.ts"],
+         "@large-ts-monorepo/lib-485": ["packages/libs-5/lib485/src/index.ts"],
+         "@large-ts-monorepo/lib-486": ["packages/libs-5/lib486/src/index.ts"],
+         "@large-ts-monorepo/lib-487": ["packages/libs-5/lib487/src/index.ts"],
+         "@large-ts-monorepo/lib-488": ["packages/libs-5/lib488/src/index.ts"],
+         "@large-ts-monorepo/lib-489": ["packages/libs-5/lib489/src/index.ts"],
+         "@large-ts-monorepo/lib-49": ["packages/libs/lib49/src/index.ts"],
+         "@large-ts-monorepo/lib-490": ["packages/libs-5/lib490/src/index.ts"],
+         "@large-ts-monorepo/lib-491": ["packages/libs-5/lib491/src/index.ts"],
+         "@large-ts-monorepo/lib-492": ["packages/libs-5/lib492/src/index.ts"],
+         "@large-ts-monorepo/lib-493": ["packages/libs-5/lib493/src/index.ts"],
+         "@large-ts-monorepo/lib-494": ["packages/libs-5/lib494/src/index.ts"],
+         "@large-ts-monorepo/lib-495": ["packages/libs-5/lib495/src/index.ts"],
+         "@large-ts-monorepo/lib-496": ["packages/libs-5/lib496/src/index.ts"],
+         "@large-ts-monorepo/lib-497": ["packages/libs-5/lib497/src/index.ts"],
+         "@large-ts-monorepo/lib-498": ["packages/libs-5/lib498/src/index.ts"],
+         "@large-ts-monorepo/lib-499": ["packages/libs-5/lib499/src/index.ts"],
+         "@large-ts-monorepo/lib-5": ["packages/libs/lib5/src/index.ts"],
+         "@large-ts-monorepo/lib-50": ["packages/libs/lib50/src/index.ts"],
+         "@large-ts-monorepo/lib-500": ["packages/libs-5/lib500/src/index.ts"],
+         "@large-ts-monorepo/lib-501": ["packages/libs-5/lib501/src/index.ts"],
+         "@large-ts-monorepo/lib-502": ["packages/libs-5/lib502/src/index.ts"],
+         "@large-ts-monorepo/lib-503": ["packages/libs-5/lib503/src/index.ts"],
+         "@large-ts-monorepo/lib-504": ["packages/libs-5/lib504/src/index.ts"],
+         "@large-ts-monorepo/lib-505": ["packages/libs-5/lib505/src/index.ts"],
+         "@large-ts-monorepo/lib-506": ["packages/libs-5/lib506/src/index.ts"],
+         "@large-ts-monorepo/lib-507": ["packages/libs-5/lib507/src/index.ts"],
+         "@large-ts-monorepo/lib-508": ["packages/libs-5/lib508/src/index.ts"],
+         "@large-ts-monorepo/lib-509": ["packages/libs-5/lib509/src/index.ts"],
+         "@large-ts-monorepo/lib-51": ["packages/libs/lib51/src/index.ts"],
+         "@large-ts-monorepo/lib-510": ["packages/libs-5/lib510/src/index.ts"],
+         "@large-ts-monorepo/lib-511": ["packages/libs-5/lib511/src/index.ts"],
+         "@large-ts-monorepo/lib-512": ["packages/libs-5/lib512/src/index.ts"],
+         "@large-ts-monorepo/lib-513": ["packages/libs-5/lib513/src/index.ts"],
+         "@large-ts-monorepo/lib-514": ["packages/libs-5/lib514/src/index.ts"],
+         "@large-ts-monorepo/lib-515": ["packages/libs-5/lib515/src/index.ts"],
+         "@large-ts-monorepo/lib-516": ["packages/libs-5/lib516/src/index.ts"],
+         "@large-ts-monorepo/lib-517": ["packages/libs-5/lib517/src/index.ts"],
+         "@large-ts-monorepo/lib-518": ["packages/libs-5/lib518/src/index.ts"],
+         "@large-ts-monorepo/lib-519": ["packages/libs-5/lib519/src/index.ts"],
+         "@large-ts-monorepo/lib-52": ["packages/libs/lib52/src/index.ts"],
+         "@large-ts-monorepo/lib-520": ["packages/libs-5/lib520/src/index.ts"],
+         "@large-ts-monorepo/lib-521": ["packages/libs-5/lib521/src/index.ts"],
+         "@large-ts-monorepo/lib-522": ["packages/libs-5/lib522/src/index.ts"],
+         "@large-ts-monorepo/lib-523": ["packages/libs-5/lib523/src/index.ts"],
+         "@large-ts-monorepo/lib-524": ["packages/libs-5/lib524/src/index.ts"],
+         "@large-ts-monorepo/lib-525": ["packages/libs-5/lib525/src/index.ts"],
+         "@large-ts-monorepo/lib-526": ["packages/libs-5/lib526/src/index.ts"],
+         "@large-ts-monorepo/lib-527": ["packages/libs-5/lib527/src/index.ts"],
+         "@large-ts-monorepo/lib-528": ["packages/libs-5/lib528/src/index.ts"],
+         "@large-ts-monorepo/lib-529": ["packages/libs-5/lib529/src/index.ts"],
+         "@large-ts-monorepo/lib-53": ["packages/libs/lib53/src/index.ts"],
+         "@large-ts-monorepo/lib-530": ["packages/libs-5/lib530/src/index.ts"],
+         "@large-ts-monorepo/lib-531": ["packages/libs-5/lib531/src/index.ts"],
+         "@large-ts-monorepo/lib-532": ["packages/libs-5/lib532/src/index.ts"],
+         "@large-ts-monorepo/lib-533": ["packages/libs-5/lib533/src/index.ts"],
+         "@large-ts-monorepo/lib-534": ["packages/libs-5/lib534/src/index.ts"],
+         "@large-ts-monorepo/lib-535": ["packages/libs-5/lib535/src/index.ts"],
+         "@large-ts-monorepo/lib-536": ["packages/libs-5/lib536/src/index.ts"],
+         "@large-ts-monorepo/lib-537": ["packages/libs-5/lib537/src/index.ts"],
+         "@large-ts-monorepo/lib-538": ["packages/libs-5/lib538/src/index.ts"],
+         "@large-ts-monorepo/lib-539": ["packages/libs-5/lib539/src/index.ts"],
+         "@large-ts-monorepo/lib-54": ["packages/libs/lib54/src/index.ts"],
+         "@large-ts-monorepo/lib-540": ["packages/libs-5/lib540/src/index.ts"],
+         "@large-ts-monorepo/lib-541": ["packages/libs-5/lib541/src/index.ts"],
+         "@large-ts-monorepo/lib-542": ["packages/libs-5/lib542/src/index.ts"],
+         "@large-ts-monorepo/lib-543": ["packages/libs-5/lib543/src/index.ts"],
+         "@large-ts-monorepo/lib-544": ["packages/libs-5/lib544/src/index.ts"],
+         "@large-ts-monorepo/lib-545": ["packages/libs-5/lib545/src/index.ts"],
+         "@large-ts-monorepo/lib-546": ["packages/libs-5/lib546/src/index.ts"],
+         "@large-ts-monorepo/lib-547": ["packages/libs-5/lib547/src/index.ts"],
+         "@large-ts-monorepo/lib-548": ["packages/libs-5/lib548/src/index.ts"],
+         "@large-ts-monorepo/lib-549": ["packages/libs-5/lib549/src/index.ts"],
+         "@large-ts-monorepo/lib-55": ["packages/libs/lib55/src/index.ts"],
+         "@large-ts-monorepo/lib-550": ["packages/libs-5/lib550/src/index.ts"],
+         "@large-ts-monorepo/lib-551": ["packages/libs-5/lib551/src/index.ts"],
+         "@large-ts-monorepo/lib-552": ["packages/libs-5/lib552/src/index.ts"],
+         "@large-ts-monorepo/lib-553": ["packages/libs-5/lib553/src/index.ts"],
+         "@large-ts-monorepo/lib-554": ["packages/libs-5/lib554/src/index.ts"],
+         "@large-ts-monorepo/lib-555": ["packages/libs-5/lib555/src/index.ts"],
+         "@large-ts-monorepo/lib-556": ["packages/libs-5/lib556/src/index.ts"],
+         "@large-ts-monorepo/lib-557": ["packages/libs-5/lib557/src/index.ts"],
+         "@large-ts-monorepo/lib-558": ["packages/libs-5/lib558/src/index.ts"],
+         "@large-ts-monorepo/lib-559": ["packages/libs-5/lib559/src/index.ts"],
+         "@large-ts-monorepo/lib-56": ["packages/libs/lib56/src/index.ts"],
+         "@large-ts-monorepo/lib-560": ["packages/libs-5/lib560/src/index.ts"],
+         "@large-ts-monorepo/lib-561": ["packages/libs-5/lib561/src/index.ts"],
+         "@large-ts-monorepo/lib-57": ["packages/libs/lib57/src/index.ts"],
+         "@large-ts-monorepo/lib-58": ["packages/libs/lib58/src/index.ts"],
+         "@large-ts-monorepo/lib-59": ["packages/libs/lib59/src/index.ts"],
+         "@large-ts-monorepo/lib-6": ["packages/libs/lib6/src/index.ts"],
+         "@large-ts-monorepo/lib-60": ["packages/libs/lib60/src/index.ts"],
+         "@large-ts-monorepo/lib-61": ["packages/libs/lib61/src/index.ts"],
+         "@large-ts-monorepo/lib-62": ["packages/libs/lib62/src/index.ts"],
+         "@large-ts-monorepo/lib-63": ["packages/libs/lib63/src/index.ts"],
+         "@large-ts-monorepo/lib-64": ["packages/libs/lib64/src/index.ts"],
+         "@large-ts-monorepo/lib-65": ["packages/libs/lib65/src/index.ts"],
+         "@large-ts-monorepo/lib-66": ["packages/libs/lib66/src/index.ts"],
+         "@large-ts-monorepo/lib-67": ["packages/libs/lib67/src/index.ts"],
+         "@large-ts-monorepo/lib-68": ["packages/libs/lib68/src/index.ts"],
+         "@large-ts-monorepo/lib-69": ["packages/libs/lib69/src/index.ts"],
+         "@large-ts-monorepo/lib-7": ["packages/libs/lib7/src/index.ts"],
+         "@large-ts-monorepo/lib-70": ["packages/libs/lib70/src/index.ts"],
+         "@large-ts-monorepo/lib-71": ["packages/libs/lib71/src/index.ts"],
+         "@large-ts-monorepo/lib-72": ["packages/libs/lib72/src/index.ts"],
+         "@large-ts-monorepo/lib-73": ["packages/libs/lib73/src/index.ts"],
+         "@large-ts-monorepo/lib-74": ["packages/libs/lib74/src/index.ts"],
+         "@large-ts-monorepo/lib-75": ["packages/libs/lib75/src/index.ts"],
+         "@large-ts-monorepo/lib-76": ["packages/libs/lib76/src/index.ts"],
+         "@large-ts-monorepo/lib-77": ["packages/libs/lib77/src/index.ts"],
+         "@large-ts-monorepo/lib-78": ["packages/libs/lib78/src/index.ts"],
+         "@large-ts-monorepo/lib-79": ["packages/libs/lib79/src/index.ts"],
+         "@large-ts-monorepo/lib-8": ["packages/libs/lib8/src/index.ts"],
+         "@large-ts-monorepo/lib-80": ["packages/libs/lib80/src/index.ts"],
+         "@large-ts-monorepo/lib-81": ["packages/libs/lib81/src/index.ts"],
+         "@large-ts-monorepo/lib-82": ["packages/libs/lib82/src/index.ts"],
+         "@large-ts-monorepo/lib-83": ["packages/libs/lib83/src/index.ts"],
+         "@large-ts-monorepo/lib-84": ["packages/libs/lib84/src/index.ts"],
+         "@large-ts-monorepo/lib-85": ["packages/libs/lib85/src/index.ts"],
+         "@large-ts-monorepo/lib-86": ["packages/libs/lib86/src/index.ts"],
+         "@large-ts-monorepo/lib-87": ["packages/libs/lib87/src/index.ts"],
+         "@large-ts-monorepo/lib-88": ["packages/libs/lib88/src/index.ts"],
+         "@large-ts-monorepo/lib-89": ["packages/libs/lib89/src/index.ts"],
+         "@large-ts-monorepo/lib-9": ["packages/libs/lib9/src/index.ts"],
+         "@large-ts-monorepo/lib-90": ["packages/libs/lib90/src/index.ts"],
+         "@large-ts-monorepo/lib-91": ["packages/libs/lib91/src/index.ts"],
+         "@large-ts-monorepo/lib-92": ["packages/libs/lib92/src/index.ts"],
+         "@large-ts-monorepo/lib-93": ["packages/libs/lib93/src/index.ts"],
+         "@large-ts-monorepo/lib-94": ["packages/libs/lib94/src/index.ts"],
+         "@large-ts-monorepo/lib-95": ["packages/libs/lib95/src/index.ts"],
+         "@large-ts-monorepo/lib-96": ["packages/libs/lib96/src/index.ts"],
+         "@large-ts-monorepo/lib-97": ["packages/libs/lib97/src/index.ts"],
+         "@large-ts-monorepo/lib-98": ["packages/libs/lib98/src/index.ts"],
+         "@large-ts-monorepo/lib-99": ["packages/libs/lib99/src/index.ts"],
+         "@large-ts-monorepo/medium-pkg1": [
+            "packages/medium-pkg1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1": [
+            "packages/medium-pkg1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-1": [
+            "packages/medium-pkg1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-2": [
+            "packages/medium-pkg1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-3": [
+            "packages/medium-pkg1-1-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-4": [
+            "packages/medium-pkg1-1-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-5": [
+            "packages/medium-pkg1-1-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-1-6": [
+            "packages/medium-pkg1-1-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2": [
+            "packages/medium-pkg1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-1": [
+            "packages/medium-pkg1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-2": [
+            "packages/medium-pkg1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-3": [
+            "packages/medium-pkg1-2-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-4": [
+            "packages/medium-pkg1-2-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-5": [
+            "packages/medium-pkg1-2-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-2-6": [
+            "packages/medium-pkg1-2-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3": [
+            "packages/medium-pkg1-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-1": [
+            "packages/medium-pkg1-3-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-2": [
+            "packages/medium-pkg1-3-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-3": [
+            "packages/medium-pkg1-3-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-4": [
+            "packages/medium-pkg1-3-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-5": [
+            "packages/medium-pkg1-3-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-3-6": [
+            "packages/medium-pkg1-3-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4": [
+            "packages/medium-pkg1-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-1": [
+            "packages/medium-pkg1-4-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-2": [
+            "packages/medium-pkg1-4-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-3": [
+            "packages/medium-pkg1-4-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-4": [
+            "packages/medium-pkg1-4-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-5": [
+            "packages/medium-pkg1-4-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-4-6": [
+            "packages/medium-pkg1-4-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5": [
+            "packages/medium-pkg1-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-1": [
+            "packages/medium-pkg1-5-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-2": [
+            "packages/medium-pkg1-5-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-3": [
+            "packages/medium-pkg1-5-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-4": [
+            "packages/medium-pkg1-5-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-5": [
+            "packages/medium-pkg1-5-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-5-6": [
+            "packages/medium-pkg1-5-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6": [
+            "packages/medium-pkg1-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-1": [
+            "packages/medium-pkg1-6-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-2": [
+            "packages/medium-pkg1-6-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-3": [
+            "packages/medium-pkg1-6-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-4": [
+            "packages/medium-pkg1-6-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-5": [
+            "packages/medium-pkg1-6-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-6-6": [
+            "packages/medium-pkg1-6-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7": [
+            "packages/medium-pkg1-7/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-1": [
+            "packages/medium-pkg1-7-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-2": [
+            "packages/medium-pkg1-7-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-3": [
+            "packages/medium-pkg1-7-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-4": [
+            "packages/medium-pkg1-7-4/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-5": [
+            "packages/medium-pkg1-7-5/src/index.ts"
+         ],
+         "@large-ts-monorepo/medium-pkg1-7-6": [
+            "packages/medium-pkg1-7-6/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1": [
+            "packages/nested-pkg1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1": [
+            "packages/nested-pkg1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1": [
+            "packages/nested-pkg1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1": [
+            "packages/nested-pkg1-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-1": [
+            "packages/nested-pkg1-1-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-1-1": [
+            "packages/nested-pkg1-1-1-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-1-2": [
+            "packages/nested-pkg1-1-1-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-2": [
+            "packages/nested-pkg1-1-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-2-1": [
+            "packages/nested-pkg1-1-1-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-1-2-2": [
+            "packages/nested-pkg1-1-1-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2": [
+            "packages/nested-pkg1-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-1": [
+            "packages/nested-pkg1-1-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-1-1": [
+            "packages/nested-pkg1-1-1-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-1-2": [
+            "packages/nested-pkg1-1-1-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-2": [
+            "packages/nested-pkg1-1-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-2-1": [
+            "packages/nested-pkg1-1-1-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-1-2-2-2": [
+            "packages/nested-pkg1-1-1-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2": [
+            "packages/nested-pkg1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1": [
+            "packages/nested-pkg1-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-1": [
+            "packages/nested-pkg1-1-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-1-1": [
+            "packages/nested-pkg1-1-2-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-1-2": [
+            "packages/nested-pkg1-1-2-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-2": [
+            "packages/nested-pkg1-1-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-2-1": [
+            "packages/nested-pkg1-1-2-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-1-2-2": [
+            "packages/nested-pkg1-1-2-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2": [
+            "packages/nested-pkg1-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-1": [
+            "packages/nested-pkg1-1-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-1-1": [
+            "packages/nested-pkg1-1-2-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-1-2": [
+            "packages/nested-pkg1-1-2-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-2": [
+            "packages/nested-pkg1-1-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-2-1": [
+            "packages/nested-pkg1-1-2-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-1-2-2-2-2": [
+            "packages/nested-pkg1-1-2-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2": [
+            "packages/nested-pkg1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1": [
+            "packages/nested-pkg1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1": [
+            "packages/nested-pkg1-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-1": [
+            "packages/nested-pkg1-2-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-1-1": [
+            "packages/nested-pkg1-2-1-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-1-2": [
+            "packages/nested-pkg1-2-1-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-2": [
+            "packages/nested-pkg1-2-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-2-1": [
+            "packages/nested-pkg1-2-1-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-1-2-2": [
+            "packages/nested-pkg1-2-1-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2": [
+            "packages/nested-pkg1-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-1": [
+            "packages/nested-pkg1-2-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-1-1": [
+            "packages/nested-pkg1-2-1-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-1-2": [
+            "packages/nested-pkg1-2-1-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-2": [
+            "packages/nested-pkg1-2-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-2-1": [
+            "packages/nested-pkg1-2-1-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-1-2-2-2": [
+            "packages/nested-pkg1-2-1-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2": [
+            "packages/nested-pkg1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1": [
+            "packages/nested-pkg1-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-1": [
+            "packages/nested-pkg1-2-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-1-1": [
+            "packages/nested-pkg1-2-2-1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-1-2": [
+            "packages/nested-pkg1-2-2-1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-2": [
+            "packages/nested-pkg1-2-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-2-1": [
+            "packages/nested-pkg1-2-2-1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-1-2-2": [
+            "packages/nested-pkg1-2-2-1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2": [
+            "packages/nested-pkg1-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-1": [
+            "packages/nested-pkg1-2-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-1-1": [
+            "packages/nested-pkg1-2-2-2-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-1-2": [
+            "packages/nested-pkg1-2-2-2-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-2": [
+            "packages/nested-pkg1-2-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-2-1": [
+            "packages/nested-pkg1-2-2-2-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/nested-pkg1-2-2-2-2-2": [
+            "packages/nested-pkg1-2-2-2-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1": ["packages/small-pkg1/src/index.ts"],
+         "@large-ts-monorepo/small-pkg1-1": [
+            "packages/small-pkg1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-1-1": [
+            "packages/small-pkg1-1-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-1-2": [
+            "packages/small-pkg1-1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-2": [
+            "packages/small-pkg1-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-2-1": [
+            "packages/small-pkg1-2-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-2-2": [
+            "packages/small-pkg1-2-2/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-3": [
+            "packages/small-pkg1-3/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-3-1": [
+            "packages/small-pkg1-3-1/src/index.ts"
+         ],
+         "@large-ts-monorepo/small-pkg1-3-2": [
+            "packages/small-pkg1-3-2/src/index.ts"
+         ]
+      }
+   },
+   "exclude": ["node_modules", "tmp"]
 }

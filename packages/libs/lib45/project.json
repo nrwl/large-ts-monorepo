@@ -1,19 +1,19 @@
 {
-  "name": "lib-45",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib45/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib45",
-        "main": "packages/libs/lib45/src/index.ts",
-        "tsConfig": "packages/libs/lib45/tsconfig.lib.json",
-        "assets": ["packages/libs/lib45/*.md"]
+   "name": "lib-45",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib45/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib45",
+            "main": "packages/libs/lib45/src/index.ts",
+            "tsConfig": "packages/libs/lib45/tsconfig.lib.json",
+            "assets": ["packages/libs/lib45/*.md"]
+         }
       }
-    }
-  }
+   }
 }

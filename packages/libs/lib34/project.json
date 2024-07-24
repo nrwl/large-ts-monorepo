@@ -1,19 +1,19 @@
 {
-  "name": "lib-34",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib34/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib34",
-        "main": "packages/libs/lib34/src/index.ts",
-        "tsConfig": "packages/libs/lib34/tsconfig.lib.json",
-        "assets": ["packages/libs/lib34/*.md"]
+   "name": "lib-34",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib34/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib34",
+            "main": "packages/libs/lib34/src/index.ts",
+            "tsConfig": "packages/libs/lib34/tsconfig.lib.json",
+            "assets": ["packages/libs/lib34/*.md"]
+         }
       }
-    }
-  }
+   }
 }

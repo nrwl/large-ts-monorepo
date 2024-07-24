@@ -1,19 +1,19 @@
 {
-  "name": "lib-76",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib76/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib76",
-        "main": "packages/libs/lib76/src/index.ts",
-        "tsConfig": "packages/libs/lib76/tsconfig.lib.json",
-        "assets": ["packages/libs/lib76/*.md"]
+   "name": "lib-76",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib76/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib76",
+            "main": "packages/libs/lib76/src/index.ts",
+            "tsConfig": "packages/libs/lib76/tsconfig.lib.json",
+            "assets": ["packages/libs/lib76/*.md"]
+         }
       }
-    }
-  }
+   }
 }

@@ -1,19 +1,19 @@
 {
-  "name": "lib-211",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-3/lib211/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-3/lib211",
-        "main": "packages/libs-3/lib211/src/index.ts",
-        "tsConfig": "packages/libs-3/lib211/tsconfig.lib.json",
-        "assets": ["packages/libs-3/lib211/*.md"]
+   "name": "lib-211",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-3/lib211/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-3/lib211",
+            "main": "packages/libs-3/lib211/src/index.ts",
+            "tsConfig": "packages/libs-3/lib211/tsconfig.lib.json",
+            "assets": ["packages/libs-3/lib211/*.md"]
+         }
       }
-    }
-  }
+   }
 }

@@ -1,19 +1,19 @@
 {
-  "name": "lib-159",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-2/lib159/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-2/lib159",
-        "main": "packages/libs-2/lib159/src/index.ts",
-        "tsConfig": "packages/libs-2/lib159/tsconfig.lib.json",
-        "assets": ["packages/libs-2/lib159/*.md"]
+   "name": "lib-159",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-2/lib159/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-2/lib159",
+            "main": "packages/libs-2/lib159/src/index.ts",
+            "tsConfig": "packages/libs-2/lib159/tsconfig.lib.json",
+            "assets": ["packages/libs-2/lib159/*.md"]
+         }
       }
-    }
-  }
+   }
 }

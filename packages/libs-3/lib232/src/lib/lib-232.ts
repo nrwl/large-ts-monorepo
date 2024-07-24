@@ -1,3 +1,3 @@
 export function lib232(): string {
-  return 'lib-232';
+   return 'lib-232';
 }

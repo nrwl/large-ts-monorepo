@@ -1,19 +1,19 @@
 {
-  "name": "lib-70",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib70/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib70",
-        "main": "packages/libs/lib70/src/index.ts",
-        "tsConfig": "packages/libs/lib70/tsconfig.lib.json",
-        "assets": ["packages/libs/lib70/*.md"]
+   "name": "lib-70",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib70/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib70",
+            "main": "packages/libs/lib70/src/index.ts",
+            "tsConfig": "packages/libs/lib70/tsconfig.lib.json",
+            "assets": ["packages/libs/lib70/*.md"]
+         }
       }
-    }
-  }
+   }
 }

@@ -1,19 +1,19 @@
 {
-  "name": "lib-350",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-4/lib350/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-4/lib350",
-        "main": "packages/libs-4/lib350/src/index.ts",
-        "tsConfig": "packages/libs-4/lib350/tsconfig.lib.json",
-        "assets": ["packages/libs-4/lib350/*.md"]
+   "name": "lib-350",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-4/lib350/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-4/lib350",
+            "main": "packages/libs-4/lib350/src/index.ts",
+            "tsConfig": "packages/libs-4/lib350/tsconfig.lib.json",
+            "assets": ["packages/libs-4/lib350/*.md"]
+         }
       }
-    }
-  }
+   }
 }

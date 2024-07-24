@@ -1,19 +1,19 @@
 {
-  "name": "lib-117",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs-2/lib117/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs-2/lib117",
-        "main": "packages/libs-2/lib117/src/index.ts",
-        "tsConfig": "packages/libs-2/lib117/tsconfig.lib.json",
-        "assets": ["packages/libs-2/lib117/*.md"]
+   "name": "lib-117",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs-2/lib117/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs-2/lib117",
+            "main": "packages/libs-2/lib117/src/index.ts",
+            "tsConfig": "packages/libs-2/lib117/tsconfig.lib.json",
+            "assets": ["packages/libs-2/lib117/*.md"]
+         }
       }
-    }
-  }
+   }
 }

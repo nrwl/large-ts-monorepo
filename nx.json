@@ -1,72 +1,54 @@
 {
-  "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx/tasks-runners/default",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
+   "$schema": "./node_modules/nx/schemas/nx-schema.json",
+   "tasksRunnerOptions": {
+      "default": {
+         "runner": "nx/tasks-runners/default",
+         "options": {
+            "cacheableOperations": ["build", "lint", "test", "e2e"]
+         }
       }
-    }
-  },
-  "targetDefaults": {
-    "build": {
-      "dependsOn": [
-        "^build"
+   },
+   "targetDefaults": {
+      "build": {
+         "dependsOn": ["^build"],
+         "inputs": ["production", "^production"]
+      },
+      "@nx/js:tsc": {
+         "cache": true,
+         "dependsOn": ["^build"],
+         "inputs": ["production", "^production"]
+      }
+   },
+   "namedInputs": {
+      "default": ["{projectRoot}/**/*", "sharedGlobals"],
+      "production": [
+         "default",
+         "!{projectRoot}/.eslintrc.json",
+         "!{projectRoot}/eslint.config.js",
+         "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
+         "!{projectRoot}/tsconfig.spec.json",
+         "!{projectRoot}/jest.config.[jt]s",
+         "!{projectRoot}/src/test-setup.[jt]s",
+         "!{projectRoot}/test-setup.[jt]s"
       ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
-    },
-    "@nx/js:tsc": {
-      "cache": true,
-      "dependsOn": [
-        "^build"
-      ],
-      "inputs": [
-        "production",
-        "^production"
-      ]
-    }
-  },
-  "namedInputs": {
-    "default": [
-      "{projectRoot}/**/*",
-      "sharedGlobals"
-    ],
-    "production": [
-      "default",
-      "!{projectRoot}/.eslintrc.json",
-      "!{projectRoot}/eslint.config.js",
-      "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
-      "!{projectRoot}/tsconfig.spec.json",
-      "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/src/test-setup.[jt]s",
-      "!{projectRoot}/test-setup.[jt]s"
-    ],
-    "sharedGlobals": []
-  },
-  "workspaceLayout": {
-    "appsDir": "packages",
-    "libsDir": "packages"
-  },
-  "plugins": [
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
+      "sharedGlobals": []
+   },
+   "workspaceLayout": {
+      "appsDir": "packages",
+      "libsDir": "packages"
+   },
+   "plugins": [
+      {
+         "plugin": "@nx/eslint/plugin",
+         "options": {
+            "targetName": "lint"
+         }
+      },
+      {
+         "plugin": "@nx/jest/plugin",
+         "options": {
+            "targetName": "test"
+         }
       }
-    },
-    {
-      "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      }
-    }
-  ]
+   ]
 }

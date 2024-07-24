@@ -1,3 +1,3 @@
 export function lib342(): string {
-  return 'lib-342';
+   return 'lib-342';
 }

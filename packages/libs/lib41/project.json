@@ -1,19 +1,19 @@
 {
-  "name": "lib-41",
-  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/libs/lib41/src",
-  "projectType": "library",
-  "tags": [],
-  "targets": {
-    "build": {
-      "executor": "@nx/js:tsc",
-      "outputs": ["{options.outputPath}"],
-      "options": {
-        "outputPath": "dist/packages/libs/lib41",
-        "main": "packages/libs/lib41/src/index.ts",
-        "tsConfig": "packages/libs/lib41/tsconfig.lib.json",
-        "assets": ["packages/libs/lib41/*.md"]
+   "name": "lib-41",
+   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+   "sourceRoot": "packages/libs/lib41/src",
+   "projectType": "library",
+   "tags": [],
+   "targets": {
+      "build": {
+         "executor": "@nx/js:tsc",
+         "outputs": ["{options.outputPath}"],
+         "options": {
+            "outputPath": "dist/packages/libs/lib41",
+            "main": "packages/libs/lib41/src/index.ts",
+            "tsConfig": "packages/libs/lib41/tsconfig.lib.json",
+            "assets": ["packages/libs/lib41/*.md"]
+         }
       }
-    }
-  }
+   }
 }
