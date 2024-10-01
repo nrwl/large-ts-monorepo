@@ -43,8 +43,9 @@ function logTitle(message) {
 }
 
 function clearOutput() {
-  cp.execSync('rm -rf dist');
+  cp.execSync('find packages -type d -name dist | xargs rm -rf');
 }
+
 function clearCache() {
   cp.execSync('nx reset');
 }
@@ -153,7 +154,7 @@ const benchmarkTimes = {
     affected50: 0,
     affectedLeafDep: 0,
   },
-  batch: {
+  references: {
     cold: 0,
     affected10: 0,
     affected20: 0,
@@ -163,18 +164,18 @@ const benchmarkTimes = {
 };
 
 // Cold builds
-logTitle(`Running a cold build with @nx/js:tsc ${NUMBER_OF_RUNS} times`);
+logTitle(`Running a cold build with "tsc" ${NUMBER_OF_RUNS} times`);
 benchmarkTimes.normal.cold = runBenchmark(() =>
-  spawnSync('nx', ['run', `${options.scenario}-pkg1:build`])
+  spawnSync('nx', [
+    'run',
+    `${options.scenario}-pkg1:build`,
+    `--configuration=old`,
+  ])
 );
 
-logTitle(
-  `Running a cold build with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
-);
-benchmarkTimes.batch.cold = runBenchmark(() =>
-  spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
-    NX_BATCH_MODE: 'true',
-  })
+logTitle(`Running a cold build with "tsc --build" ${NUMBER_OF_RUNS} times`);
+benchmarkTimes.references.cold = runBenchmark(() =>
+  spawnSync('nx', ['run', `${options.scenario}-pkg1:build`])
 );
 
 // ~10% affected
@@ -186,21 +187,23 @@ const affected10RunOptions = {
 };
 
 logTitle(
-  `Running build for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with "tsc" ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected10 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  () =>
+    spawnSync('nx', [
+      'run',
+      `${options.scenario}-pkg1:build`,
+      `--configuration=old`,
+    ]),
   affected10RunOptions
 );
 
 logTitle(
-  `Running build for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with "tsc --build" ${NUMBER_OF_RUNS} times`
 );
-benchmarkTimes.batch.affected10 = runBenchmark(
-  () =>
-    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
-      NX_BATCH_MODE: 'true',
-    }),
+benchmarkTimes.references.affected10 = runBenchmark(
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
   affected10RunOptions
 );
 
@@ -213,21 +216,23 @@ const affected20RunOptions = {
 };
 
 logTitle(
-  `Running build for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with "tsc" ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected20 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  () =>
+    spawnSync('nx', [
+      'run',
+      `${options.scenario}-pkg1:build`,
+      `--configuration=old`,
+    ]),
   affected20RunOptions
 );
 
 logTitle(
-  `Running build for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) "tsc --build" ${NUMBER_OF_RUNS} times`
 );
-benchmarkTimes.batch.affected20 = runBenchmark(
-  () =>
-    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
-      NX_BATCH_MODE: 'true',
-    }),
+benchmarkTimes.references.affected20 = runBenchmark(
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
   affected20RunOptions
 );
 
@@ -240,21 +245,23 @@ const affected50RunOptions = {
 };
 
 logTitle(
-  `Running build for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with @nx/js:tsc ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with "tsc" ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affected50 = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  () =>
+    spawnSync('nx', [
+      'run',
+      `${options.scenario}-pkg1:build`,
+      `--configuration=old`,
+    ]),
   affected50RunOptions
 );
 
 logTitle(
-  `Running build for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
+  `Running build for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with "tsc --build" ${NUMBER_OF_RUNS} times`
 );
-benchmarkTimes.batch.affected50 = runBenchmark(
-  () =>
-    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
-      NX_BATCH_MODE: 'true',
-    }),
+benchmarkTimes.references.affected50 = runBenchmark(
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
   affected50RunOptions
 );
 
@@ -276,21 +283,23 @@ const affectedLeafDepRunOptions = {
 };
 
 logTitle(
-  `Running build for project with a leaf dependency affected with @nx/js:tsc ${NUMBER_OF_RUNS} times`
+  `Running build for project with a leaf dependency affected with "tsc" ${NUMBER_OF_RUNS} times`
 );
 benchmarkTimes.normal.affectedLeafDep = runBenchmark(
-  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
+  () =>
+    spawnSync('nx', [
+      'run',
+      `${options.scenario}-pkg1:build`,
+      `--configuration=old`,
+    ]),
   affectedLeafDepRunOptions
 );
 
 logTitle(
-  `Running build for project with a leaf dependency affected with @nx/js:tsc using batch execution ${NUMBER_OF_RUNS} times`
+  `Running build for project with a leaf dependency affected with "tsc --build" ${NUMBER_OF_RUNS} times`
 );
-benchmarkTimes.batch.affectedLeafDep = runBenchmark(
-  () =>
-    spawnSync('nx', ['run', `${options.scenario}-pkg1:build`], {
-      NX_BATCH_MODE: 'true',
-    }),
+benchmarkTimes.references.affectedLeafDep = runBenchmark(
+  () => spawnSync('nx', ['run', `${options.scenario}-pkg1:build`]),
   affectedLeafDepRunOptions
 );
 
@@ -300,71 +309,72 @@ console.log('\n');
 logTitle('RESULTS');
 console.log('\n');
 console.log(
-  `Average cold build time with @nx/js:tsc is: ${benchmarkTimes.normal.cold}ms`
+  `Average cold build time with "tsc" is: ${benchmarkTimes.normal.cold}ms`
 );
 console.log(
-  `Average cold build time with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.cold}ms`
+  `Average cold build time with "tsc --build" time is: ${benchmarkTimes.references.cold}ms`
 );
 console.log(
-  `Cold builds with @nx/js:tsc using batch execution is ${
-    benchmarkTimes.normal.cold / benchmarkTimes.batch.cold
-  }x faster than non-batch execution`
-);
-
-console.log('\n');
-
-console.log(
-  `Average build time for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with @nx/js:tsc is: ${benchmarkTimes.normal.affected10}ms`
-);
-console.log(
-  `Average build time for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.affected10}ms`
-);
-console.log(
-  `Running @nx/js:tsc using batch execution was ${
-    benchmarkTimes.normal.affected10 / benchmarkTimes.batch.affected10
-  }x faster than non-batch execution`
+  `Cold builds with "tsc --build" is ${
+    benchmarkTimes.normal.cold / benchmarkTimes.references.cold
+  }x faster than not using --build`
 );
 
 console.log('\n');
 
 console.log(
-  `Average build time for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with @nx/js:tsc is: ${benchmarkTimes.normal.affected20}ms`
+  `Average build time for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with "tsc" is: ${benchmarkTimes.normal.affected10}ms`
 );
 console.log(
-  `Average build time for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.affected20}ms`
+  `Average build time for ${affected10Info.count} affected packages (~${affected10Info.percentage}%) with "tsc --build" time is: ${benchmarkTimes.references.affected10}ms`
 );
 console.log(
-  `Running @nx/js:tsc using batch execution was ${
-    benchmarkTimes.normal.affected20 / benchmarkTimes.batch.affected20
-  }x faster than non-batch execution`
-);
-
-console.log('\n');
-
-console.log(
-  `Average build time for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with @nx/js:tsc is: ${benchmarkTimes.normal.affected50}ms`
-);
-console.log(
-  `Average build time for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.affected50}ms`
-);
-console.log(
-  `Running @nx/js:tsc using batch execution was ${
-    benchmarkTimes.normal.affected50 / benchmarkTimes.batch.affected50
-  }x faster than non-batch execution`
+  `Running "tsc --build" was ${
+    benchmarkTimes.normal.affected10 / benchmarkTimes.references.affected10
+  }x faster than not using --build`
 );
 
 console.log('\n');
 
 console.log(
-  `Average build time for project with a leaf dependency affected with @nx/js:tsc is: ${benchmarkTimes.normal.affectedLeafDep}ms`
+  `Average build time for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with "tsc" is: ${benchmarkTimes.normal.affected20}ms`
 );
 console.log(
-  `Average build time for project with a leaf dependency affected with @nx/js:tsc using batch execution time is: ${benchmarkTimes.batch.affectedLeafDep}ms`
+  `Average build time for ${affected20Info.count} affected packages (~${affected20Info.percentage}%) with "tsc --build" time is: ${benchmarkTimes.references.affected20}ms`
 );
 console.log(
-  `Running @nx/js:tsc using batch execution was ${
-    benchmarkTimes.normal.affectedLeafDep / benchmarkTimes.batch.affectedLeafDep
-  }x faster than non-batch execution`
+  `Running "tsc --build" was ${
+    benchmarkTimes.normal.affected20 / benchmarkTimes.references.affected20
+  }x faster than not using --build`
+);
+
+console.log('\n');
+
+console.log(
+  `Average build time for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with "tsc" is: ${benchmarkTimes.normal.affected50}ms`
+);
+console.log(
+  `Average build time for ${affected50Info.count} affected packages (~${affected50Info.percentage}%) with "tsc --build" time is: ${benchmarkTimes.references.affected50}ms`
+);
+console.log(
+  `Running "tsc --build" was ${
+    benchmarkTimes.normal.affected50 / benchmarkTimes.references.affected50
+  }x faster than not using --build`
+);
+
+console.log('\n');
+
+console.log(
+  `Average build time for project with a leaf dependency affected with "tsc" is: ${benchmarkTimes.normal.affectedLeafDep}ms`
+);
+console.log(
+  `Average build time for project with a leaf dependency affected with "tsc --build" time is: ${benchmarkTimes.references.affectedLeafDep}ms`
+);
+console.log(
+  `Running "tsc --build" was ${
+    benchmarkTimes.normal.affectedLeafDep /
+    benchmarkTimes.references.affectedLeafDep
+  }x faster than not using --build`
 );
 
 // cleanup pkgs changes

@@ -6,11 +6,12 @@
     "sharedGlobals": []
   },
   "targetDefaults": {
-    "build-old": {
-      "command": "tsc tsconfig.lib.json --pretty --verbose"
-    },
-    "build-new": {
-      "command": "tsc --build tsconfig.lib.json --pretty --verbose"
+    "build": {
+      "configurations": {
+        "old": {
+          "command": "tsc -p tsconfig.lib.json --pretty"
+        }
+      }
     }
   },
   "plugins": [
