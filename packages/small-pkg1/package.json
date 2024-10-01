@@ -1,5 +1,11 @@
 {
   "name": "@large-ts-monorepo/small-pkg1",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@large-ts-monorepo/small-pkg1-1": "*",
+    "@large-ts-monorepo/small-pkg1-2": "*",
+    "@large-ts-monorepo/small-pkg1-3": "*"
+  }
 }

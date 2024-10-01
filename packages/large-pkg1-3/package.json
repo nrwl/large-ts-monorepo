@@ -1,5 +1,28 @@
 {
   "name": "@large-ts-monorepo/large-pkg1-3",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@large-ts-monorepo/large-pkg1-3-1": "*",
+    "@large-ts-monorepo/large-pkg1-3-2": "*",
+    "@large-ts-monorepo/large-pkg1-3-3": "*",
+    "@large-ts-monorepo/large-pkg1-3-4": "*",
+    "@large-ts-monorepo/large-pkg1-3-5": "*",
+    "@large-ts-monorepo/large-pkg1-3-6": "*",
+    "@large-ts-monorepo/large-pkg1-3-7": "*",
+    "@large-ts-monorepo/large-pkg1-3-8": "*",
+    "@large-ts-monorepo/large-pkg1-3-9": "*",
+    "@large-ts-monorepo/large-pkg1-3-10": "*",
+    "@large-ts-monorepo/large-pkg1-3-11": "*",
+    "@large-ts-monorepo/large-pkg1-3-12": "*",
+    "@large-ts-monorepo/large-pkg1-3-13": "*",
+    "@large-ts-monorepo/large-pkg1-3-14": "*",
+    "@large-ts-monorepo/large-pkg1-3-15": "*",
+    "@large-ts-monorepo/large-pkg1-3-16": "*",
+    "@large-ts-monorepo/large-pkg1-3-17": "*",
+    "@large-ts-monorepo/large-pkg1-3-18": "*",
+    "@large-ts-monorepo/large-pkg1-3-19": "*",
+    "@large-ts-monorepo/large-pkg1-3-20": "*"
+  }
 }

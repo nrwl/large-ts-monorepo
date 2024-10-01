@@ -1,10 +1,34 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/out-tsc",
-    "declaration": true,
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/tsconfig.lib.tsbuildinfo",
+    "emitDeclarationOnly": false,
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],
-  "exclude": ["jest.config.ts", "src/**/*.spec.ts", "src/**/*.test.ts"]
+  "references": [
+    { "path": "../large-pkg1-1-20/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-19/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-18/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-17/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-16/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-15/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-14/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-13/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-12/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-11/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-10/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-9/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-8/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-7/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-6/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-5/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-4/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-3/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-2/tsconfig.lib.json" },
+    { "path": "../large-pkg1-1-1/tsconfig.lib.json" }
+  ]
 }

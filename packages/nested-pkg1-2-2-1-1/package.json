@@ -1,5 +1,6 @@
 {
   "name": "@large-ts-monorepo/nested-pkg1-2-2-1-1",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "main": "dist/index.js"
 }

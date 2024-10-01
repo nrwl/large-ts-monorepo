@@ -1,19 +1,28 @@
 {
   "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "module": "commonjs",
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true
-  },
   "files": [],
   "include": [],
   "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    }
+    { "path": "../large-pkg1-1-20" },
+    { "path": "../large-pkg1-1-19" },
+    { "path": "../large-pkg1-1-18" },
+    { "path": "../large-pkg1-1-17" },
+    { "path": "../large-pkg1-1-16" },
+    { "path": "../large-pkg1-1-15" },
+    { "path": "../large-pkg1-1-14" },
+    { "path": "../large-pkg1-1-13" },
+    { "path": "../large-pkg1-1-12" },
+    { "path": "../large-pkg1-1-11" },
+    { "path": "../large-pkg1-1-10" },
+    { "path": "../large-pkg1-1-9" },
+    { "path": "../large-pkg1-1-8" },
+    { "path": "../large-pkg1-1-7" },
+    { "path": "../large-pkg1-1-6" },
+    { "path": "../large-pkg1-1-5" },
+    { "path": "../large-pkg1-1-4" },
+    { "path": "../large-pkg1-1-3" },
+    { "path": "../large-pkg1-1-2" },
+    { "path": "../large-pkg1-1-1" },
+    { "path": "./tsconfig.lib.json" }
   ]
 }

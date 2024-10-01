@@ -1,5 +1,6 @@
 {
   "name": "@large-ts-monorepo/medium-pkg1-6-3",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "main": "dist/index.js"
 }

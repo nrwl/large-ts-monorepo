@@ -1,5 +1,20 @@
 {
   "name": "@large-ts-monorepo/large-pkg1",
   "version": "0.0.1",
-  "type": "commonjs"
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@large-ts-monorepo/large-pkg1-1": "*",
+    "@large-ts-monorepo/large-pkg1-2": "*",
+    "@large-ts-monorepo/large-pkg1-3": "*",
+    "@large-ts-monorepo/large-pkg1-4": "*",
+    "@large-ts-monorepo/large-pkg1-5": "*",
+    "@large-ts-monorepo/large-pkg1-6": "*",
+    "@large-ts-monorepo/large-pkg1-7": "*",
+    "@large-ts-monorepo/large-pkg1-8": "*",
+    "@large-ts-monorepo/large-pkg1-9": "*",
+    "@large-ts-monorepo/large-pkg1-10": "*",
+    "@large-ts-monorepo/large-pkg1-11": "*",
+    "@large-ts-monorepo/large-pkg1-12": "*"
+  }
 }
