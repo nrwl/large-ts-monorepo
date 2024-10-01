@@ -1318,9 +1318,50 @@ importers:
 
   packages/large-pkg1-9-9: {}
 
-  packages/medium-pkg1: {}
+  packages/medium-pkg1:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-1':
+        specifier: '*'
+        version: link:../medium-pkg1-1
+      '@large-ts-monorepo/medium-pkg1-2':
+        specifier: '*'
+        version: link:../medium-pkg1-2
+      '@large-ts-monorepo/medium-pkg1-3':
+        specifier: '*'
+        version: link:../medium-pkg1-3
+      '@large-ts-monorepo/medium-pkg1-4':
+        specifier: '*'
+        version: link:../medium-pkg1-4
+      '@large-ts-monorepo/medium-pkg1-5':
+        specifier: '*'
+        version: link:../medium-pkg1-5
+      '@large-ts-monorepo/medium-pkg1-6':
+        specifier: '*'
+        version: link:../medium-pkg1-6
+      '@large-ts-monorepo/medium-pkg1-7':
+        specifier: '*'
+        version: link:../medium-pkg1-7
 
-  packages/medium-pkg1-1: {}
+  packages/medium-pkg1-1:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-1-1':
+        specifier: '*'
+        version: link:../medium-pkg1-1-1
+      '@large-ts-monorepo/medium-pkg1-1-2':
+        specifier: '*'
+        version: link:../medium-pkg1-1-2
+      '@large-ts-monorepo/medium-pkg1-1-3':
+        specifier: '*'
+        version: link:../medium-pkg1-1-3
+      '@large-ts-monorepo/medium-pkg1-1-4':
+        specifier: '*'
+        version: link:../medium-pkg1-1-4
+      '@large-ts-monorepo/medium-pkg1-1-5':
+        specifier: '*'
+        version: link:../medium-pkg1-1-5
+      '@large-ts-monorepo/medium-pkg1-1-6':
+        specifier: '*'
+        version: link:../medium-pkg1-1-6
 
   packages/medium-pkg1-1-1: {}
 
@@ -1334,7 +1375,26 @@ importers:
 
   packages/medium-pkg1-1-6: {}
 
-  packages/medium-pkg1-2: {}
+  packages/medium-pkg1-2:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-2-1':
+        specifier: '*'
+        version: link:../medium-pkg1-2-1
+      '@large-ts-monorepo/medium-pkg1-2-2':
+        specifier: '*'
+        version: link:../medium-pkg1-2-2
+      '@large-ts-monorepo/medium-pkg1-2-3':
+        specifier: '*'
+        version: link:../medium-pkg1-2-3
+      '@large-ts-monorepo/medium-pkg1-2-4':
+        specifier: '*'
+        version: link:../medium-pkg1-2-4
+      '@large-ts-monorepo/medium-pkg1-2-5':
+        specifier: '*'
+        version: link:../medium-pkg1-2-5
+      '@large-ts-monorepo/medium-pkg1-2-6':
+        specifier: '*'
+        version: link:../medium-pkg1-2-6
 
   packages/medium-pkg1-2-1: {}
 
@@ -1348,7 +1408,26 @@ importers:
 
   packages/medium-pkg1-2-6: {}
 
-  packages/medium-pkg1-3: {}
+  packages/medium-pkg1-3:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-3-1':
+        specifier: '*'
+        version: link:../medium-pkg1-3-1
+      '@large-ts-monorepo/medium-pkg1-3-2':
+        specifier: '*'
+        version: link:../medium-pkg1-3-2
+      '@large-ts-monorepo/medium-pkg1-3-3':
+        specifier: '*'
+        version: link:../medium-pkg1-3-3
+      '@large-ts-monorepo/medium-pkg1-3-4':
+        specifier: '*'
+        version: link:../medium-pkg1-3-4
+      '@large-ts-monorepo/medium-pkg1-3-5':
+        specifier: '*'
+        version: link:../medium-pkg1-3-5
+      '@large-ts-monorepo/medium-pkg1-3-6':
+        specifier: '*'
+        version: link:../medium-pkg1-3-6
 
   packages/medium-pkg1-3-1: {}
 
@@ -1362,7 +1441,26 @@ importers:
 
   packages/medium-pkg1-3-6: {}
 
-  packages/medium-pkg1-4: {}
+  packages/medium-pkg1-4:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-4-1':
+        specifier: '*'
+        version: link:../medium-pkg1-4-1
+      '@large-ts-monorepo/medium-pkg1-4-2':
+        specifier: '*'
+        version: link:../medium-pkg1-4-2
+      '@large-ts-monorepo/medium-pkg1-4-3':
+        specifier: '*'
+        version: link:../medium-pkg1-4-3
+      '@large-ts-monorepo/medium-pkg1-4-4':
+        specifier: '*'
+        version: link:../medium-pkg1-4-4
+      '@large-ts-monorepo/medium-pkg1-4-5':
+        specifier: '*'
+        version: link:../medium-pkg1-4-5
+      '@large-ts-monorepo/medium-pkg1-4-6':
+        specifier: '*'
+        version: link:../medium-pkg1-4-6
 
   packages/medium-pkg1-4-1: {}
 
@@ -1376,7 +1474,26 @@ importers:
 
   packages/medium-pkg1-4-6: {}
 
-  packages/medium-pkg1-5: {}
+  packages/medium-pkg1-5:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-5-1':
+        specifier: '*'
+        version: link:../medium-pkg1-5-1
+      '@large-ts-monorepo/medium-pkg1-5-2':
+        specifier: '*'
+        version: link:../medium-pkg1-5-2
+      '@large-ts-monorepo/medium-pkg1-5-3':
+        specifier: '*'
+        version: link:../medium-pkg1-5-3
+      '@large-ts-monorepo/medium-pkg1-5-4':
+        specifier: '*'
+        version: link:../medium-pkg1-5-4
+      '@large-ts-monorepo/medium-pkg1-5-5':
+        specifier: '*'
+        version: link:../medium-pkg1-5-5
+      '@large-ts-monorepo/medium-pkg1-5-6':
+        specifier: '*'
+        version: link:../medium-pkg1-5-6
 
   packages/medium-pkg1-5-1: {}
 
@@ -1390,7 +1507,26 @@ importers:
 
   packages/medium-pkg1-5-6: {}
 
-  packages/medium-pkg1-6: {}
+  packages/medium-pkg1-6:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-6-1':
+        specifier: '*'
+        version: link:../medium-pkg1-6-1
+      '@large-ts-monorepo/medium-pkg1-6-2':
+        specifier: '*'
+        version: link:../medium-pkg1-6-2
+      '@large-ts-monorepo/medium-pkg1-6-3':
+        specifier: '*'
+        version: link:../medium-pkg1-6-3
+      '@large-ts-monorepo/medium-pkg1-6-4':
+        specifier: '*'
+        version: link:../medium-pkg1-6-4
+      '@large-ts-monorepo/medium-pkg1-6-5':
+        specifier: '*'
+        version: link:../medium-pkg1-6-5
+      '@large-ts-monorepo/medium-pkg1-6-6':
+        specifier: '*'
+        version: link:../medium-pkg1-6-6
 
   packages/medium-pkg1-6-1: {}
 
@@ -1404,7 +1540,26 @@ importers:
 
   packages/medium-pkg1-6-6: {}
 
-  packages/medium-pkg1-7: {}
+  packages/medium-pkg1-7:
+    dependencies:
+      '@large-ts-monorepo/medium-pkg1-7-1':
+        specifier: '*'
+        version: link:../medium-pkg1-7-1
+      '@large-ts-monorepo/medium-pkg1-7-2':
+        specifier: '*'
+        version: link:../medium-pkg1-7-2
+      '@large-ts-monorepo/medium-pkg1-7-3':
+        specifier: '*'
+        version: link:../medium-pkg1-7-3
+      '@large-ts-monorepo/medium-pkg1-7-4':
+        specifier: '*'
+        version: link:../medium-pkg1-7-4
+      '@large-ts-monorepo/medium-pkg1-7-5':
+        specifier: '*'
+        version: link:../medium-pkg1-7-5
+      '@large-ts-monorepo/medium-pkg1-7-6':
+        specifier: '*'
+        version: link:../medium-pkg1-7-6
 
   packages/medium-pkg1-7-1: {}
 
@@ -1418,127 +1573,344 @@ importers:
 
   packages/medium-pkg1-7-6: {}
 
-  packages/nested-pkg1: {}
+  packages/nested-pkg1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1
+      '@large-ts-monorepo/nested-pkg1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2
 
-  packages/nested-pkg1-1: {}
+  packages/nested-pkg1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1
+      '@large-ts-monorepo/nested-pkg1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2
 
-  packages/nested-pkg1-1-1: {}
+  packages/nested-pkg1-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1
+      '@large-ts-monorepo/nested-pkg1-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2
 
-  packages/nested-pkg1-1-1-1: {}
+  packages/nested-pkg1-1-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-1
+      '@large-ts-monorepo/nested-pkg1-1-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-2
 
-  packages/nested-pkg1-1-1-1-1: {}
+  packages/nested-pkg1-1-1-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-1-1
+      '@large-ts-monorepo/nested-pkg1-1-1-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-1-2
 
   packages/nested-pkg1-1-1-1-1-1: {}
 
   packages/nested-pkg1-1-1-1-1-2: {}
 
-  packages/nested-pkg1-1-1-1-2: {}
+  packages/nested-pkg1-1-1-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-2-1
+      '@large-ts-monorepo/nested-pkg1-1-1-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-1-2-2
 
   packages/nested-pkg1-1-1-1-2-1: {}
 
   packages/nested-pkg1-1-1-1-2-2: {}
 
-  packages/nested-pkg1-1-1-2: {}
+  packages/nested-pkg1-1-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-1
+      '@large-ts-monorepo/nested-pkg1-1-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-2
 
-  packages/nested-pkg1-1-1-2-1: {}
+  packages/nested-pkg1-1-1-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-1-1
+      '@large-ts-monorepo/nested-pkg1-1-1-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-1-2
 
   packages/nested-pkg1-1-1-2-1-1: {}
 
   packages/nested-pkg1-1-1-2-1-2: {}
 
-  packages/nested-pkg1-1-1-2-2: {}
+  packages/nested-pkg1-1-1-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-1-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-2-1
+      '@large-ts-monorepo/nested-pkg1-1-1-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-1-2-2-2
 
   packages/nested-pkg1-1-1-2-2-1: {}
 
   packages/nested-pkg1-1-1-2-2-2: {}
 
-  packages/nested-pkg1-1-2: {}
+  packages/nested-pkg1-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1
+      '@large-ts-monorepo/nested-pkg1-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2
 
-  packages/nested-pkg1-1-2-1: {}
+  packages/nested-pkg1-1-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-1
+      '@large-ts-monorepo/nested-pkg1-1-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-2
 
-  packages/nested-pkg1-1-2-1-1: {}
+  packages/nested-pkg1-1-2-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-1-1
+      '@large-ts-monorepo/nested-pkg1-1-2-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-1-2
 
   packages/nested-pkg1-1-2-1-1-1: {}
 
   packages/nested-pkg1-1-2-1-1-2: {}
 
-  packages/nested-pkg1-1-2-1-2: {}
+  packages/nested-pkg1-1-2-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-2-1
+      '@large-ts-monorepo/nested-pkg1-1-2-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-1-2-2
 
   packages/nested-pkg1-1-2-1-2-1: {}
 
   packages/nested-pkg1-1-2-1-2-2: {}
 
-  packages/nested-pkg1-1-2-2: {}
+  packages/nested-pkg1-1-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-1
+      '@large-ts-monorepo/nested-pkg1-1-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-2
 
-  packages/nested-pkg1-1-2-2-1: {}
+  packages/nested-pkg1-1-2-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-1-1
+      '@large-ts-monorepo/nested-pkg1-1-2-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-1-2
 
   packages/nested-pkg1-1-2-2-1-1: {}
 
   packages/nested-pkg1-1-2-2-1-2: {}
 
-  packages/nested-pkg1-1-2-2-2: {}
+  packages/nested-pkg1-1-2-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-1-2-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-2-1
+      '@large-ts-monorepo/nested-pkg1-1-2-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-1-2-2-2-2
 
   packages/nested-pkg1-1-2-2-2-1: {}
 
   packages/nested-pkg1-1-2-2-2-2: {}
 
-  packages/nested-pkg1-2: {}
+  packages/nested-pkg1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1
+      '@large-ts-monorepo/nested-pkg1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2
 
-  packages/nested-pkg1-2-1: {}
+  packages/nested-pkg1-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1
+      '@large-ts-monorepo/nested-pkg1-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2
 
-  packages/nested-pkg1-2-1-1: {}
+  packages/nested-pkg1-2-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-1
+      '@large-ts-monorepo/nested-pkg1-2-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-2
 
-  packages/nested-pkg1-2-1-1-1: {}
+  packages/nested-pkg1-2-1-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-1-1
+      '@large-ts-monorepo/nested-pkg1-2-1-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-1-2
 
   packages/nested-pkg1-2-1-1-1-1: {}
 
   packages/nested-pkg1-2-1-1-1-2: {}
 
-  packages/nested-pkg1-2-1-1-2: {}
+  packages/nested-pkg1-2-1-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-2-1
+      '@large-ts-monorepo/nested-pkg1-2-1-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-1-2-2
 
   packages/nested-pkg1-2-1-1-2-1: {}
 
   packages/nested-pkg1-2-1-1-2-2: {}
 
-  packages/nested-pkg1-2-1-2: {}
+  packages/nested-pkg1-2-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-1
+      '@large-ts-monorepo/nested-pkg1-2-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-2
 
-  packages/nested-pkg1-2-1-2-1: {}
+  packages/nested-pkg1-2-1-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-1-1
+      '@large-ts-monorepo/nested-pkg1-2-1-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-1-2
 
   packages/nested-pkg1-2-1-2-1-1: {}
 
   packages/nested-pkg1-2-1-2-1-2: {}
 
-  packages/nested-pkg1-2-1-2-2: {}
+  packages/nested-pkg1-2-1-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-1-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-2-1
+      '@large-ts-monorepo/nested-pkg1-2-1-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-1-2-2-2
 
   packages/nested-pkg1-2-1-2-2-1: {}
 
   packages/nested-pkg1-2-1-2-2-2: {}
 
-  packages/nested-pkg1-2-2: {}
+  packages/nested-pkg1-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1
+      '@large-ts-monorepo/nested-pkg1-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2
 
-  packages/nested-pkg1-2-2-1: {}
+  packages/nested-pkg1-2-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-1
+      '@large-ts-monorepo/nested-pkg1-2-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-2
 
-  packages/nested-pkg1-2-2-1-1: {}
+  packages/nested-pkg1-2-2-1-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-1-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-1-1
+      '@large-ts-monorepo/nested-pkg1-2-2-1-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-1-2
 
   packages/nested-pkg1-2-2-1-1-1: {}
 
   packages/nested-pkg1-2-2-1-1-2: {}
 
-  packages/nested-pkg1-2-2-1-2: {}
+  packages/nested-pkg1-2-2-1-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-1-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-2-1
+      '@large-ts-monorepo/nested-pkg1-2-2-1-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-1-2-2
 
   packages/nested-pkg1-2-2-1-2-1: {}
 
   packages/nested-pkg1-2-2-1-2-2: {}
 
-  packages/nested-pkg1-2-2-2: {}
+  packages/nested-pkg1-2-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-1
+      '@large-ts-monorepo/nested-pkg1-2-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-2
 
-  packages/nested-pkg1-2-2-2-1: {}
+  packages/nested-pkg1-2-2-2-1:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-2-1-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-1-1
+      '@large-ts-monorepo/nested-pkg1-2-2-2-1-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-1-2
 
   packages/nested-pkg1-2-2-2-1-1: {}
 
   packages/nested-pkg1-2-2-2-1-2: {}
 
-  packages/nested-pkg1-2-2-2-2: {}
+  packages/nested-pkg1-2-2-2-2:
+    dependencies:
+      '@large-ts-monorepo/nested-pkg1-2-2-2-2-1':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-2-1
+      '@large-ts-monorepo/nested-pkg1-2-2-2-2-2':
+        specifier: '*'
+        version: link:../nested-pkg1-2-2-2-2-2
 
   packages/nested-pkg1-2-2-2-2-1: {}
 

@@ -2,5 +2,13 @@
   "name": "@large-ts-monorepo/medium-pkg1-2",
   "version": "0.0.1",
   "type": "commonjs",
-  "main": "dist/index.js"
+  "main": "dist/index.js",
+  "dependencies": {
+    "@large-ts-monorepo/medium-pkg1-2-1": "*",
+    "@large-ts-monorepo/medium-pkg1-2-2": "*",
+    "@large-ts-monorepo/medium-pkg1-2-3": "*",
+    "@large-ts-monorepo/medium-pkg1-2-4": "*",
+    "@large-ts-monorepo/medium-pkg1-2-5": "*",
+    "@large-ts-monorepo/medium-pkg1-2-6": "*"
+  }
 }

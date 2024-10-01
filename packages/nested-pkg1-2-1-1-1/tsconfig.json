@@ -3,9 +3,8 @@
   "files": [],
   "include": [],
   "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    }
+    { "path": "../nested-pkg1-2-1-1-1-2" },
+    { "path": "../nested-pkg1-2-1-1-1-1" },
+    { "path": "./tsconfig.lib.json" }
   ]
 }
-

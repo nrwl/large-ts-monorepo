@@ -3,9 +3,12 @@
   "files": [],
   "include": [],
   "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    }
+    { "path": "../medium-pkg1-4-6" },
+    { "path": "../medium-pkg1-4-5" },
+    { "path": "../medium-pkg1-4-4" },
+    { "path": "../medium-pkg1-4-3" },
+    { "path": "../medium-pkg1-4-2" },
+    { "path": "../medium-pkg1-4-1" },
+    { "path": "./tsconfig.lib.json" }
   ]
 }
-

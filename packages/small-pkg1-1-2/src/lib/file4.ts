@@ -24,7 +24,7 @@ function smallPkg112_file4() {
   const point1 = { x: 0, y: 0 };
   const point2 = { x: 5, y: 5 };
   const distance = calculateDistance(point1, point2);
-  console.log("Distance between two points:", distance);
+  console.log('Distance between two points:', distance);
 
   function addNumbers(a: number, b: number): number {
     return a + b;
@@ -88,32 +88,32 @@ function smallPkg112_file4() {
 
   function formatDate(date: Date): string {
     const options: Intl.DateTimeFormatOptions = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
     };
     return date.toLocaleDateString(undefined, options);
   }
 
   // Invoke some functions
   const sum = addNumbers(5, 10);
-  console.log("Sum:", sum);
+  console.log('Sum:', sum);
 
   const power = calculatePower(2, 8);
-  console.log("Power:", power);
+  console.log('Power:', power);
 
   const factorial = calculateFactorial(5);
-  console.log("Factorial:", factorial);
+  console.log('Factorial:', factorial);
 
   const randomNumber = generateRandomNumber(1, 100);
-  console.log("Random Number:", randomNumber);
+  console.log('Random Number:', randomNumber);
 
-  greet("John");
-  sayGoodbye("Jane");
+  greet('John');
+  sayGoodbye('Jane');
 
-  const isValidEmail = validateEmail("example@example.com");
-  console.log("Is Valid Email:", isValidEmail);
+  const isValidEmail = validateEmail('example@example.com');
+  console.log('Is Valid Email:', isValidEmail);
 
   const formattedDate = formatDate(new Date());
-  console.log("Formatted Date:", formattedDate);
+  console.log('Formatted Date:', formattedDate);
 }

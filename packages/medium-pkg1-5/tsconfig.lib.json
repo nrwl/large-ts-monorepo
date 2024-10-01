@@ -9,6 +9,12 @@
     "types": ["node"]
   },
   "include": ["src/**/*.ts"],
-  "references": []
+  "references": [
+    { "path": "../medium-pkg1-5-6/tsconfig.lib.json" },
+    { "path": "../medium-pkg1-5-5/tsconfig.lib.json" },
+    { "path": "../medium-pkg1-5-4/tsconfig.lib.json" },
+    { "path": "../medium-pkg1-5-3/tsconfig.lib.json" },
+    { "path": "../medium-pkg1-5-2/tsconfig.lib.json" },
+    { "path": "../medium-pkg1-5-1/tsconfig.lib.json" }
+  ]
 }
-
