@@ -5,6 +5,14 @@
     "production": ["default"],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "build-old": {
+      "command": "tsc tsconfig.lib.json --pretty --verbose"
+    },
+    "build-new": {
+      "command": "tsc --build tsconfig.lib.json --pretty --verbose"
+    }
+  },
   "plugins": [
     {
       "plugin": "@nx/js/typescript",

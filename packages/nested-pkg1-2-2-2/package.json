@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "type": "commonjs",
   "main": "dist/index.js",
+  "nx": {
+    "targets": {
+      "build-old": {},
+      "build-new": {}
+    }
+  },
   "dependencies": {
     "@large-ts-monorepo/nested-pkg1-2-2-2-1": "*",
     "@large-ts-monorepo/nested-pkg1-2-2-2-2": "*"
