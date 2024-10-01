@@ -1,5 +1,5 @@
 {
-  "name": "@large-ts-monorepo/medium-pkg1-3",
+  "name": "medium-pkg1-3",
   "version": "0.0.1",
   "type": "commonjs",
   "main": "dist/index.js",
@@ -10,11 +10,11 @@
     }
   },
   "dependencies": {
-    "@large-ts-monorepo/medium-pkg1-3-1": "*",
-    "@large-ts-monorepo/medium-pkg1-3-2": "*",
-    "@large-ts-monorepo/medium-pkg1-3-3": "*",
-    "@large-ts-monorepo/medium-pkg1-3-4": "*",
-    "@large-ts-monorepo/medium-pkg1-3-5": "*",
-    "@large-ts-monorepo/medium-pkg1-3-6": "*"
+    "medium-pkg1-3-1": "*",
+    "medium-pkg1-3-2": "*",
+    "medium-pkg1-3-3": "*",
+    "medium-pkg1-3-4": "*",
+    "medium-pkg1-3-5": "*",
+    "medium-pkg1-3-6": "*"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@large-ts-monorepo/large-pkg1-12-9",
+  "name": "large-pkg1-12-9",
   "version": "0.0.1",
   "type": "commonjs",
   "main": "dist/index.js"
