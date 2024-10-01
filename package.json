@@ -24,5 +24,8 @@
     "typescript": "5.5.4",
     "yargs-parser": "^21.1.1",
     "@nx/eslint": "20.0.0-beta.4"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
